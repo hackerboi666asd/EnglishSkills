@@ -1,4 +1,6 @@
 // data-skills.js
+// Version: FINAL REMASTERED
+// Includes: AFB I, II, III, Enhanced Tools (Speaking/Checklist), Operators in Grading
 
 const skillsContent = [
     /* ============================================================
@@ -9,7 +11,7 @@ const skillsContent = [
         cat: "AFB I",
         short: "Concise account of main points (1/3 length).",
         content: `
-            <h3>Summarize / Write a Summary</h3>
+            <h3>Summary</h3>
             <p class="intro-text"><em>A summary is the art of saying much with few words. Your goal is to strip the text down to its bare bones without losing the core message. Think: <strong>Maximum information in minimum words.</strong></em></p>
             
             <h4>The Golden Rule</h4>
@@ -549,62 +551,141 @@ const skillsContent = [
     {
         title: "Speaking Skills",
         cat: "Tools",
-        short: "Phrases for Picture Description & Discussion.",
+        short: "Strategies & Phrases (Discussion, Monologue, Description).",
         content: `
-            <h3>Speaking Phrases</h3>
+            <h3>Speaking Skills: The Complete Guide</h3>
+            <p class="intro-text"><em>Whether it's a picture description, a presentation, or a discussion: Structure and polite interaction are key to a high grade.</em></p>
 
-            <h4>1. Picture Description (Structure)</h4>
-            <ol>
-                <li><strong>Intro:</strong> "The photo/cartoon depicts/shows..."</li>
-                <li><strong>Description:</strong> "In the foreground...", "On the left...", "In the background..."</li>
-                <li><strong>Action:</strong> "The people <strong>are standing</strong>..." (Present Progressive!).</li>
-                <li><strong>Interpretation:</strong> "The atmosphere seems...", "This symbolizes..."</li>
-            </ol>
-
-            <h4>2. Discussion Strategies</h4>
+            <h4>1. Visuals & Monologues</h4>
             <div class="table-wrap">
             <table>
-                <tr><td><strong>Agreeing</strong></td><td>"You are absolutely right.", "I couldn't agree more.", "That's a good point."</td></tr>
-                <tr><td><strong>Disagreeing</strong></td><td>"I see your point, but...", "I'm afraid I disagree.", "I look at it differently."</td></tr>
-                <tr><td><strong>Interrupting</strong></td><td>"Sorry to interrupt, but...", "May I add something here?"</td></tr>
-                <tr><td><strong>Stalling</strong></td><td>"That's an interesting question...", "Let me think about that for a second."</td></tr>
+                <tr>
+                    <td><strong>Picture Description</strong></td>
+                    <td>
+                        "The photo depicts/shows..."<br>
+                        "In the foreground / background / centre..."<br>
+                        "The atmosphere seems to be..."<br>
+                        "The person is stand<strong>ing</strong>..." (Pres. Progressive!)
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Cartoon Analysis</strong></td>
+                    <td>
+                        "The cartoonist criticizes..."<br>
+                        "The caption suggests that..."<br>
+                        "The element X symbolizes..."<br>
+                        "It is an exaggeration of..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Presentation (Monologue)</strong></td>
+                    <td>
+                        "I would like to talk about..."<br>
+                        "My presentation is divided into three parts."<br>
+                        "Let's move on to the next point."<br>
+                        "To conclude, I would like to say..."
+                    </td>
+                </tr>
             </table>
             </div>
+
+            <h4>2. Discussion Strategies (Phrases)</h4>
+            <p>Don't just say "Yes" or "No". Use these professional phrases:</p>
+            
+            <p><strong>Stating Opinion:</strong></p>
+            <ul>
+                <li>"From my point of view..."</li>
+                <li>"To my mind..." / "It seems to me that..."</li>
+                <li>"I am of the opinion that..."</li>
+            </ul>
+
+            <p><strong>Agreeing:</strong></p>
+            <ul>
+                <li>"You hit the nail on the head."</li>
+                <li>"I see eye to eye with you on this."</li>
+                <li>"I couldn't agree more." / "That is exactly my point."</li>
+            </ul>
+
+            <p><strong>Disagreeing (Polite):</strong></p>
+            <ul>
+                <li>"I see your point, but I view this differently."</li>
+                <li>"I'm afraid I cannot agree with you there."</li>
+                <li>"That may be true, but we must also consider..."</li>
+            </ul>
+
+            <p><strong>Disagreeing (Strong):</strong></p>
+            <ul>
+                <li>"I totally disagree."</li>
+                <li>"I beg to differ."</li>
+            </ul>
+
+            <p><strong>Interrupting & Clarifying:</strong></p>
+            <ul>
+                <li>"May I jump in here for a second?" / "Sorry to interrupt, but..."</li>
+                <li>"What exactly do you mean by...?"</li>
+                <li>"Could you elaborate on that?"</li>
+            </ul>
+
+            <p><strong>Playing for Time:</strong></p>
+            <ul>
+                <li>"That is a complex issue. Let me think..."</li>
+                <li>"How shall I put it..."</li>
+            </ul>
         `
     },
     {
-        title: "Extended Checklist",
+        title: "General Checklist",
         cat: "Tools",
-        short: "Final Polish (Content, Structure, Language).",
+        short: "The \"Last Minute\" Polish (Content, Structure, Style).",
         content: `
-            <h3>The Final Checklist</h3>
-            <p class="intro-text"><em>Before you hand in your exam, take 5 minutes to check these points.</em></p>
+            <h3>General Checklist (Self-Correction)</h3>
+            <p class="intro-text"><em>Finished writing? Don't hand it in yet! Check your text against these criteria to save valuable points.</em></p>
             
-            <h4>1. Task & Content</h4>
+            <h4>1. Content & Task Fulfillment</h4>
             <ul>
-                <li>⬜ <strong>Operator:</strong> Did I stick to it? (e.g., NO opinion in a summary).</li>
-                <li>⬜ <strong>Focus:</strong> Did I delete irrelevant details?</li>
+                <li>⬜ <strong>Operator Check:</strong> Did I strictly follow the operator? (e.g. NO opinion in a summary, NO analysis in an outline).</li>
+                <li>⬜ <strong>Focus:</strong> Did I answer the <em>exact</em> question or did I just write down everything I know?</li>
+                <li>⬜ <strong>Completeness:</strong> Are all W-questions answered (Summary) / all stylistic devices interpreted (Analysis)?</li>
             </ul>
 
-            <h4>2. Structure</h4>
+            <h4>2. Structure & Logic</h4>
             <ul>
+                <li>⬜ <strong>Red Thread:</strong> Is there a clear Intro, Body, and Conclusion?</li>
                 <li>⬜ <strong>Paragraphs:</strong> Is the text visually divided? (One idea = one paragraph).</li>
-                <li>⬜ <strong>Connectives:</strong> Did I use <em>However, Therefore, Furthermore</em>?</li>
+                <li>⬜ <strong>Topic Sentences:</strong> Does the first sentence of each paragraph state what it is about?</li>
+                <li>⬜ <strong>Connectives:</strong> Did I use <em>However, Therefore, Furthermore</em> to link my thoughts?</li>
             </ul>
 
-            <h4>3. Language</h4>
+            <h4>3. Style & Tone</h4>
             <ul>
-                <li>⬜ <strong>Tense:</strong> Simple Present for analysis/summary?</li>
-                <li>⬜ <strong>Style:</strong> No short forms (I'm -> I am). No slang.</li>
-                <li>⬜ <strong>Mistakes:</strong> Check for "False Friends" (become/get) and he/she/it-s.</li>
+                <li>⬜ <strong>Register:</strong> Is it formal enough? (Avoid: "kids", "stuff", "cool", "gonna").</li>
+                <li>⬜ <strong>Variety:</strong> Did I vary my sentence beginnings? (Don't start every sentence with "The author" or "He").</li>
+                <li>⬜ <strong>Objective vs. Subjective:</strong> Did I keep my opinion out of AFB I and II?</li>
+            </ul>
+
+            <h4>4. Language & Grammar</h4>
+            <ul>
+                <li>⬜ <strong>Tenses:</strong> Simple Present for Summary/Analysis? Past Tense for events in the past?</li>
+                <li>⬜ <strong>Short Forms:</strong> Did I remove all short forms (I'm -> I am, don't -> do not)?</li>
+                <li>⬜ <strong>False Friends:</strong> Check tricky words (<em>become</em> vs <em>get</em>, <em>spend</em> vs <em>donate</em>).</li>
+                <li>⬜ <strong>He/She/It:</strong> The 's' must fit!</li>
+                <li>⬜ <strong>Quotations:</strong> Are quotes integrated correctly? (e.g. using line numbers).</li>
             </ul>
         `
     },
+
+    /* ============================================================
+       GRADING / OPERATORS
+       ============================================================ */
     {
         title: "Operators (Official List)",
-        cat: "Tools",
+        cat: "Grading",
         short: "Official definitions (AFB I-III).",
         content: `
+            <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px;">
+                Source: <a href="https://bildung.bremen.de/sixcms/media.php/13/e_03-2015_a.pdf" target="_blank" style="color: #666; text-decoration: underline;">Bildungsplan Bremen (Pages 21-22)</a>
+            </p>
+
             <h3>Official List of Operators</h3>
             <p>Definitions based on the official guidelines.</p>
             
@@ -638,9 +719,6 @@ const skillsContent = [
                 </tbody>
             </table>
             </div>
-            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">
-                Source: <a href="https://bildung.bremen.de/sixcms/media.php/13/e_03-2015_a.pdf" target="_blank" style="color: #666; text-decoration: underline;">Bildungsplan Bremen (Pages 21-22)</a>
-            </p>
         `
     }
 ];
