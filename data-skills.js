@@ -1,11 +1,10 @@
 // data-skills.js
-// Version: Final (All English UI, Full Content)
 
 const skillsContent = [
     /* ============================================================
-       AFB I: COMPREHENSION (The Basics)
+       AFB I: COMPREHENSION
        ============================================================ */
-       {
+    {
         title: "Summarize / Write a summary",
         cat: "AFB I",
         short: "Concise account of main points (1/3 length).",
@@ -105,10 +104,11 @@ const skillsContent = [
             </ul>
         `
     },
-/* ============================================================
-       AFB II: ANALYSIS (Analysis, Interpretation & Structure)
+
+    /* ============================================================
+       AFB II: ANALYSIS
        ============================================================ */
-       {
+    {
         title: "Characterization",
         cat: "AFB II",
         short: "Analyze character traits & development.",
@@ -123,7 +123,7 @@ const skillsContent = [
             </ul>
 
             <h4>2. Preparation (The Grid Method)</h4>
-            <p>Before writing, sort your findings in a grid (Step 1 from your guide):</p>
+            <p>Before writing, sort your findings in a grid:</p>
             <div class="table-wrap">
                 <table>
                     <thead><tr><th>Category</th><th>Evidence (Quote/Line)</th><th>Trait (Adjective)</th></tr></thead>
@@ -168,17 +168,17 @@ const skillsContent = [
                     </tr>
                     <tr>
                         <td><strong>Third-Person Omniscient</strong><br>(All-knowing)</td>
-                        <td>"He/She" + knows thoughts of ALL</td>
+                        <td>"He/She" + knows ALL</td>
                         <td><strong>Objective / Trustworthy.</strong> Has an "Olympian view". Can jump between places/times and judge events from above.</td>
                     </tr>
                     <tr>
                         <td><strong>Third-Person Limited</strong><br>(Personal)</td>
-                        <td>"He/She" + knows thoughts of ONE</td>
+                        <td>"He/She" + knows ONE</td>
                         <td><strong>Identification / Suspense.</strong> The reader feels close to this "reflector figure" but has limited knowledge (doesn't know what others think).</td>
                     </tr>
                     <tr>
                         <td><strong>Third-Person Objective</strong><br>(Neutral)</td>
-                        <td>Only actions/dialogue (Camera view)</td>
+                        <td>Only actions/dialogue</td>
                         <td><strong>Distance.</strong> No insight into feelings. The reader must judge the characters solely by their actions.</td>
                     </tr>
                 </tbody>
@@ -248,10 +248,11 @@ const skillsContent = [
             </ul>
         `
     },
-/* ============================================================
+
+    /* ============================================================
        AFB III: WRITING / TEXT PRODUCTION
        ============================================================ */
-       {
+    {
         title: "Comment",
         cat: "AFB III",
         short: "Express your opinion (One-sided argument).",
@@ -297,7 +298,7 @@ const skillsContent = [
             <ol>
                 <li><strong>Introduction:</strong> Present the controversial issue without taking sides yet.</li>
                 <li><strong>Counter-Arguments (The side you disagree with):</strong>
-                    <br>Start with their strongest argument and end with their weakest.
+                    <br>Start with their strongest argument and end with the weakest.
                 </li>
                 <li><strong>Turning Point:</strong> Use a connective like <em>"However...", "On the other hand...", "Looking at the facts..."</em></li>
                 <li><strong>Your Arguments (The side you support):</strong>
@@ -435,10 +436,11 @@ const skillsContent = [
             </div>
         `
     },
+
     /* ============================================================
        TOOLS & METHODS
        ============================================================ */
-       {
+    {
         title: "Linking Words / Connectives",
         cat: "Tools",
         short: "Improve flow & logic (The Glue of your Essay).",
@@ -486,7 +488,7 @@ const skillsContent = [
             <h3>Mediation: The Master Guide</h3>
             <p class="intro-text"><em>Mediation means transmitting information to a specific addressee. <strong>No word-for-word translation!</strong> Summarize the relevant points in English.</em></p>
 
-            <h4>1. The Golden Rules (from your Skill Box)</h4>
+            <h4>1. The Golden Rules</h4>
             <ul>
                 <li><strong>Length:</strong> Approx. <strong>1/3</strong> of the original text.</li>
                 <li><strong>Tense:</strong> Use <strong>Simple Present</strong>.</li>
@@ -643,10 +645,6 @@ const skillsContent = [
     }
 ];
 
-// Load into global scope
-if(window.contentData) {
-    window.contentData.push(...skillsContent);
-}
 // Load into global scope
 if(window.contentData) {
     window.contentData.push(...skillsContent);
