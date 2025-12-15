@@ -1,27 +1,25 @@
 // data-grading.js
-// Enthält die vollständigen Bewertungsraster für Schreiben und Mediation.
+// Version: Final (Exakt nach User-Uploads)
 
 const gradingContent = [
     {
-        title: "Benotung: Schreiben (Sprache)",
+        title: "Bewertungskriterien: Schreiben (Sprache)",
         cat: "Grading",
-        short: "Bewertungsraster: Sprachliche Qualität (Darstellungsleistung).",
+        short: "Kompetenzbereich Schreiben: Sprache (Darstellungsleistung)",
         content: `
-            <h3>Bewertungskriterien: Kompetenzbereich Schreiben (Sprache)</h3>
-            <p>Dieses Raster bewertet die "Darstellungsleistung".</p>
-            
+            <h3>Bewertungskriterien: Kompetenzbereich Schreiben: Sprache</h3>
             <div class="table-wrap">
             <table class="grading-table">
               <thead>
                 <tr>
                   <th>Kategorie</th>
                   <th>Unterkategorie</th>
-                  <th>15-13 BE (Sehr gut)</th>
-                  <th>12,5-10,5 BE (Gut)</th>
-                  <th>10-8,5 BE (Befriedigend)</th>
-                  <th>8-5,5 BE (Ausreichend)</th>
-                  <th>5-2 BE (Mangelhaft)</th>
-                  <th>1,5-0 BE (Ungenügend)</th>
+                  <th>15-13 BE</th>
+                  <th>12,5-10,5 BE</th>
+                  <th>10-8,5 BE</th>
+                  <th>8-5,5 BE</th>
+                  <th>5-2 BE</th>
+                  <th>1,5-0 BE</th>
                 </tr>
               </thead>
               <tbody>
@@ -87,162 +85,120 @@ const gradingContent = [
         `
     },
     {
-        title: "Benotung: Schreiben (Inhalt)",
+        title: "Bewertungskriterien: Schreiben (Inhalt)",
         cat: "Grading",
-        short: "Bewertungsraster: Inhaltliche Qualität.",
+        short: "Kompetenzbereich Schreiben: Inhalt",
         content: `
-            <h3>Bewertungskriterien: Kompetenzbereich Schreiben (Inhalt)</h3>
-            
-            <div class="table-wrap">
-            <table class="grading-table">
-                <thead>
-                    <tr>
-                        <th>Kategorie</th>
-                        <th>15-13 BE</th>
-                        <th>12,5-10,5 BE</th>
-                        <th>10-8,5 BE</th>
-                        <th>8-5,5 BE</th>
-                        <th>5-2 BE</th>
-                        <th>1,5-0 BE</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Aufgabenerfüllung</td>
-                        <td>Aufgabe vollständig, differenziert und operatorgerecht bearbeitet. Keine Redundanz.</td>
-                        <td>Aufgabe vollständig und operatorgerecht bearbeitet.</td>
-                        <td>Aufgabe weitgehend vollständig und im Wesentlichen operatorgerecht.</td>
-                        <td>Aufgabe in Ansätzen erfüllt, teilweise operatorgerecht.</td>
-                        <td>Aufgabe kaum erfüllt, kaum operatorgerecht, irrelevante Infos.</td>
-                        <td>Aufgabe nicht erfüllt.</td>
-                    </tr>
-                    <tr>
-                        <td>Verständlichkeit & Struktur</td>
-                        <td>Durchgehend sachgerecht, logisch und sehr klar strukturiert.</td>
-                        <td>Sachgerecht, logisch und klar strukturiert.</td>
-                        <td>Weitgehend sachgerecht und strukturiert.</td>
-                        <td>Ansatzweise sachgerecht und strukturiert.</td>
-                        <td>Wenig strukturiert, Sprünge in der Logik.</td>
-                        <td>Unstrukturiert und unlogisch.</td>
-                    </tr>
-                    <tr>
-                        <td>Analyse (AFB II)</td>
-                        <td>Detailliertes und umfassendes Deuten von Form & Wirkung. Belege (Zitate) korrekt.</td>
-                        <td>Umfassendes Deuten von Form & Wirkung. Belege vorhanden.</td>
-                        <td>Deuten von Form & Wirkung im Wesentlichen gelungen.</td>
-                        <td>Ansatzweise richtiges Deuten.</td>
-                        <td>Fehlerhaftes Deuten. Zitate fehlen/falsch.</td>
-                        <td>Keine Analyseleistung.</td>
-                    </tr>
-                    <tr>
-                        <td>Argumentation (AFB III)</td>
-                        <td>Differenziert, widerspruchsfrei, überzeugend begründet. Vielschichtig.</td>
-                        <td>Widerspruchsfrei, überzeugend begründet.</td>
-                        <td>Weitgehend widerspruchsfrei, begründet.</td>
-                        <td>Teilweise nachvollziehbar, Begründungen einfach.</td>
-                        <td>Widersprüchlich, einseitig, kaum begründet.</td>
-                        <td>Keine Argumentation.</td>
-                    </tr>
-                    <tr>
-                        <td>Kreatives Schreiben</td>
-                        <td>Eigenständige, sehr kreative und in jeder Hinsicht schlüssige Verarbeitung.</td>
-                        <td>Weitgehend eigenständige, kreative und nachvollziehbare Verarbeitung.</td>
-                        <td>Im Wesentlichen eigenständige, zum Teil kreative Verarbeitung.</td>
-                        <td>Ansatzweise eigenständige Verarbeitung.</td>
-                        <td>Kaum eigenständig, kaum kreativ, unlogisch.</td>
-                        <td>Thema verfehlt.</td>
-                    </tr>
-                    <tr>
-                        <td>Reflexion</td>
-                        <td>Umfassende Reflexion und sehr überzeugende Begründung.</td>
-                        <td>Schlüssige Reflexion und überzeugende Begründung.</td>
-                        <td>Im Wesentlichen noch schlüssige Reflexion.</td>
-                        <td>Meist angemessene Reflexion.</td>
-                        <td>Kaum reflektiert, kaum Begründung (Wiederholung des Textes).</td>
-                        <td>Keine Reflexion.</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-        `
-    },
-    {
-        title: "Benotung: Sprachmittlung (Mediation)",
-        cat: "Grading",
-        short: "Bewertungsraster: Sprachmittlung (Inhalt & Sprache).",
-        content: `
-            <h3>Bewertungskriterien: Kompetenzbereich Sprachmittlung</h3>
-            
+            <h3>Bewertungskriterien: Kompetenzbereich Schreiben: Inhalt</h3>
             <div class="table-wrap">
             <table class="grading-table">
               <thead>
                 <tr>
                   <th>Kategorie</th>
-                  <th>15-13 BE</th>
-                  <th>12,5-10,5 BE</th>
-                  <th>10-8,5 BE</th>
-                  <th>8-7 BE</th>
-                  <th>6,5-5,5 BE</th>
-                  <th>5-4 BE</th>
-                  <th>3,5-1,5 BE</th>
-                  <th>1-0 BE</th>
+                  <th>Anforderung (Ideal 15-13 BE)</th>
+                  <th>Ausreichend / Mangelhaft (5-2 BE)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aufgabenerfüllung</td>
+                  <td>Aufgabe vollständig, differenziert und operatorgerecht bearbeitet. Keine Redundanz.</td>
+                  <td>Aufgabe nur in Ansätzen / kaum erfüllt. Irrelevante Informationen.</td>
+                </tr>
+                <tr>
+                  <td>Verständlichkeit</td>
+                  <td>Durchgehend sachgerecht, logisch und sehr klar strukturiert.</td>
+                  <td>Wenig strukturiert, Sprünge in der Logik.</td>
+                </tr>
+                <tr>
+                  <td>Analyse (AFB II)</td>
+                  <td>Detailliertes Deuten von Form & Wirkung. Belege (Zitate) korrekt eingebunden.</td>
+                  <td>Fehlerhaftes Deuten. Zitate fehlen oder falsch.</td>
+                </tr>
+                <tr>
+                  <td>Argumentation (AFB III)</td>
+                  <td>Differenziert, widerspruchsfrei, überzeugend begründet. Vielschichtig.</td>
+                  <td>Widersprüchlich, einseitig, kaum begründet.</td>
+                </tr>
+                <tr>
+                  <td>Kreatives Schreiben</td>
+                  <td>Eigenständige, sehr kreative und in jeder Hinsicht schlüssige Verarbeitung.</td>
+                  <td>Kaum eigenständig, in sehr geringem Maße kreativ, unlogisch.</td>
+                </tr>
+                <tr>
+                  <td>Reflexion</td>
+                  <td>Umfassende Reflexion und sehr überzeugende Begründung.</td>
+                  <td>Kaum reflektiert, kaum oder keine Begründung (oft Wiederholung des Textes).</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        `
+    },
+    {
+        title: "Bewertungskriterien: Sprachmittlung",
+        cat: "Grading",
+        short: "Kompetenzbereich Sprachmittlung (Mediation)",
+        content: `
+            <h3>Bewertungskriterien: Kompetenzbereich Sprachmittlung</h3>
+            <div class="table-wrap">
+            <table class="grading-table">
+              <thead>
+                <tr>
+                  <th>Kategorie</th>
+                  <th>10–8,5 BE</th>
+                  <th>8–7 BE</th>
+                  <th>6,5–5,5 BE</th>
+                  <th>5–4 BE</th>
+                  <th>3,5–1,5 BE</th>
+                  <th>1–0 BE</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Informationsverarbeitung</td>
-                  <td>alle relevanten Infos vollständig und äußerst präzise erfasst</td>
-                  <td>alle relevanten Infos vollständig und präzise erfasst</td>
-                  <td>alle relevanten Infos vollständig und präzise wiedergegeben</td>
-                  <td>alle relevanten Infos im Wesentlichen erfasst</td>
-                  <td>Infos mehrheitlich erfasst und überwiegend treffend</td>
-                  <td>Infos nur teilweise erfasst und z.T. ungenau</td>
-                  <td>Infos ansatzweise erfasst, lückenhaft oder falsch</td>
-                  <td>Infos nicht erfasst</td>
+                  <td>alle im Sinne der Aufgabenstellung relevanten Informationen vollständig erfasst und präzise wiedergegeben</td>
+                  <td>alle im Sinne der Aufgabenstellung relevanten Informationen im Wesentlichen erfasst</td>
+                  <td>Informationen mehrheitlich erfasst und überwiegend treffend wiedergegeben</td>
+                  <td>Informationen nur teilweise erfasst und z. T. ungenau wiedergegeben</td>
+                  <td>Informationen nur ansatzweise erfasst, lückenhaft oder falsch wiedergegeben</td>
+                  <td>Informationen nicht erfasst</td>
                 </tr>
                 <tr>
-                  <td>Adressatenbezug & Textsorte</td>
-                  <td>äußerst treffend auf Empfänger zugeschnitten; Konventionen perfekt eingehalten</td>
-                  <td>sehr treffend auf Empfänger zugeschnitten; Konventionen eingehalten</td>
-                  <td>treffend auf Empfänger zugeschnitten; Konventionen eingehalten</td>
-                  <td>Adressatenbezug erkennbar; Konventionen weitgehend eingehalten</td>
-                  <td>Adressatenbezug im Wesentlichen erkennbar</td>
-                  <td>Adressatenbezug kaum erkennbar; Textsorte im Ansatz getroffen</td>
-                  <td>Adressatenbezug weitgehend fehlend; Textsorte verfehlt</td>
-                  <td>Kein Bezug; falsche Textsorte</td>
+                  <td>Adressatenbezug und Textsorte</td>
+                  <td>äußerst treffend auf den Adressaten zugeschnitten; Textsortenkonventionen perfekt eingehalten</td>
+                  <td>treffend auf den Adressaten zugeschnitten; Textsortenkonventionen eingehalten</td>
+                  <td>Adressatenbezug erkennbar; Textsortenkonventionen weitgehend eingehalten</td>
+                  <td>Adressatenbezug im Wesentlichen erkennbar; Textsorte im Ansatz getroffen</td>
+                  <td>Adressatenbezug kaum erkennbar; Textsorte verfehlt</td>
+                  <td>kein Adressatenbezug; Textsorte verfehlt</td>
                 </tr>
                 <tr>
                   <td>Interkulturelle Kompetenz</td>
-                  <td>Kulturelle Begriffe präzise und überaus zielführend erläutert</td>
-                  <td>Kulturelle Begriffe präzise und zielführend erläutert</td>
-                  <td>Kulturelle Begriffe verständlich erläutert</td>
-                  <td>Kulturelle Begriffe meist verständlich erläutert</td>
+                  <td>kulturelle Begriffe bzw. Sachverhalte präzise und überaus zielführend erläutert</td>
+                  <td>kulturelle Begriffe bzw. Sachverhalte verständlich erläutert</td>
                   <td>Erläuterungen im Wesentlichen nachvollziehbar</td>
-                  <td>Ansatzweise Erklärungen vorhanden</td>
+                  <td>ansatzweise Erklärungen vorhanden</td>
                   <td>Erläuterungen missverständlich oder fehlend</td>
-                  <td>Keine Erläuterungen</td>
+                  <td>keine Erläuterungen</td>
                 </tr>
                 <tr>
-                  <td>Strategien (Kompensation)</td>
-                  <td>überaus eigenständiger Text; besonders geschickte Paraphrasen</td>
-                  <td>sehr eigenständiger Text; geschickte Paraphrasen</td>
-                  <td>eigenständiger Text; gelungene Nutzung von Strategien</td>
-                  <td>weitgehend eigenständiger Text; Strategien genutzt</td>
-                  <td>zumeist eigenständiger Text; im Wesentlichen gelungen</td>
-                  <td>im Ansatz eigenständig; ansatzweise gelungen</td>
-                  <td>stellenweise wörtlich übersetzt; kaum Strategien</td>
-                  <td>nahezu wörtlich übersetzt (unverständlich)</td>
+                  <td>Sprache</td>
+                  <td>nahezu durchgängig korrekte, variable sprachliche Strukturen und Konnektoren, differenzierte, präzise und idiomatische Wortwahl</td>
+                  <td>weitgehend korrekte und abwechslungsreiche sprachliche Strukturen und Konnektoren, zumeist treffende Wortwahl</td>
+                  <td>größtenteils korrekte sprachliche Strukturen und Konnektoren, einfache und verständliche Wortwahl</td>
+                  <td>teils fehlerhafte, einfache, wenig variable sprachliche Strukturen und Konnektoren, begrenzte und fehlerhafte Wortwahl</td>
+                  <td>sehr einfache und häufig fehlerhafte sprachliche Strukturen und Konnektoren, deutlich begrenzte Wortwahl</td>
+                  <td>unverständliche, schwerwiegend fehlerhafte Zielsprache</td>
                 </tr>
                 <tr>
-                  <td>Sprache (Wortschatz/Grammatik)</td>
-                  <td>durchgängig korrekt, variabel, idiomatisch, differenziert</td>
-                  <td>nahezu durchgängig korrekt, variabel, idiomatisch</td>
-                  <td>weitgehend korrekt, variabel, treffende Wortwahl</td>
-                  <td>größtenteils korrekt, einfache aber treffende Wortwahl</td>
-                  <td>weitgehend korrekt, einfache Wortwahl, verständlich</td>
-                  <td>teils fehlerhaft, wenig variabel, begrenzt</td>
-                  <td>sehr einfach, häufig fehlerhaft, deutlich begrenzt</td>
-                  <td>unverständlich, schwerwiegend fehlerhaft</td>
+                  <td>Strategien / Umgang mit der Textvorlage</td>
+                  <td>überaus eigenständiger idiomatischer Text, besonders geschickte Nutzung von Kompensationsstrategien (Paraphrasen, Hyperonyme etc.)</td>
+                  <td>weitgehend eigenständig produzierter und idiomatischer Text, überwiegend geschickte Nutzung von Kompensationsstrategien</td>
+                  <td>zumeist eigenständig produzierter Text, im Wesentlichen gelungene Nutzung von Kompensationsstrategien</td>
+                  <td>im Ansatz eigenständig produzierter Text, ansatzweise gelungene Nutzung von Kompensationsstrategien</td>
+                  <td>stellenweise wörtlich übersetzter und somit sprachuntypischer Text, kaum Kompensationsstrategien</td>
+                  <td>nahezu wörtlich übersetzter und unverständlicher Text, keine Kompensationsstrategien</td>
                 </tr>
               </tbody>
             </table>
@@ -251,9 +207,9 @@ const gradingContent = [
     }
 ];
 
-// Sicherstellen, dass das globale Array existiert und Daten pushen
+// In das globale Array pushen
 if(window.contentData) {
     window.contentData.push(...gradingContent);
-    // Event feuern, falls data-grading nach app.js geladen wird (Sicherheitsnetz)
+    // Event feuern, falls data-grading nach app.js geladen wird
     window.dispatchEvent(new Event('gradingLoaded'));
 }
