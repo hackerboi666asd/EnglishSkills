@@ -1,37 +1,32 @@
 // data-skills.js
-// Hier laden wir die Methoden, Skills und Operatoren in das globale Array.
+// Version: 2.0 (Tools in English, Expanded Operators & Skills)
 
 const skillsContent = [
-    /* --- AFB I --- */
+    /* ============================================================
+       WRITING SKILLS (AFB I - III)
+       (Anleitungen auf Deutsch, wie gewohnt)
+       ============================================================ */
     {
         title: "Summary",
         cat: "AFB I",
         short: "Wiedergabe der Hauptinhalte (1/3 Länge, neutral).",
         content: `
             <h3>How to write a Summary</h3>
-            <p>Eine Summary fasst die wichtigsten Inhalte eines Textes kurz und sachlich zusammen. Sie ist die Basis für fast jede Klausur.</p>
-            
+            <p>Eine Summary fasst die wichtigsten Inhalte eines Textes kurz und sachlich zusammen.</p>
             <div class="highlight-box">
-                <strong>Die Goldenen Regeln:</strong><br>
-                ✅ <strong>Simple Present:</strong> Immer im Präsens schreiben.<br>
-                ✅ <strong>Own Words:</strong> Löse dich vom Originaltext.<br>
-                ✅ <strong>Neutral:</strong> Keine eigene Meinung ("I think"), keine Analyse.<br>
-                ❌ <strong>No Quotes:</strong> Keine Zitate, keine direkte Rede.<br>
-                ❌ <strong>Short:</strong> Nur ca. 1/3 der Originallänge.
+                <strong>Golden Rules:</strong><br>
+                ✅ <strong>Simple Present:</strong> Always use the present tense.<br>
+                ✅ <strong>Own Words:</strong> Do not copy sentences.<br>
+                ✅ <strong>Neutral:</strong> No personal opinion, no "I think".<br>
+                ❌ <strong>No Quotes:</strong> No direct speech or line references.<br>
+                ❌ <strong>Short:</strong> Only about 1/3 of the original length.
             </div>
-
-            <h4>1. Der Einleitungssatz (Introductory Sentence)</h4>
-            <p>Muss enthalten: <em>Title, Author, Text Type, Date of Publication, Source</em> und die <em>Main Idea</em> (Kernthema).</p>
-            <p><em>Beispiel:</em><br>
-            "The newspaper article 'Climate Change', written by Jane Doe and published in The Guardian on 12th May 2023, deals with the severe consequences of global warming."</p>
-
-            <h4>2. Der Hauptteil (Main Part)</h4>
-            <p>Fasse die Sinnabschnitte (paragraphs) logisch zusammen. Beantworte die W-Fragen (Who, What, Where, When, Why).</p>
-            <p><strong>Nützliche Verben (Reporting Verbs):</strong><br>
-            The author <em>claims, states, suggests, explains, describes, criticizes, points out, argues...</em></p>
-            
-            <p><strong>Verknüpfungen (Connectives):</strong><br>
-            <em>Furthermore, In addition, However, On the one hand... on the other hand, Consequently.</em></p>
+            <h4>Structure</h4>
+            <p><strong>1. Introductory Sentence:</strong><br>
+            Mention: <em>Title, Author, Text Type, Date, Source</em> and the <em>Main Idea</em>.<br>
+            <em>"The article '...' by ..., published in ... on ..., deals with..."</em></p>
+            <p><strong>2. Main Part:</strong><br>
+            Summarize the text paragraph by paragraph (or by logical sections). Use <strong>connectives</strong> (However, Furthermore, Consequently).</p>
         `
     },
     {
@@ -40,56 +35,39 @@ const skillsContent = [
         short: "Gezielte Informationsentnahme (Fokus-Aspekt).",
         content: `
             <h3>Writing an Outline</h3>
-            <p>Im Gegensatz zur Summary (ganzer Text) fokussiert sich die Outline auf einen <strong>spezifischen Aspekt</strong> der Aufgabenstellung.</p>
-            <p><em>Beispiel-Aufgabe: "Outline the author's arguments regarding the economic crisis."</em></p>
-
-            <h4>Vorgehensweise</h4>
+            <p>Focus only on the <strong>specific aspect</strong> asked for in the task (e.g. "Outline the author's arguments regarding X"). Leave out everything else!</p>
+            <h4>Steps</h4>
             <ol>
-                <li><strong>Scan & Filter:</strong> Suche gezielt nach Schlüsselwörtern (Keywords) aus der Aufgabe. Alles andere (z.B. Infos über das Wetter oder die Kindheit des Autors) lässt du weg!</li>
-                <li><strong>Structure:</strong>
-                    <ul>
-                        <li>Einleitungssatz (wie bei Summary).</li>
-                        <li>Hauptteil: Gib die relevanten Infos logisch geordnet wieder.</li>
-                    </ul>
-                </li>
-                <li><strong>Form:</strong> Nutze ganze Sätze (Running Text), es sei denn, der Operator lautet explizit "list" oder "bullet points".</li>
+                <li><strong>Scan & Filter:</strong> Find keywords related to the task. Ignore unrelated details.</li>
+                <li><strong>Structure:</strong> Start with an introductory sentence (like in a summary). Then list the findings logically.</li>
+                <li><strong>Form:</strong> Use full sentences (running text) unless the operator says "list" or "bullet points".</li>
             </ol>
-            <p><strong>Wichtig:</strong> Auch hier gilt <em>Simple Present</em> und <em>keine Zitate</em>.</p>
+            <p><strong>Tip:</strong> Remain neutral. No analysis, no opinion.</p>
         `
     },
-
-    /* --- AFB II --- */
     {
         title: "Characterization",
         cat: "AFB II",
         short: "Analyse einer Figur (Grid-Method & P.E.E.).",
         content: `
             <h3>Characterization</h3>
-            <p>Du analysierst das Wesen einer Figur anhand von dem, was sie tut, sagt und was andere über sie sagen.</p>
-
-            <h4>1. Vorbereitung: Die Grid-Methode</h4>
-            <p>Erstelle auf einem Schmierblatt eine Tabelle, bevor du schreibst:</p>
+            <p>Analyse a character based on explicit statements and implicit behavior.</p>
+            <h4>1. Preparation: The Grid Method</h4>
             <div class="table-wrap">
                 <table>
-                    <thead><tr><th>Kategorie</th><th>Evidence (Textstelle/Zitat)</th><th>Rückschluss (Adjektiv)</th></tr></thead>
+                    <thead><tr><th>Category</th><th>Evidence (Text/Lines)</th><th>Conclusion (Trait)</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Appearance</strong></td><td>"wore a dirty shirt" (l. 5)</td><td>neglected, poor</td></tr>
-                        <tr><td><strong>Behavior</strong></td><td>"screamed at the teacher" (l. 12)</td><td>aggressive, disrespectful</td></tr>
-                        <tr><td><strong>Language</strong></td><td>"uses slang, short sentences"</td><td>uneducated, informal</td></tr>
-                        <tr><td><strong>Relationships</strong></td><td>"nobody sat next to him" (l. 30)</td><td>isolated, lonely</td></tr>
+                        <tr><td>Appearance</td><td>"dirty shirt" (l. 5)</td><td>neglected, poor</td></tr>
+                        <tr><td>Behavior</td><td>"screams at teacher" (l. 12)</td><td>aggressive, disrespectful</td></tr>
+                        <tr><td>Relationships</td><td>"no friends" (l. 30)</td><td>isolated, lonely</td></tr>
                     </tbody>
                 </table>
             </div>
-
-            <h4>2. Aufbau des Essays (The P.E.E. Chain)</h4>
+            <h4>2. Writing (P.E.E. Chain)</h4>
             <ul>
-                <li><strong>Introduction:</strong> Name, Alter, Rolle (Protagonist/Antagonist), Beziehung zu anderen.</li>
-                <li><strong>Body Paragraphs:</strong> Nutze die P.E.E. Formel für jede Eigenschaft:
-                    <br><strong>P</strong>oint: Behauptung ("He is aggressive.")
-                    <br><strong>E</strong>vidence: Beleg/Zitat ("This becomes clear when he screams... (l. 12).")
-                    <br><strong>E</strong>xplanation: Erklärung ("This shows his lack of respect.")
-                </li>
-                <li><strong>Conclusion:</strong> Fazit. Ist die Figur <em>static</em> (unverändert) oder <em>dynamic</em> (entwickelt sich)?</li>
+                <li><strong>Point:</strong> State the trait ("He is aggressive").</li>
+                <li><strong>Evidence:</strong> Prove it ("This is shown when he screams... (l. 12)").</li>
+                <li><strong>Explanation:</strong> Explain it ("This behavior demonstrates his lack of respect...").</li>
             </ul>
         `
     },
@@ -99,32 +77,15 @@ const skillsContent = [
         short: "Erzählperspektive und Wirkung (Point of View).",
         content: `
             <h3>Analyzing Narrative Perspective</h3>
-            <p>Analysiere nicht nur, <em>wer</em> erzählt, sondern <em>welchen Effekt</em> das auf den Leser hat.</p>
-
+            <p>Identify the narrator and explain the <strong>effect</strong> on the reader.</p>
             <div class="table-wrap">
             <table>
-                <thead><tr><th>Typ</th><th>Erkennungsmerkmal</th><th>Wirkung (Effect)</th></tr></thead>
+                <thead><tr><th>Type</th><th>Characteristics</th><th>Effect</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td><strong>First-Person Narrator</strong><br>(Ich-Erzähler)</td>
-                        <td>"I", "me", "my"</td>
-                        <td>Subjektiv. Erzeugt Nähe und Identifikation. Leser sieht alles durch seine "Brille". Kann unzuverlässig sein.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Omniscient</strong><br>(Auktorial/Allwissend)</td>
-                        <td>"He/She". Kennt Gedanken <strong>aller</strong> Figuren.</td>
-                        <td>Wirkt objektiv, vertrauenswürdig. Hat den Überblick ("God-like view"). Kann werten und kommentieren.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Limited</strong><br>(Personal)</td>
-                        <td>"He/She". Kennt nur Gedanken <strong>einer</strong> Figur.</td>
-                        <td>Fokus auf einer Person ("Reflector figure"). Leser fühlt mit ihr, weiß aber nicht mehr als sie. Erzeugt Spannung.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Objective</strong><br>(Neutral)</td>
-                        <td>Wie eine Kamera. Nur Handlungen/Dialoge.</td>
-                        <td>Neutral, distanziert. Keine Einblicke in Gefühle. Der Leser muss selbst urteilen.</td>
-                    </tr>
+                    <tr><td><strong>First-Person</strong> (I)</td><td>"I/Me". Part of the story.</td><td>Subjective. Creates intimacy/sympathy. Can be unreliable.</td></tr>
+                    <tr><td><strong>Omniscient</strong> (All-knowing)</td><td>"He/She". Knows ALL thoughts.</td><td>Objective, trustworthy. Olympian view. Can comment on events.</td></tr>
+                    <tr><td><strong>Limited</strong> (Personal)</td><td>"He/She". Knows ONE character's thoughts.</td><td>Reader identifies with this "reflector figure". Creates suspense (limited knowledge).</td></tr>
+                    <tr><td><strong>Objective</strong> (Neutral)</td><td>Camera view. No thoughts.</td><td>Neutral, cold, distant. Reader must judge actions alone.</td></tr>
                 </tbody>
             </table>
             </div>
@@ -136,97 +97,64 @@ const skillsContent = [
         short: "Sprachanalyse: Wortwahl, Tonfall & Stilmittel.",
         content: `
             <h3>Language Analysis</h3>
-            <p>Verbinde immer das Merkmal mit der Wirkung: <strong>Feature + Quote + Effect.</strong></p>
-
-            <h4>1. Register (Sprachebene)</h4>
+            <p>Always connect: <strong>Feature + Example + Effect</strong>.</p>
+            <h4>1. Register (Formality)</h4>
             <ul>
-                <li><strong>Formal:</strong> Passiv, komplexe Sätze (Hypotaxe), gehobenes Vokabular. <em>(Wirkung: seriös, distanziert, objektiv)</em>.</li>
-                <li><strong>Informal / Colloquial:</strong> Umgangssprache, Slang, Kurzformen ("can't"), direkte Anrede. <em>(Wirkung: authentisch, jugendlich, emotional)</em>.</li>
+                <li><strong>Formal:</strong> Passive voice, complex sentences, advanced vocab. (Effect: serious, objective).</li>
+                <li><strong>Informal:</strong> Slang, short forms, direct address. (Effect: authentic, emotional, close).</li>
             </ul>
-
-            <h4>2. Tone (Tonfall)</h4>
-            <p>Adjektive zur Beschreibung: <em>optimistic, pessimistic, critical, sarcastic, ironic, aggressive, emotional, serious, humorous, warning, matter-of-fact (sachlich).</em></p>
-
-            <h4>3. Stylistic Devices (Glossary)</h4>
-            <div class="table-wrap">
-            <table>
-                <tr><td><strong>Metaphor</strong></td><td>Bildlicher Vergleich ("Time is money").</td><td>Erzeugt Kopfkino.</td></tr>
-                <tr><td><strong>Simile</strong></td><td>Vergleich mit "like/as" ("Strong as a lion").</td><td>Veranschaulicht.</td></tr>
-                <tr><td><strong>Anaphora</strong></td><td>Wiederholung am Satzanfang.</td><td>Betonung, Eindringlichkeit.</td></tr>
-                <tr><td><strong>Personification</strong></td><td>Dinge werden vermenschlicht.</td><td>Lebendigkeit.</td></tr>
-                <tr><td><strong>Rhetorical Question</strong></td><td>Scheinfrage.</td><td>Bezieht den Leser ein.</td></tr>
-                <tr><td><strong>Enumeration</strong></td><td>Aufzählung.</td><td>Zeigt Fülle/Vielfalt.</td></tr>
-            </table>
-            </div>
+            <h4>2. Tone (Mood)</h4>
+            <p>Examples: <em>optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, warning.</em></p>
+            <h4>3. Stylistic Devices</h4>
+            <p><strong>Metaphor</strong> (Image), <strong>Simile</strong> (Comparison with like/as), <strong>Anaphora</strong> (Repetition), <strong>Rhetorical Question</strong> (Involvement), <strong>Personification</strong> (Making things human).</p>
         `
     },
-
-    /* --- AFB III --- */
     {
         title: "Comment",
         cat: "AFB III",
-        short: "Eigene Meinung argumentativ darlegen (Einseitig).",
+        short: "Eigene Meinung (Einseitig / Opinion).",
         content: `
             <h3>Writing a Comment</h3>
-            <p>Hier äußerst du <strong>deine eigene Meinung</strong> zu einer Streitfrage. Du darfst subjektiv sein und musst nicht beide Seiten gleich behandeln.</p>
-
+            <p>State your <strong>personal opinion</strong> clearly. You do not need to be balanced.</p>
             <h4>Structure</h4>
             <ol>
-                <li><strong>Introduction:</strong>
-                    <br>- <strong>Hook:</strong> Zitat, Frage oder aktuelles Ereignis als Einstieg.
-                    <br>- <strong>Thesis:</strong> Deine klare Meinung ("In my opinion, ...").
-                </li>
-                <li><strong>Body (Argumentation):</strong>
-                    <br>- Ein Argument pro Absatz!
-                    <br>- Aufbau: <strong>Statement</strong> (Behauptung) &rarr; <strong>Explanation</strong> (Erklärung) &rarr; <strong>Example</strong> (Beispiel).
-                    <br>- <em>Tipp:</em> Nutze "Rebuttal" (Entkräftung): Nenne ein Gegenargument ("Some say...") und zerstöre es sofort ("...but they are wrong because...").
-                </li>
-                <li><strong>Conclusion:</strong>
-                    <br>- Zusammenfassung (andere Worte!).
-                    <br>- Ausblick oder Appell ("We must act now").
-                </li>
+                <li><strong>Intro:</strong> Hook (Quote/Question), Topic, Thesis ("In my opinion...").</li>
+                <li><strong>Body:</strong> One argument per paragraph. Use the structure: <em>Statement &rarr; Explanation &rarr; Example</em>. <br>Tip: Use a <strong>Rebuttal</strong> (Destroy a counter-argument).</li>
+                <li><strong>Conclusion:</strong> Summary of stance, Outlook/Appeal.</li>
             </ol>
         `
     },
     {
         title: "Discussion",
         cat: "AFB III",
-        short: "Erörterung von Pro und Contra (Zweiseitig).",
+        short: "Erörterung Pro & Contra (Dialectical).",
         content: `
             <h3>Writing a Discussion</h3>
-            <p>Du musst <strong>beide Seiten</strong> (Pro & Contra) beleuchten, bevor du urteilst. Objektivität ist wichtig.</p>
-
-            <h4>The Sandwich Method (Empfohlen)</h4>
+            <p>Weigh <strong>both sides</strong> (Pro & Con) objectively before concluding.</p>
+            <h4>Sandwich Method</h4>
             <ol>
-                <li><strong>Intro:</strong> Thema vorstellen.</li>
-                <li><strong>Contra-Seite:</strong> Alle Argumente der Seite, die du <em>nicht</em> unterstützt (vom Stärksten zum Schwächsten).</li>
-                <li><strong>Turning Point:</strong> "However...", "On the other hand..."</li>
-                <li><strong>Pro-Seite:</strong> Alle Argumente deiner Seite (vom Schwächsten zum Stärksten). &rarr; Das stärkste Argument bleibt im Gedächtnis.</li>
-                <li><strong>Conclusion:</strong> Wäge ab und fälle ein begründetes Urteil.</li>
+                <li><strong>Intro:</strong> Present the issue.</li>
+                <li><strong>Counter-Arguments:</strong> The side you do NOT support (Strongest to Weakest).</li>
+                <li><strong>Turning Point:</strong> "However...", "Looking at the other side..."</li>
+                <li><strong>Your Side:</strong> The arguments you support (Weakest to Strongest).</li>
+                <li><strong>Conclusion:</strong> Your reasoned verdict.</li>
             </ol>
         `
     },
     {
         title: "Newspaper Article",
         cat: "AFB III",
-        short: "Zeitungsartikel: Headline, Lead, Body.",
+        short: "Inverted Pyramid, Headlines, Style.",
         content: `
-            <h3>Writing a Newspaper Article</h3>
-            <p>Nutze das Prinzip der <strong>Inverted Pyramid</strong>: Das Wichtigste zuerst.</p>
-
-            <h4>Elemente</h4>
+            <h3>Newspaper Article</h3>
+            <p><strong>Rule:</strong> Most important info first (Inverted Pyramid).</p>
+            <h4>Elements</h4>
             <ul>
-                <li><strong>Headline:</strong> Kurz, knackig ("Climate Crisis Escalates").</li>
-                <li><strong>Byline:</strong> "By [Dein Name]".</li>
-                <li><strong>Place line:</strong> Ort des Geschehens (z.B. "BREMEN - ...").</li>
+                <li><strong>Headline:</strong> Catchy ("Climate Crisis Escalates").</li>
+                <li><strong>Byline:</strong> "By [Name]".</li>
+                <li><strong>Lead Paragraph:</strong> W-Questions (Who, What, Where, When).</li>
+                <li><strong>Body:</strong> Details, Quotes, Background (Why/How).</li>
             </ul>
-
-            <h4>Structure</h4>
-            <ol>
-                <li><strong>Lead Paragraph:</strong> Der erste Absatz muss die <strong>W-Fragen</strong> beantworten (Who, What, Where, When).</li>
-                <li><strong>Body:</strong> Hintergründe (Why, How). Nutze Zitate von (erfundenen) Experten ("According to Dr. Smith..."). Nutze Zwischenüberschriften (Cross-headings).</li>
-                <li><strong>Conclusion:</strong> Folgen und Ausblick.</li>
-            </ol>
         `
     },
     {
@@ -235,19 +163,11 @@ const skillsContent = [
         short: "Rede schreiben: Audience & Rhetoric.",
         content: `
             <h3>Writing a Speech</h3>
-            <p>Eine Rede muss emotional und hörerorientiert sein.</p>
-
             <h4>Key Elements</h4>
             <ul>
-                <li><strong>Audience:</strong> Sprich sie direkt an ("Dear fellow students..."). Passe den Ton an (Lehrer = formal, Schüler = locker).</li>
-                <li><strong>Rhetoric:</strong> Nutze "We"-Formen (Gemeinschaftsgefühl), Anaphern und rhetorische Fragen.</li>
-            </ul>
-
-            <h4>Structure</h4>
-            <ul>
-                <li><strong>Intro:</strong> Begrüßung. "Hook" um Aufmerksamkeit zu wecken (Witz, Schock, Frage). Nenne das Thema.</li>
-                <li><strong>Body:</strong> Strukturiere klar ("First of all...", "Secondly..."). Argumentiere überzeugend.</li>
-                <li><strong>Conclusion:</strong> Fasse zusammen. Beende mit einem starken <strong>Call to Action</strong> ("Let's change the world today!"). Danke dem Publikum.</li>
+                <li><strong>Audience:</strong> Address them! ("Dear fellow students").</li>
+                <li><strong>Rhetoric:</strong> Use "We" (unity), Anaphora (emphasis), Questions.</li>
+                <li><strong>Structure:</strong> Hook &rarr; Arguments &rarr; Call to Action.</li>
             </ul>
         `
     },
@@ -257,144 +177,194 @@ const skillsContent = [
         short: "Formelle Korrespondenz.",
         content: `
             <h3>Formal Letter & Email</h3>
-            
-            <h4>Layout</h4>
-            <p><strong>Letter:</strong> Deine Adresse (rechts), Empfänger (links), Datum, Betreffzeile (Subject).<br>
-            <strong>Email:</strong> Subject Line ist entscheidend!</p>
-
-            <h4>Salutations (Anrede & Gruß)</h4>
-            <div class="table-wrap">
-            <table>
-                <tr><td>Name unbekannt</td><td>Dear Sir or Madam</td><td>Yours faithfully</td></tr>
-                <tr><td>Name bekannt</td><td>Dear Mr Smith</td><td>Yours sincerely</td></tr>
-            </table>
-            </div>
-
-            <h4>Regeln</h4>
-            <ul>
-                <li>Keine Short forms (I'm -> I am).</li>
-                <li>Höflich aber präzise ("I am writing to apply for...", "I would like to complain about...").</li>
-            </ul>
+            <h4>Salutations</h4>
+            <p>Unknown: <em>Dear Sir or Madam</em> &rarr; <em>Yours faithfully</em><br>
+            Known: <em>Dear Mr X</em> &rarr; <em>Yours sincerely</em></p>
+            <h4>Rules</h4>
+            <p>No short forms (I'm). Be polite but precise. State your purpose in the first sentence.</p>
         `
     },
     {
         title: "Blog Entry",
         cat: "AFB III",
-        short: "Subjektiv, kreativ, interaktiv.",
+        short: "Kreativ, subjektiv, interaktiv.",
         content: `
-            <h3>Writing a Blog Entry</h3>
-            <p>Ein Blog ist persönlich und interaktiv.</p>
+            <h3>Blog Entry</h3>
             <ul>
-                <li><strong>Titel:</strong> Kreativ und einladend.</li>
-                <li><strong>Ton:</strong> Persönlich ("I"-Perspektive), oft etwas lockerer, aber themenabhängig.</li>
-                <li><strong>Interaktion:</strong> Sprich den Leser an ("Have you ever...?", "What do you think?").</li>
-                <li><strong>Struktur:</strong> Einleitung (Hook), Hauptteil (Gedanken/Erlebnisse), Schluss (Fazit + Aufforderung zum Kommentieren).</li>
+                <li><strong>Catchy Title.</strong></li>
+                <li><strong>Personal Tone:</strong> Use "I", share experiences.</li>
+                <li><strong>Interaction:</strong> Ask the reader ("What do you think?").</li>
+                <li><strong>Ending:</strong> Call to action ("Comment below!").</li>
             </ul>
         `
     },
 
-    /* --- TOOLS --- */
+    /* ============================================================
+       TOOLS & METHODS (English Only)
+       ============================================================ */
     {
-        title: "Mediation",
+        title: "Mediation Skills",
         cat: "Tools",
-        short: "Sprachmittlung DE -> EN (Strategien).",
+        short: "Comprehensive guide to mediating texts (DE -> EN).",
         content: `
-            <h3>Mediation Strategies</h3>
-            <p>Übertragung von Informationen für einen bestimmten Adressaten. <strong>Keine wörtliche Übersetzung!</strong></p>
+            <h3>Mediation: The Master Guide</h3>
+            <p>Mediation means transmitting information from one language to another for a specific purpose. It is <strong>NOT</strong> a word-for-word translation.</p>
 
-            <h4>Vorgehen</h4>
-            <ol>
-                <li><strong>Analyse:</strong> Wer ist der Empfänger? Was braucht er? (Filtere irrelevante Infos raus!).</li>
-                <li><strong>Textsorte:</strong> Schreibe den geforderten Text (z.B. eine Email an einen Freund über einen deutschen Artikel).</li>
-            </ol>
-            
-            <h4>Compensation Strategies (Wenn dir Vokabeln fehlen)</h4>
+            <h4>1. The "Wh" Analysis (Preparation)</h4>
+            <p>Before you write, analyze the task:</p>
             <ul>
-                <li><strong>Paraphrase:</strong> Umschreibe das Wort.</li>
-                <li><strong>Generalize:</strong> "Bratwurst & Schnitzel" -> "hearty German meat dishes".</li>
-                <li><strong>Explain:</strong> "Abitur" -> "German school leaving exams".</li>
+                <li><strong>WHO</strong> is the addressee? (A friend? A professor?) &rarr; Determines your <em>Register</em> (formal vs. informal).</li>
+                <li><strong>WHAT</strong> text type is required? (Email? Blog? Article?) &rarr; Determines your <em>Structure</em>.</li>
+                <li><strong>WHY</strong> are you writing? (To inform? To warn? To persuade?) &rarr; Determines your <em>Tone</em>.</li>
+                <li><strong>WHICH</strong> info is relevant? &rarr; Filter out unnecessary details!</li>
+            </ul>
+
+            <h4>2. Compensation Strategies (When you are stuck)</h4>
+            <p>Don't panic if you don't know a German word in English. Use these strategies:</p>
+            <ul>
+                <li><strong>Paraphrase:</strong> Explain the meaning. (e.g., for <em>"Fachkräftemangel"</em> &rarr; "a lack of qualified workers").</li>
+                <li><strong>Generalize (Superordinates):</strong> Use a general term. (e.g., for <em>"Riesling, Dornfelder and Silvaner"</em> &rarr; "different types of German wine").</li>
+                <li><strong>Cultural Explanation:</strong> Explain concepts that don't exist in the UK/USA. (e.g., <em>"Abitur"</em> &rarr; "German higher education entrance qualification" or "school leaving exam").</li>
+            </ul>
+
+            <h4>3. Structure & Phrases</h4>
+            <ul>
+                <li><strong>Intro:</strong> Address the recipient + Mention the source. <br><em>"I found an interesting article by [Author] about [Topic] that I wanted to summarize for you."</em></li>
+                <li><strong>Body:</strong> Present the relevant points logically (connectives!). Use attribution: <br><em>"The author points out...", "According to the text...", "The article suggests..."</em></li>
+                <li><strong>Conclusion:</strong> Closing remark fitting the text type.</li>
             </ul>
         `
     },
     {
         title: "Listening Skills",
         cat: "Tools",
-        short: "Pre-, While- und Post-Listening.",
+        short: "Strategies for Pre-, While-, and Post-Listening.",
         content: `
-            <h3>Listening Guide</h3>
-            
-            <h4>1. Pre-Listening</h4>
-            <p>Lies die Fragen <strong>bevor</strong> das Audio startet! Markiere Keywords. Überlege: Welches Thema? Welche Wörter erwartest du?</p>
+            <h3>Listening Comprehension Guide</h3>
+            <p>Success in listening exams is 50% preparation and strategy.</p>
 
-            <h4>2. While-Listening</h4>
-            <p>Höre beim ersten Mal auf den Gesamtzusammenhang (Gist).<br>
-            Achte auf <strong>Signposts</strong> (Signalwörter) wie "But", "However", "Most importantly" – hier folgen oft die Antworten.<br>
-            Mache Notizen (Zahlen, Namen), keine ganzen Sätze.</p>
+            <h4>Phase 1: Pre-Listening (The most important minute)</h4>
+            <ul>
+                <li><strong>Read the instructions!</strong> Do you need to tick a box, write a word, or complete a sentence?</li>
+                <li><strong>Analyze the items:</strong> Read the questions/statements. Underline keywords.</li>
+                <li><strong>Predict:</strong> Brainstorm! If the topic is "London Underground", expect words like <em>tube, delay, ticket, station, crowded</em>. This activates your brain.</li>
+            </ul>
 
-            <h4>3. Post-Listening</h4>
-            <p>Ergänze deine Notizen. Prüfe bei Lückentexten die Grammatik (passt das Wort in den Satz?).</p>
+            <h4>Phase 2: While-Listening (Stay calm)</h4>
+            <ul>
+                <li><strong>First listening:</strong> Focus on the <strong>Gist</strong> (the main idea). Don't get stuck on a single unknown word, or you will miss the next three sentences.</li>
+                <li><strong>Signposting:</strong> Listen for transition words. 
+                    <br>&rarr; <em>"However...", "But..."</em> often signal that the previous point is being corrected (a trap!).
+                    <br>&rarr; <em>"Most importantly..."</em> signals the main answer.</li>
+                <li><strong>Note-taking:</strong> Use symbols (+, -, !, ?) and abbreviations. Do not try to write full sentences while listening.</li>
+            </ul>
+
+            <h4>Phase 3: Post-Listening (Quality Check)</h4>
+            <ul>
+                <li><strong>Gap Fills:</strong> Check the grammar. If the sentence is "The boy is ______", the answer cannot be "run". It must be "running".</li>
+                <li><strong>Logic:</strong> Does your answer make sense in the context?</li>
+                <li><strong>Spelling:</strong> Check for major errors that might change the meaning.</li>
+            </ul>
         `
     },
     {
         title: "Speaking Skills",
         cat: "Tools",
-        short: "Redemittel für Bildbeschreibung & Diskussion.",
+        short: "Phrases for Picture Description and Discussion.",
         content: `
-            <h3>Speaking Phrases</h3>
+            <h3>Speaking: Monologue & Discussion</h3>
 
-            <h4>Picture Description</h4>
-            <p>"The picture shows/depicts...", "In the foreground/background...", "On the left/right...", "The atmosphere is...", "This symbolizes..."</p>
+            <h4>Part 1: Picture Description (Structure)</h4>
+            <ol>
+                <li><strong>Introduction:</strong> "The photo/cartoon shows/depicts..."</li>
+                <li><strong>Description (Where?):</strong> "In the foreground...", "In the background...", "On the left...", "In the centre..."</li>
+                <li><strong>Action (What?):</strong> Use Present Progressive! "The people <strong>are standing</strong>...", "He <strong>is looking</strong>..."</li>
+                <li><strong>Atmosphere/Message:</strong> "The atmosphere seems gloomy/cheerful...", "The artist wants to criticize..."</li>
+            </ol>
 
-            <h4>Discussion</h4>
-            <ul>
-                <li><strong>Agree:</strong> "I totally agree.", "You have a point there."</li>
-                <li><strong>Disagree:</strong> "I see your point, but...", "I'm afraid I disagree.", "I look at it differently."</li>
-                <li><strong>Stalling (Zeit gewinnen):</strong> "That's an interesting question.", "Let me think about that for a second."</li>
-            </ul>
-        `
-    },
-    {
-        title: "Checklist: Peer Review",
-        cat: "Tools",
-        short: "Text vor Abgabe prüfen.",
-        content: `
-            <h3>Writing Checklist</h3>
-            <ul>
-                <li>⬜ <strong>Structure:</strong> Einleitung, Hauptteil, Schluss? Absätze gemacht?</li>
-                <li>⬜ <strong>Task:</strong> Operator beachtet? (z.B. keine Analyse in der Summary).</li>
-                <li>⬜ <strong>Logic:</strong> Linking Words (Therefore, However) genutzt?</li>
-                <li>⬜ <strong>Language:</strong> Simple Present (bei Analyse)? Keine Short Forms? False Friends gecheckt?</li>
-            </ul>
-        `
-    },
-    {
-        title: "Operatoren (Vollständig)",
-        cat: "Tools",
-        short: "Alle Operatoren (AFB I, II, III).",
-        content: `
-            <h3>Official List of Operators</h3>
+            <h4>Part 2: Discussion Strategies</h4>
             <div class="table-wrap">
             <table>
+                <tr><td><strong>Stating Opinion</strong></td><td>"Personally, I believe that...", "From my point of view...", "I am convinced that..."</td></tr>
+                <tr><td><strong>Agreeing</strong></td><td>"I completely agree.", "You are absolutely right.", "That is exactly my point.", "I couldn't agree more."</td></tr>
+                <tr><td><strong>Disagreeing (Polite)</strong></td><td>"I see your point, but...", "I am not sure I agree.", "I look at it differently.", "That might be true, but..."</td></tr>
+                <tr><td><strong>Disagreeing (Strong)</strong></td><td>"I totally disagree.", "I don't think that is true at all."</td></tr>
+                <tr><td><strong>Interrupting</strong></td><td>"Sorry to interrupt, but...", "Can I just say something here?", "May I add something?"</td></tr>
+                <tr><td><strong>Clarifying</strong></td><td>"What exactly do you mean by...?", "Could you explain that again?", "So, are you saying that...?"</td></tr>
+                <tr><td><strong>Playing for Time</strong></td><td>"That is an interesting question.", "Let me think about that for a second.", "Well, how should I put it..."</td></tr>
+            </table>
+            </div>
+        `
+    },
+    {
+        title: "Extended Checklist",
+        cat: "Tools",
+        short: "Comprehensive Peer Review & Self-Correction.",
+        content: `
+            <h3>The Ultimate Writing Checklist</h3>
+            <p>Check your text against these categories before handing it in.</p>
+
+            <h4>1. Content & Task</h4>
+            <ul>
+                <li>⬜ <strong>Operator:</strong> Did I strictly follow the operator? (e.g., NO analysis in a summary, NO opinion in an outline).</li>
+                <li>⬜ <strong>Completeness:</strong> Did I use all relevant info from the text?</li>
+                <li>⬜ <strong>Focus:</strong> Did I leave out irrelevant details?</li>
+            </ul>
+
+            <h4>2. Structure & Logic</h4>
+            <ul>
+                <li>⬜ <strong>Red Thread:</strong> Is there a clear Introduction, Body, and Conclusion?</li>
+                <li>⬜ <strong>Paragraphs:</strong> One idea = One paragraph. Are they visually visible?</li>
+                <li>⬜ <strong>Linking:</strong> Did I use connectives? (<em>Therefore, However, Furthermore, In contrast</em>).</li>
+                <li>⬜ <strong>Topic Sentences:</strong> Does the first sentence of each paragraph state what it is about?</li>
+            </ul>
+
+            <h4>3. Language & Style</h4>
+            <ul>
+                <li>⬜ <strong>Tenses:</strong> Simple Present for Summary/Analysis? Past Tense for narrative events?</li>
+                <li>⬜ <strong>Register:</strong> Is it formal enough? (No "I'm", "can't", "gonna", "kids", "stuff").</li>
+                <li>⬜ <strong>Vocabulary:</strong> Did I use precise vocab? (Avoid "good", "bad", "nice", "things").</li>
+                <li>⬜ <strong>False Friends:</strong> Check: <em>become vs. get</em>, <em>spend vs. donate</em>, <em>meaning vs. opinion</em>.</li>
+                <li>⬜ <strong>Sentence Variety:</strong> Did I mix short and long sentences?</li>
+            </ul>
+        `
+    },
+    {
+        title: "Operatoren (Official List)",
+        cat: "Tools",
+        short: "Complete definitions from the curriculum (PDF).",
+        content: `
+            <h3>Official List of Operators</h3>
+            <p>Definitions strictly based on the official guidelines.</p>
+            
+            <div class="table-wrap">
+            <table class="op-table" style="font-size: 0.9em;">
                 <thead><tr><th>Operator</th><th>AFB</th><th>Definition</th></tr></thead>
                 <tbody>
-                    <tr><td>Outline</td><td>I</td><td>Give the main features/structure, omitting details.</td></tr>
-                    <tr><td>Point out / State</td><td>I</td><td>Identify sth. and present it clearly.</td></tr>
-                    <tr><td>Present</td><td>I</td><td>(Re)structure sth. and write it down.</td></tr>
-                    <tr><td>Summarize</td><td>I</td><td>Give a concise account of main points.</td></tr>
-                    <tr><td>Describe / Depict</td><td>I/II</td><td>Give a detailed account of what sth. is like.</td></tr>
-                    <tr><td>Analyse / Examine</td><td>II</td><td>Look in detail, explain meaning/structure.</td></tr>
-                    <tr><td>Characterize</td><td>II</td><td>Detailed account of typical qualities of a person.</td></tr>
-                    <tr><td>Compare / Contrast</td><td>II</td><td>Show similarities/differences.</td></tr>
-                    <tr><td>Explain</td><td>II</td><td>Make clear by giving reasons/causes.</td></tr>
-                    <tr><td>Illustrate / Show</td><td>II</td><td>Use examples to explain.</td></tr>
-                    <tr><td>Interpret</td><td>II</td><td>Analyse content/form to establish meaning.</td></tr>
-                    <tr><td>Relate</td><td>II</td><td>Establish a connection between things.</td></tr>
-                    <tr><td>Assess / Evaluate</td><td>III</td><td>Express well-founded opinion after consideration.</td></tr>
-                    <tr><td>Comment</td><td>III</td><td>State opinion clearly, giving evidence.</td></tr>
-                    <tr><td>Discuss</td><td>III</td><td>Investigate by argument (Pro/Con).</td></tr>
-                    <tr><td>Justify</td><td>III</td><td>Make decision understandable by solid reasons.</td></tr>
-                    <tr><td>Reflect on</td><td>III</td><td>Express thoughts carefully and deeply.</td></tr>
-                    <tr><td>Create / Imagine</td><td>III</td><td>Produce a text based on a task.</td></tr>
+                    <tr><td><strong>outline</strong></td><td>I</td><td>give the main features, structure or general principles of a topic omitting minor details</td></tr>
+                    <tr><td><strong>point out / state</strong></td><td>I</td><td>identify sth. and present it clearly</td></tr>
+                    <tr><td><strong>present</strong></td><td>I</td><td>(re)structure sth. and write it down</td></tr>
+                    <tr><td><strong>summarize / write a summary</strong></td><td>I</td><td>give a concise account of the main points (condense)</td></tr>
+                    
+                    <tr><td><strong>describe / depict</strong></td><td>I/II</td><td>give a detailed account of what sth. is like</td></tr>
+                    
+                    <tr><td><strong>analyse / examine</strong></td><td>II</td><td>look at sth in detail and explain its meaning or structure</td></tr>
+                    <tr><td><strong>describe the character of / characterize</strong></td><td>II</td><td>give a detailed account of the typical or most noticeable qualities or features of a person, place or thing</td></tr>
+                    <tr><td><strong>compare</strong></td><td>II</td><td>show similarities and differences</td></tr>
+                    <tr><td><strong>contrast</strong></td><td>II</td><td>emphasize the differences between two or more things</td></tr>
+                    <tr><td><strong>explain</strong></td><td>II</td><td>make sth. clear by giving reasons and causes</td></tr>
+                    <tr><td><strong>illustrate / show</strong></td><td>II</td><td>use examples to explain or make clear</td></tr>
+                    <tr><td><strong>interpret</strong></td><td>II</td><td>analyse content and form / context in order to establish meaning</td></tr>
+                    <tr><td><strong>relate</strong></td><td>II</td><td>establish a connection between two or more things</td></tr>
+                    
+                    <tr><td><strong>assess / evaluate</strong></td><td>III</td><td>express a well-founded opinion about the nature or quality of sb./sth. after careful consideration of the most important aspects in question</td></tr>
+                    <tr><td><strong>comment</strong></td><td>III</td><td>state clearly your opinions on the topic in question, giving evidence to support your view</td></tr>
+                    <tr><td><strong>discuss</strong></td><td>III</td><td>investigate an issue by argument; give reasons for and against</td></tr>
+                    <tr><td><strong>justify</strong></td><td>III</td><td>make understandable a decision/conclusion/view etc. by giving solid reasons</td></tr>
+                    <tr><td><strong>reflect on</strong></td><td>III</td><td>express your thoughts on sth. carefully and deeply</td></tr>
+                    
+                    <tr><td><strong>create and write + text type</strong></td><td>III</td><td>produce sth. that has not existed before</td></tr>
+                    <tr><td><strong>imagine and write + text type</strong></td><td>III</td><td>form a picture in your mind of what sth. might be like and give a detailed account of it</td></tr>
                 </tbody>
             </table>
             </div>
@@ -402,7 +372,7 @@ const skillsContent = [
     }
 ];
 
-// In das globale Array pushen
+// Load into global scope
 if(window.contentData) {
     window.contentData.push(...skillsContent);
 }
