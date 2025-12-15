@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Oberstufe Hub | Skills & Methods</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>English Oberstufe Hub</h1>
+    <p>Skills, Methoden, Operatoren & Benotung für das Abitur</p>
+</header>
+
+<div class="controls">
+    <button class="filter-btn active" data-filter="all">Alle</button>
+    <button class="filter-btn" data-filter="AFB I">AFB I</button>
+    <button class="filter-btn" data-filter="AFB II">AFB II</button>
+    <button class="filter-btn" data-filter="AFB III">AFB III</button>
+    <button class="filter-btn" data-filter="Tools">Tools</button>
+    <button class="filter-btn" data-filter="Grading">Benotung</button>
+</div>
+
+<main class="grid" id="grid">
+    </main>
+
+<footer>
+    <p>Erstellt für den Englischunterricht (Gymnasium Bremen).</p>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <div class="modal-header">
+            <h2 id="mTitle">Title</h2>
+            <span class="sub" id="mCat">Category</span>
+        </div>
+        <div class="modal-content" id="mBody"></div>
+    </div>
+</div>
+
+<script>
+    // Wir initialisieren das Array global, damit die anderen Dateien es füllen können
+    window.contentData = []; 
+</script>
+
+<script src="data-skills.js"></script>
+<script src="data-grading.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
