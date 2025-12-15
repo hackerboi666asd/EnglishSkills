@@ -435,37 +435,84 @@ const skillsContent = [
             </div>
         `
     },
-
     /* ============================================================
        TOOLS & METHODS
        ============================================================ */
+       {
+        title: "Linking Words / Connectives",
+        cat: "Tools",
+        short: "Improve flow & logic (The Glue of your Essay).",
+        content: `
+            <h3>Linking Words & Connectives</h3>
+            <p class="intro-text"><em>Connectives are the glue that holds your essay together. Without them, your text is just a list of sentences. Use them to guide the reader through your arguments.</em></p>
+
+            <h4>1. Sequencing & Structuring</h4>
+            <ul>
+                <li><strong>Beginning:</strong> To begin with, First of all, Initially.</li>
+                <li><strong>Continuing:</strong> Furthermore, Moreover, In addition, Secondly.</li>
+                <li><strong>Concluding:</strong> All in all, To sum up, In conclusion, Finally.</li>
+            </ul>
+
+            <h4>2. Contrasting (Crucial for Discussions!)</h4>
+            <ul>
+                <li><strong>However,</strong> ... (The classic. Always use a comma!)</li>
+                <li><strong>On the one hand... on the other hand...</strong> (Always use both).</li>
+                <li><strong>In contrast to... / On the contrary,</strong> ...</li>
+                <li><strong>Although / Even though</strong> ...</li>
+                <li><strong>Despite / In spite of</strong> (+ Noun or -ing form).</li>
+                <li><strong>Whereas / While</strong> (Great for direct comparison).</li>
+            </ul>
+
+            <h4>3. Cause & Effect</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Reasons (Why?)</strong></td><td>Due to, Because of, Since, As, The reason for this is...</td></tr>
+                <tr><td><strong>Results (So what?)</strong></td><td>Therefore, Consequently, As a result, Thus, Hence.</td></tr>
+            </table>
+            </div>
+
+            <h4>4. Expressing Opinion</h4>
+            <ul>
+                <li><strong>Neutral:</strong> In my opinion, From my point of view, To my mind.</li>
+                <li><strong>Strong:</strong> I am convinced that, It is undeniable that, There is no doubt that.</li>
+            </ul>
+        `
+    },
     {
         title: "Mediation Skills",
         cat: "Tools",
         short: "Mediate texts DE -> EN (Strategies & Structure).",
         content: `
             <h3>Mediation: The Master Guide</h3>
-            <p>Transmit information from German to English for a specific addressee. <strong>NO word-for-word translation!</strong></p>
+            <p class="intro-text"><em>Mediation means transmitting information to a specific addressee. <strong>No word-for-word translation!</strong> Summarize the relevant points in English.</em></p>
 
-            <h4>1. Analysis (The "Wh" Questions)</h4>
+            <h4>1. The Golden Rules (from your Skill Box)</h4>
             <ul>
-                <li><strong>WHO</strong> is the addressee? (Register: formal vs. informal).</li>
-                <li><strong>WHAT</strong> text type? (Email, Blog?).</li>
-                <li><strong>WHICH</strong> info is relevant? (Filter out details!).</li>
+                <li><strong>Length:</strong> Approx. <strong>1/3</strong> of the original text.</li>
+                <li><strong>Tense:</strong> Use <strong>Simple Present</strong>.</li>
+                <li><strong>Neutrality:</strong> No personal opinion, no interpretation.</li>
+                <li><strong>Audience:</strong> Address the reader at the beginning and end!</li>
             </ul>
 
-            <h4>2. Compensation Strategies</h4>
+            <h4>2. Preparation (The "Wh" Questions)</h4>
             <ul>
-                <li><strong>Paraphrase:</strong> Explain the meaning.</li>
-                <li><strong>Generalize:</strong> "Riesling & Silvaner" &rarr; "German wine".</li>
-                <li><strong>Explain Culture:</strong> "Abitur" &rarr; "School leaving exam".</li>
+                <li><strong>WHO</strong> is the addressee? &rarr; Register (Formal vs. Informal).</li>
+                <li><strong>WHAT</strong> text type? (Email, Blog, Article).</li>
+                <li><strong>WHICH</strong> info is relevant? &rarr; Filter out details!</li>
             </ul>
 
-            <h4>3. Structure</h4>
+            <h4>3. Compensation Strategies (Don't panic!)</h4>
             <ul>
-                <li><strong>Intro:</strong> Address recipient + Source ("I found an article by...").</li>
-                <li><strong>Body:</strong> Present points logically using attribution ("The author states...").</li>
-                <li><strong>Conclusion:</strong> Closing remark fitting the text type.</li>
+                <li><strong>Paraphrase:</strong> Explain the meaning in simple words.</li>
+                <li><strong>Generalize:</strong> "Riesling & Silvaner" &rarr; "German wines".</li>
+                <li><strong>Explain Culture:</strong> "Abitur" &rarr; "German school leaving exam".</li>
+            </ul>
+
+            <h4>4. Useful Phrases</h4>
+            <ul>
+                <li><em>"According to the author..."</em></li>
+                <li><em>"The article deals with..." / "The text outlines..."</em></li>
+                <li><em>"With reference to the article..."</em></li>
             </ul>
         `
     },
@@ -475,23 +522,25 @@ const skillsContent = [
         short: "Strategies for Pre-, While-, and Post-Listening.",
         content: `
             <h3>Listening Comprehension Guide</h3>
+            <p class="intro-text"><em>Success in listening exams is 50% strategy. Don't just listen passively – be an active detective.</em></p>
 
-            <h4>Phase 1: Pre-Listening</h4>
+            <h4>Phase 1: Pre-Listening (The most important minute)</h4>
             <ul>
-                <li><strong>Read instructions!</strong> (Tick box or write words?).</li>
-                <li><strong>Predict:</strong> Topic "London"? Expect: <em>tube, delay, crowd</em>.</li>
+                <li><strong>Read Instructions:</strong> Tick box? Fill gap? Full sentence?</li>
+                <li><strong>Predict Keywords:</strong> If the topic is "Airport", expect: <em>delay, gate, luggage, boarding</em>.</li>
             </ul>
 
             <h4>Phase 2: While-Listening</h4>
             <ul>
-                <li><strong>Gist:</strong> Focus on the main idea first.</li>
-                <li><strong>Signposting:</strong> Watch out for "But..." (trap!) or "Most importantly..." (answer!).</li>
-                <li><strong>Notes:</strong> Use symbols/abbreviations. No full sentences.</li>
+                <li><strong>Gist first:</strong> Don't get stuck on one word. Keep listening!</li>
+                <li><strong>Signposting:</strong> Watch out for <em>"But...", "However..."</em> (often a trap!) or <em>"Most importantly..."</em> (the answer!).</li>
+                <li><strong>Notes:</strong> Use abbreviations and symbols (+, -, !). No sentences.</li>
             </ul>
 
             <h4>Phase 3: Post-Listening</h4>
             <ul>
-                <li><strong>Check:</strong> Grammar (Gap fills), Logic, Spelling.</li>
+                <li><strong>Gap Fills:</strong> Check Grammar! (e.g. "The boy is <em>running</em>", not "run").</li>
+                <li><strong>Logic Check:</strong> Does the answer make sense in context?</li>
             </ul>
         `
     },
@@ -502,16 +551,21 @@ const skillsContent = [
         content: `
             <h3>Speaking Phrases</h3>
 
-            <h4>1. Picture Description</h4>
-            <p>"The photo depicts...", "In the foreground...", "The atmosphere seems...", "This symbolizes..."</p>
+            <h4>1. Picture Description (Structure)</h4>
+            <ol>
+                <li><strong>Intro:</strong> "The photo/cartoon depicts/shows..."</li>
+                <li><strong>Description:</strong> "In the foreground...", "On the left...", "In the background..."</li>
+                <li><strong>Action:</strong> "The people <strong>are standing</strong>..." (Present Progressive!).</li>
+                <li><strong>Interpretation:</strong> "The atmosphere seems...", "This symbolizes..."</li>
+            </ol>
 
             <h4>2. Discussion Strategies</h4>
             <div class="table-wrap">
             <table>
-                <tr><td><strong>Agreeing</strong></td><td>"You are absolutely right.", "I couldn't agree more."</td></tr>
-                <tr><td><strong>Disagreeing</strong></td><td>"I see your point, but...", "I am not sure I agree."</td></tr>
-                <tr><td><strong>Interrupting</strong></td><td>"May I add something?", "Sorry to interrupt, but..."</td></tr>
-                <tr><td><strong>Stalling</strong></td><td>"That is an interesting question...", "Let me think..."</td></tr>
+                <tr><td><strong>Agreeing</strong></td><td>"You are absolutely right.", "I couldn't agree more.", "That's a good point."</td></tr>
+                <tr><td><strong>Disagreeing</strong></td><td>"I see your point, but...", "I'm afraid I disagree.", "I look at it differently."</td></tr>
+                <tr><td><strong>Interrupting</strong></td><td>"Sorry to interrupt, but...", "May I add something here?"</td></tr>
+                <tr><td><strong>Stalling</strong></td><td>"That's an interesting question...", "Let me think about that for a second."</td></tr>
             </table>
             </div>
         `
@@ -519,36 +573,35 @@ const skillsContent = [
     {
         title: "Extended Checklist",
         cat: "Tools",
-        short: "Comprehensive Peer Review & Self-Correction.",
+        short: "Final Polish (Content, Structure, Language).",
         content: `
-            <h3>The Ultimate Writing Checklist</h3>
+            <h3>The Final Checklist</h3>
+            <p class="intro-text"><em>Before you hand in your exam, take 5 minutes to check these points.</em></p>
             
-            <h4>1. Content & Task</h4>
+            <h4>1. Task & Content</h4>
             <ul>
-                <li>⬜ <strong>Operator:</strong> Strictly followed? (e.g. NO opinion in outline).</li>
-                <li>⬜ <strong>Focus:</strong> Irrelevant details left out?</li>
+                <li>⬜ <strong>Operator:</strong> Did I stick to it? (e.g., NO opinion in a summary).</li>
+                <li>⬜ <strong>Focus:</strong> Did I delete irrelevant details?</li>
             </ul>
 
-            <h4>2. Structure & Logic</h4>
+            <h4>2. Structure</h4>
             <ul>
-                <li>⬜ <strong>Red Thread:</strong> Intro, Body, Conclusion?</li>
-                <li>⬜ <strong>Paragraphs:</strong> One idea = One paragraph?</li>
-                <li>⬜ <strong>Linking:</strong> Connectives used? (Therefore, However).</li>
+                <li>⬜ <strong>Paragraphs:</strong> Is the text visually divided? (One idea = one paragraph).</li>
+                <li>⬜ <strong>Connectives:</strong> Did I use <em>However, Therefore, Furthermore</em>?</li>
             </ul>
 
             <h4>3. Language</h4>
             <ul>
-                <li>⬜ <strong>Tenses:</strong> Simple Present for analysis?</li>
-                <li>⬜ <strong>Register:</strong> Formal enough? (No "kids", "stuff").</li>
-                <li>⬜ <strong>Vocabulary:</strong> Precise? (Avoid "good/bad").</li>
-                <li>⬜ <strong>False Friends:</strong> Checked? (become vs get).</li>
+                <li>⬜ <strong>Tense:</strong> Simple Present for analysis/summary?</li>
+                <li>⬜ <strong>Style:</strong> No short forms (I'm -> I am). No slang.</li>
+                <li>⬜ <strong>Mistakes:</strong> Check for "False Friends" (become/get) and he/she/it-s.</li>
             </ul>
         `
     },
     {
         title: "Operators (Official List)",
         cat: "Tools",
-        short: "Official definitions of all operators (AFB I-III).",
+        short: "Official definitions (AFB I-III).",
         content: `
             <h3>Official List of Operators</h3>
             <p>Definitions based on the official guidelines.</p>
@@ -557,25 +610,43 @@ const skillsContent = [
             <table class="op-table" style="font-size: 0.9em;">
                 <thead><tr><th>Operator</th><th>AFB</th><th>Definition</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>outline</strong></td><td>I</td><td>give the main features, structure or principles.</td></tr>
-                    <tr><td><strong>point out / state</strong></td><td>I</td><td>identify sth. and present it clearly.</td></tr>
-                    <tr><td><strong>summarize</strong></td><td>I</td><td>give a concise account of main points.</td></tr>
-                    <tr><td><strong>describe</strong></td><td>I/II</td><td>give a detailed account.</td></tr>
-                    <tr><td><strong>analyse</strong></td><td>II</td><td>explain meaning or structure in detail.</td></tr>
-                    <tr><td><strong>characterize</strong></td><td>II</td><td>give a detailed account of a person's qualities.</td></tr>
-                    <tr><td><strong>explain</strong></td><td>II</td><td>make clear by giving reasons.</td></tr>
-                    <tr><td><strong>interpret</strong></td><td>II</td><td>analyse context to establish meaning.</td></tr>
-                    <tr><td><strong>comment</strong></td><td>III</td><td>state your opinion clearly with evidence.</td></tr>
-                    <tr><td><strong>discuss</strong></td><td>III</td><td>investigate by argument (Pro/Con).</td></tr>
-                    <tr><td><strong>justify</strong></td><td>III</td><td>give solid reasons for a decision.</td></tr>
-                    <tr><td><strong>create / imagine</strong></td><td>III</td><td>produce a text based on a task.</td></tr>
+                    <tr><td><strong>outline</strong></td><td>I</td><td>give the main features, structure or general principles of a topic omitting minor details</td></tr>
+                    <tr><td><strong>point out / state</strong></td><td>I</td><td>identify sth. and present it clearly</td></tr>
+                    <tr><td><strong>present</strong></td><td>I</td><td>(re)structure sth. and write it down</td></tr>
+                    <tr><td><strong>summarize</strong></td><td>I</td><td>give a concise account of the main points (condense)</td></tr>
+                    
+                    <tr><td><strong>describe / depict</strong></td><td>I/II</td><td>give a detailed account of what sth. is like</td></tr>
+                    
+                    <tr><td><strong>analyse / examine</strong></td><td>II</td><td>look at sth in detail and explain its meaning or structure</td></tr>
+                    <tr><td><strong>characterize</strong></td><td>II</td><td>give a detailed account of the typical or most noticeable qualities or features of a person, place or thing</td></tr>
+                    <tr><td><strong>compare</strong></td><td>II</td><td>show similarities and differences</td></tr>
+                    <tr><td><strong>contrast</strong></td><td>II</td><td>emphasize the differences between two or more things</td></tr>
+                    <tr><td><strong>explain</strong></td><td>II</td><td>make sth. clear by giving reasons and causes</td></tr>
+                    <tr><td><strong>illustrate / show</strong></td><td>II</td><td>use examples to explain or make clear</td></tr>
+                    <tr><td><strong>interpret</strong></td><td>II</td><td>analyse content and form / context in order to establish meaning</td></tr>
+                    <tr><td><strong>relate</strong></td><td>II</td><td>establish a connection between two or more things</td></tr>
+                    
+                    <tr><td><strong>assess / evaluate</strong></td><td>III</td><td>express a well-founded opinion about the nature or quality of sb./sth. after careful consideration of the most important aspects in question</td></tr>
+                    <tr><td><strong>comment</strong></td><td>III</td><td>state clearly your opinions on the topic in question, giving evidence to support your view</td></tr>
+                    <tr><td><strong>discuss</strong></td><td>III</td><td>investigate an issue by argument; give reasons for and against</td></tr>
+                    <tr><td><strong>justify</strong></td><td>III</td><td>make understandable a decision/conclusion/view etc. by giving solid reasons</td></tr>
+                    <tr><td><strong>reflect on</strong></td><td>III</td><td>express your thoughts on sth. carefully and deeply</td></tr>
+                    
+                    <tr><td><strong>create / imagine</strong></td><td>III</td><td>produce sth. that has not existed before / form a picture in your mind</td></tr>
                 </tbody>
             </table>
             </div>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 10px;">
+                Source: <a href="https://bildung.bremen.de/sixcms/media.php/13/e_03-2015_a.pdf" target="_blank" style="color: #666; text-decoration: underline;">Bildungsplan Bremen (Pages 21-22)</a>
+            </p>
         `
     }
 ];
 
+// Load into global scope
+if(window.contentData) {
+    window.contentData.push(...skillsContent);
+}
 // Load into global scope
 if(window.contentData) {
     window.contentData.push(...skillsContent);
