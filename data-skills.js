@@ -5,11 +5,11 @@
        AFB I: COMPREHENSION
        ============================================================ */
        {
-        title: "Summarize / Write a summary",
+        title: "Summary",
         cat: "AFB I",
-        short: "Concise account of main points (1/3 length).",
+        short: "Concise account of a text's main points.",
         content: `
-            <h3>Summarize / Write a Summary</h3>
+            <h3>Summary</h3>
             <p class="intro-text"><em>A summary is the art of saying much with few words. Your goal is to strip the text down to its bare bones without losing the core message. Think: <strong>Maximum information in minimum words.</strong></em></p>
             
             <h4>The Golden Rule</h4>
@@ -565,24 +565,57 @@
     {
         title: "E-Mail",
         cat: "AFB III",
-        short: "Formal vs. Informal E-Mails.",
+        short: "Formal vs. Informal E-Mails (Structure & Phrases).",
         content: `
             <h3>Writing an E-Mail</h3>
-            <p class="intro-text"><em>Emails are faster than letters, but the rules of politeness still apply in a business context.</em></p>
+            <p class="intro-text"><em>Emails are faster than letters, but in a professional context (teacher, job application), the rules of politeness are strict.</em></p>
 
-            <h4>Structure</h4>
+            <h4>1. Structure & Netiquette</h4>
             <ul>
-                <li><strong>Subject Line:</strong> CRITICAL! Summarize the content (e.g., "Question regarding the essay"). Never leave this blank.</li>
-                <li><strong>Body:</strong> Salutation &rarr; Opening &rarr; Main Point &rarr; Closing.</li>
+                <li><strong>Subject Line:</strong> The most important part! Be precise (e.g., "Question regarding Homework" vs. "Question"). Never leave it blank.</li>
+                <li><strong>Salutation:</strong> Always address the person politely. Use the last name for teachers/bosses.</li>
+                <li><strong>The Body:</strong> Keep it short and clear. One topic per email.</li>
+                <li><strong>Tone:</strong> Avoid using ALL CAPS (it looks like shouting) and excessive emojis in formal emails.</li>
             </ul>
 
-            <h4>Formal vs. Personal</h4>
+            <h4>2. Formal vs. Informal (The Difference)</h4>
             <div class="table-wrap">
             <table>
-                <tr><th>Feature</th><th>Formal (Teacher/Job)</th><th>Personal (Friend)</th></tr>
-                <tr><td><strong>Greeting</strong></td><td>Dear Mr Miller,</td><td>Hi Tom, / Hey,</td></tr>
-                <tr><td><strong>Style</strong></td><td>Polite, objective, no slang.</td><td>Relaxed, short forms (I'm, don't) allowed.</td></tr>
-                <tr><td><strong>Closing</strong></td><td>Yours sincerely, / Best regards,</td><td>Best wishes, / Love, / Take care,</td></tr>
+                <tr><th>Feature</th><th>Formal (Teacher/Job)</th><th>Informal (Friend)</th></tr>
+                <tr><td><strong>Greeting</strong></td><td>Dear Mr Miller,<br>Dear Sir or Madam,</td><td>Hi Tom,<br>Hey Sarah,</td></tr>
+                <tr><td><strong>Style</strong></td><td>Objective, full sentences, no short forms (I am).</td><td>Relaxed, short forms (I'm), slang/emojis allowed.</td></tr>
+                <tr><td><strong>Closing</strong></td><td>Yours sincerely,<br>Best regards,</td><td>Best wishes,<br>Love,<br>CU,</td></tr>
+            </table>
+            </div>
+
+            <h4>3. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Function</th>
+                    <th>Formal</th>
+                    <th>Informal</th>
+                </tr>
+                <tr>
+                    <td><strong>Opening</strong></td>
+                    <td>"I hope you are doing well."<br>"I am writing with reference to..."</td>
+                    <td>"How's it going?"<br>"Just wanted to tell you..."</td>
+                </tr>
+                <tr>
+                    <td><strong>The Reason</strong></td>
+                    <td>"Could you please inform me about..."<br>"I would like to apologize for..."</td>
+                    <td>"Can you tell me..."<br>"Sorry for..."</td>
+                </tr>
+                <tr>
+                    <td><strong>Attachments</strong></td>
+                    <td>"Please find attached the document."</td>
+                    <td>"Here is the photo..."</td>
+                </tr>
+                <tr>
+                    <td><strong>Closing</strong></td>
+                    <td>"I look forward to hearing from you."</td>
+                    <td>"Write back soon!"</td>
+                </tr>
             </table>
             </div>
         `
@@ -778,6 +811,45 @@
             <ul>
                 <li>"That is a complex issue. Let me think..."</li>
                 <li>"How shall I put it..."</li>
+            </ul>
+        `
+    },
+    {
+        title: "Practicing Speaking (AI & Life)",
+        cat: "Tools",
+        short: "Train fluency with AI Voice Mode & Real Life tips.",
+        content: `
+            <h3>How to Practice Speaking</h3>
+            <p class="intro-text"><em>Speaking is a muscle. If you don't train it, it gets weak. You don't need a ticket to London to practice – you have a native speaker in your pocket.</em></p>
+
+            <h4>1. The AI Voice Mode (Your 24/7 Partner)</h4>
+            <p>Apps like <strong>ChatGPT, Gemini, or Grok</strong> have a specific "Voice Mode". It allows you to have a fluid conversation without typing. It is the best way to lose the fear of making mistakes.</p>
+            
+            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0c4a6e;">
+                <strong>How to start:</strong><br>
+                1. Open the App on your phone.<br>
+                2. Click the <strong>Headphone</strong> or <strong>Waveform Icon</strong> (usually bottom right).<br>
+                3. Start talking! (Tip: Tell the AI to "Correct me if I make a mistake").
+            </div>
+
+            <h4>Scenario Ideas (Prompts)</h4>
+            <p>Don't just say "Hello". Give the AI a role to make it fun:</p>
+            <div class="table-wrap">
+            <table>
+                <tr><th>Scenario</th><th>What to say (Prompt)</th></tr>
+                <tr><td><strong>The Debate</strong></td><td>"I believe that [Topic] is good/bad. I want you to argue against me. Let's have a debate."</td></tr>
+                <tr><td><strong>The Job Interview</strong></td><td>"Pretend you are an employer at Google. Interview me for a student job. Ask tough questions."</td></tr>
+                <tr><td><strong>Travel / Service</strong></td><td>"You are a waiter in a rude restaurant in London. I want to complain about my soup. Let's roleplay."</td></tr>
+                <tr><td><strong>Small Talk</strong></td><td>"I want to practice small talk. Ask me about my hobbies and keep the conversation going."</td></tr>
+            </table>
+            </div>
+
+            <h4>2. Other Ways to Practice</h4>
+            <ul>
+                <li><strong>Online Gaming (Discord):</strong> Switch to international servers (EU-West / US). Communicate in English during matches. It forces you to react quickly.</li>
+                <li><strong>Narrate Your Life (Self-Talk):</strong> When you are alone, say out loud what you are doing. <em>"I am opening the fridge. I am looking for the milk."</em> It sounds weird, but it helps connect your brain to your mouth directly.</li>
+                <li><strong>Shadowing (Netflix/YouTube):</strong> Watch a scene with English subtitles. Pause after a sentence and repeat it <strong>exactly</strong> like the actor (mimic the speed, melody, and accent).</li>
+                <li><strong>Vacation Mode:</strong> Even if you are not abroad, try to order food in English at an Irish Pub or talk to tourists in your city to give directions.</li>
             </ul>
         `
     },
