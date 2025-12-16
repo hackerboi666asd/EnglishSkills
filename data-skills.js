@@ -143,34 +143,36 @@ const skillsContent = [
         cat: "AFB II",
         short: "Analyze character traits & development.",
         content: `
-            <h3>How to write a Characterization</h3>
-            <p class="intro-text"><em>Characters are the heart of every story. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
+                       <h3>How to write a Characterization</h3>
+            <p class="intro-text"><em>Characters are the heart of every story. Understanding them helps you understand the whole plot. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
 
             <h4>1. Elements of Analysis</h4>
+            <p>To fully understand a character, you must analyze two different layers:</p>
             <ul>
-                <li><strong>Direct (Explicit):</strong> The narrator tells you exactly what the character is like.</li>
-                <li><strong>Indirect (Implicit):</strong> You conclude traits from <strong>appearance, behavior, and language</strong>.</li>
+                <li><strong>Direct Characterization (Explicit):</strong> The narrator tells you <em>exactly</em> what the character is like (e.g., "He was a cruel and rich man").</li>
+                <li><strong>Indirect Characterization (Implicit):</strong> The author only shows you details. You must draw your own conclusions from the character's <strong>appearance, behavior, and language</strong>.</li>
             </ul>
 
             <h4>2. Preparation (The Grid Method)</h4>
+            <p>Before writing, scan the text for both direct and indirect clues and sort them into a grid:</p>
             <div class="table-wrap">
                 <table>
-                    <thead><tr><th>Type</th><th>Evidence</th><th>Trait (Conclusion)</th></tr></thead>
+                    <thead><tr><th>Type</th><th>Evidence (Quote/Line)</th><th>Trait (Conclusion)</th></tr></thead>
                     <tbody>
-                        <tr><td>Direct</td><td>"was a lonely boy"</td><td>lonely</td></tr>
-                        <tr><td>Indirect</td><td>"screams at teacher"</td><td>disrespectful</td></tr>
+                        <tr><td><strong>Direct</strong></td><td>"was a lonely boy" (l. 1)</td><td>lonely, isolated</td></tr>
+                        <tr><td><strong>Indirect</strong> (Appearance)</td><td>"wore a dirty shirt" (l. 5)</td><td>neglected, poor</td></tr>
+                        <tr><td><strong>Indirect</strong> (Behavior)</td><td>"screams at teacher" (l. 12)</td><td>aggressive, disrespectful</td></tr>
                     </tbody>
                 </table>
             </div>
 
-            <h4>3. Useful Phrases</h4>
-            <div class="table-wrap">
-            <table>
-                <tr><td><strong>Describing Traits</strong></td><td>"The character is portrayed as..."<br>"He/She appears to be..."<br>"This trait becomes evident when..."<br>"His behavior suggests that..."</td></tr>
-                <tr><td><strong>Connecting to Text</strong></td><td>"This is highlighted by the fact that..."<br>"The quote '...' underlines his/her..."</td></tr>
-                <tr><td><strong>Development</strong></td><td>"In the course of the story, the character changes from... to..."<br>"There is a sharp contrast between..."</td></tr>
-            </table>
-            </div>
+            <h4>3. Writing Structure (P.E.E.)</h4>
+            <p>Use this chain for every trait you analyze. Never just list adjectives!</p>
+            <ul>
+                <li><strong>Point (Name it):</strong> "The character appears to be very aggressive..."</li>
+                <li><strong>Evidence (Quote it):</strong> "...which becomes clear when he shouts at the teacher (l. 12)."</li>
+                <li><strong>Explanation (Explain it):</strong> "This behavior highlights his total lack of respect for authority figures."</li>
+            </ul>
         `
     },
     {
@@ -179,110 +181,134 @@ const skillsContent = [
         short: "Identify narrator type & analyze effect.",
         content: `
             <h3>Analyzing Narrative Perspective</h3>
-            <p class="intro-text"><em>The narrator is the "camera". By choosing a perspective, the author controls what we know and how we feel.</em></p>
+            <p class="intro-text"><em>The narrator is the "camera" through which we see the story. By choosing a specific perspective, the author controls what we know and how we feel. Your job is to find out <strong>how</strong> this influence works.</em></p>
             
             <div class="table-wrap">
             <table>
-                <thead><tr><th>Type</th><th>Effect / Function</th></tr></thead>
+                <thead><tr><th>Type</th><th>Signal Words</th><th>Effect / Function</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>First-Person</strong> ("I")</td><td>Subjective; creates intimacy; reader identifies with narrator.</td></tr>
-                    <tr><td><strong>Third-Person Omniscient</strong></td><td>Reliable; "God-like" view; knows thoughts of everyone; objective distance.</td></tr>
-                    <tr><td><strong>Third-Person Limited</strong></td><td>Creates suspense; reader feels close to the "reflector figure" but has limited knowledge.</td></tr>
+                    <tr>
+                        <td><strong>First-Person</strong><br>(I-Narrator)</td>
+                        <td>"I", "me", "my"</td>
+                        <td><strong>Subjective.</strong> Creates intimacy and identification. We see the world through <em>their</em> eyes.  Can be an <em>unreliable narrator</em>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Third-Person Omniscient</strong><br>(All-knowing)</td>
+                        <td>"He/She" + knows ALL</td>
+                        <td><strong>Objective / Trustworthy.</strong> Has an "Olympian view". Can jump between places/times and judge events from above.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Third-Person Limited</strong><br>(Personal)</td>
+                        <td>"He/She" + knows ONE</td>
+                        <td><strong>Identification / Suspense.</strong> The reader feels close to this "reflector figure" but has limited knowledge (doesn't know what others think).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Third-Person Objective</strong><br>(Neutral)</td>
+                        <td>Only actions/dialogue</td>
+                        <td><strong>Distance.</strong> No insight into feelings. The reader must judge the characters solely by their actions.</td>
+                    </tr>
                 </tbody>
             </table>
             </div>
 
-            <h4>Useful Phrases for the Effect</h4>
-            <p><strong>Use these to score points! Don't just name the type.</strong></p>
-            <ul>
-                <li>"This perspective <strong>allows the reader to identify with</strong> the protagonist."</li>
-                <li>"It <strong>restricts the reader's knowledge</strong>, creating suspense."</li>
-                <li>"The narrator <strong>creates a distance</strong> between the reader and the events."</li>
-                <li>"The reader <strong>shares the character's feelings</strong> and inner thoughts."</li>
-                <li>"Since we only see the action through X's eyes, the narration is <strong>subjective</strong> / biased."</li>
-            </ul>
-            
+            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-top: 20px;">
+                <strong>⚠️ Crucial Rule:</strong><br>
+                Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
+            </div>
+
+            <h4>3. Writing the Analysis (The Formula)</h4>
+            <p>Don't just name the perspective. Explain what it <em>does</em> to the reader.</p>
+            <p class="highlight-box">
+                <strong>1. Identify:</strong> "The story is told by a third-person limited narrator..."<br>
+                <strong>2. Connect:</strong> "...who focuses on the protagonist's thoughts (l. 15)."<br>
+                <strong>3. Effect:</strong> "This creates suspense, as the reader shares the character's fear but does not know what the antagonist is planning."
+            </p>
         `
     },
     {
         title: "Cartoon Analysis",
         cat: "AFB II",
-        short: "Analyze visuals (Word Box & Steps).",
+        short: "Analyze visuals (Description &rarr; Symbols &rarr; Message).",
         content: `
             <h3>Cartoon Analysis</h3>
-            <p class="intro-text"><em>A cartoon is a satirical comment. Decode the story: Introduction &rarr; Description &rarr; Analysis &rarr; Evaluation.</em></p>
+            <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It does not just show a picture; it tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
 
             <h4>1. Introduction</h4>
-            <p>"The cartoon drawn by [Artist] was published in [Source] in the year... It deals with the topic of..."</p>
+            <p>State the basic facts (title (if there is one), author, date, source) and the general topic.<br>
+            <em>"The cartoon by [Artist], published in [Source] on [Date], deals with [Topic]."</em></p>
 
-            <h4>2. Description (The "Word Box")</h4>
-            <div class="table-wrap">
-            <table>
-                <tr><td><strong>Overview</strong></td><td>"The cartoon shows..."<br>"In the cartoon you can see (that)..."</td></tr>
-                <tr><td><strong>Location</strong></td><td>"In the centre...", "In the foreground/background...", "On the right/left-hand side...", "At the top/bottom..."</td></tr>
-                <tr><td><strong>Text</strong></td><td>"There is a caption below the cartoon which says '...'"<br>"The text in the speech bubble is spoken by..."</td></tr>
-            </table>
-            </div>
-
-            <h4>3. Analysis (Decoding Symbols)</h4>
+            <h4>2. Description (The "Camera View")</h4>
+            <p>Describe <strong>objectively</strong> what you see. Do not interpret yet!</p>
             <ul>
-                <li>"The figure is a <strong>caricature</strong> of..." (exaggerated traits).</li>
-                <li>"The person's body language / facial expression shows that..."</li>
-                <li>"The element X <strong>symbolises / stands for</strong>..."</li>
-                <li>"The cartoonist's <strong>message</strong> might be that..."</li>
-                <li>"He is making a humorous/ironic comment on..."</li>
-                <li>"He is making fun of..."</li>
+                <li><strong>Locate elements:</strong> "In the foreground/background...", "In the centre...", "On the left/right..."</li>
+                <li><strong>Describe action:</strong> Use <strong>Present Progressive</strong>! ("The politician <strong>is holding</strong> a bag of money.").</li>
+                <li><strong>Mention details:</strong> Facial expressions, gestures, clothing, setting.</li>
             </ul>
 
-            <h4>4. Evaluation</h4>
+            <h4>3. Analysis (The Decoding)</h4>
+            <p>Explain the meaning of the elements you described. Use the formula:</p>
+            <div class="highlight-box">
+                <strong>Element (Description) &rarr; Meaning (Interpretation)</strong><br>
+                <em>"The giant bag of money <strong>symbolizes/stands for</strong> the greed of the corporation."</em>
+            </div>
+            <p><strong>Look for these specific devices:</strong></p>
             <ul>
-                <li>"I think the cartoon is effective because..."</li>
-                <li>"In my opinion, the cartoon is easy to understand because..."</li>
-                <li>"I agree with the point the cartoonist is making because..."</li>
+                <li><strong>Caricature:</strong> Are specific features exaggerated (e.g., long nose = Pinocchio/Liar)?</li>
+                <li><strong>Symbolism:</strong> Dove = Peace, Chains = Oppression, Donkey = Democrats (USA), Elephant = Republicans (USA).</li>
+                <li><strong>Labelling:</strong> Words written on objects to identify them.</li>
+                <li><strong>Irony:</strong> Is the text (Caption/Speech bubble) the opposite of the picture?</li>
+            </ul>
+
+            <h4>4. The Message</h4>
+            <p>Summarize the cartoonist's intention in one sentence.</p>
+            <ul>
+                <li>"The cartoonist wants to criticize..."</li>
+                <li>"The cartoon wants to show that..."</li>
+                <li>"The artist makes fun of..."</li>
             </ul>
         `
     },
     {
         title: "Style, Tone & Register",
         cat: "AFB II",
-        short: "Analyze language (Devices & Functions).",
+        short: "Analyze language (Style = Diction + Syntax + Tone).",
         content: `
             <h3>Language Analysis</h3>
-            <p class="intro-text"><em>Language analysis means uncovering the <strong>Style</strong> (How?), the <strong>Tone</strong> (Vibe?), and the <strong>Register</strong> (Who for?).</em></p>
+            <p class="intro-text"><em>Authors never choose words by accident. Language analysis is not just listing metaphors; it is about uncovering the <strong>Style</strong> (How is it written?), the <strong>Tone</strong> (What is the vibe?), and the <strong>Register</strong> (Who is it for?).</em></p>
 
-            <h4>1. The Three Pillars</h4>
+            <h4>1. Style (The "How")</h4>
+            <p>Style is the umbrella term for the specific way an author uses language. It consists of three main pillars:</p>
             <ul>
-                <li><strong>Diction:</strong> Positive/negative words? Keywords?</li>
-                <li><strong>Syntax:</strong> Short sentences (speed/drama) or complex sentences (details)?</li>
-                <li><strong>Rhetorical Devices:</strong> Metaphors, anaphora, etc.</li>
+                <li><strong>Diction (Word Choice):</strong>
+                    <br>&rarr; <em>Positively/Negatively connoted words:</em> Do words evoke fear ("crisis", "disaster") or hope ("opportunity", "bright future")?
+                    <br>&rarr; <em>Keywords:</em> Are there repetitive key terms emphasizing a message?
+                </li>
+                <li><strong>Syntax (Sentence Structure):</strong>
+                    <br>&rarr; <em>Parataxis (Short sentences):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
+                    <br>&rarr; <em>Hypotaxis (Complex sentences):</em> Used for detailed explanations, complex arguments, or to show high education.
+                </li>
+                <li><strong>Rhetorical Devices:</strong>
+                    <br>Metaphors, similes, anaphora, etc. belong here. They are the "spices" of the style.
+                </li>
             </ul>
 
-            <h4>2. Useful Phrases (Device + Function)</h4>
-            <p>Always connect the device to its effect!</p>
-            <div class="table-wrap">
-            <table>
-                <tr>
-                    <td><strong>Identifying</strong></td>
-                    <td><strong>Explaining Effect</strong></td>
-                </tr>
-                <tr>
-                    <td>"The <strong>metaphor</strong> '...' ..."</td>
-                    <td>"...<strong>emphasizes</strong> the danger of the situation."</td>
-                </tr>
-                <tr>
-                    <td>"The use of <strong>repetition</strong>..."</td>
-                    <td>"...<strong>highlights</strong> the importance of this message."</td>
-                </tr>
-                <tr>
-                    <td>"The author uses <strong>emotive adjectives</strong>..."</td>
-                    <td>"...to appeal to the reader's emotions."</td>
-                </tr>
-                <tr>
-                    <td>"This choice of words..."</td>
-                    <td>"...<strong>creates an atmosphere of</strong> fear/hope/urgency."</td>
-                </tr>
-            </table>
+            <h4>2. Tone (The Atmosphere)</h4>
+            <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the audience. It can change throughout the text!</p>
+            <div class="highlight-box">
+                <strong>Useful Adjectives:</strong><br>
+                optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, emotional, objective, solemn, cynical.
             </div>
+
+            <h4>3. Register (The Formality)</h4>
+            <p>Register describes the level of formality. It tells you about the relationship between author and reader.</p>
+            <ul>
+                <li><strong>Formal (High Register):</strong> Passive voice, complex syntax, advanced vocabulary.
+                    <br>&rarr; <em>Effect:</em> Professional, objective, distant, authoritative. (e.g., Scientific Articles, Serious Newspapers).</li>
+                <li><strong>Neutral (Standard Register):</strong> Clear, correct standard English, accessible to everyone.
+                    <br>&rarr; <em>Effect:</em> Informative, factual. (e.g., News Reports).</li>
+                <li><strong>Informal (Low Register):</strong> Slang, short forms ("can't"), colloquialisms, direct address ("you").
+                    <br>&rarr; <em>Effect:</em> Authentic, emotional, creates closeness/intimacy. (e.g., Blogs, Comments, speeches to young people).</li>
+            </ul>
         `
     },
  /* ============================================================
