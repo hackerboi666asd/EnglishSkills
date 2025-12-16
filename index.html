@@ -3,17 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Oberstufe Hub | Skills & Methods</title>
+    <title>Englisch Oberstufe Bremen | Skills & Methods</title>
+    
     <link rel="stylesheet" href="style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Intro Section Styles */
+        .intro-section {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .origin-badge {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #475569;
+            font-size: 0.85rem;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .intro-text {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        /* Die kleinen AFB Erklär-Karten */
+        .afb-explainer {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap; /* Damit es auf Handy umbricht */
+        }
+
+        .afb-card {
+            flex: 1;
+            min-width: 220px;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            text-align: left;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s ease;
+        }
+
+        .afb-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .afb-card strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #1e293b;
+            font-weight: 700;
+        }
+
+        .afb-desc {
+            color: #64748b;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            display: block;
+        }
+
+        .afb-desc em {
+            display: block;
+            margin-top: 6px;
+            font-style: normal;
+            font-weight: 500;
+            color: #334155;
+        }
+
+        /* Farbliche Codierung zur Orientierung */
+        .afb-i { border-left: 5px solid #a5b4fc; }   /* Leichtes Blau */
+        .afb-ii { border-left: 5px solid #fcd34d; }  /* Leichtes Gelb */
+        .afb-iii { border-left: 5px solid #f87171; } /* Leichtes Rot */
+
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>English Oberstufe Hub</h1>
-    <p>Skills, Methoden, Operatoren & Benotung für das Abitur</p>
+    <h1>Englisch in der Oberstufe im Bundesland Bremen</h1>
+    <p>Anforderungsbereiche & -methoden, Skills und Benotungskriterien</p>
 </header>
+
+<div class="intro-section">
+    <span class="origin-badge">Erstellt für den Englischunterricht im Bundesland Bremen</span>
+    
+    <p class="intro-text">
+        Willkommen beim digitalen Methoden-Guide für das Abitur. Hier findest du alles, 
+        was du für die schriftliche und mündliche Prüfung brauchst – von der Summary bis zur Benotung.
+    </p>
+
+    <div class="afb-explainer">
+        <div class="afb-card afb-i">
+            <strong>AFB I: Comprehension</strong>
+            <span class="afb-desc">Reproduktion & Zusammenfassung. <br><em>"Was steht im Text?"</em></span>
+        </div>
+        <div class="afb-card afb-ii">
+            <strong>AFB II: Analysis</strong>
+            <span class="afb-desc">Analyse & Reorganisation. <br><em>"Wie macht der Autor das?"</em></span>
+        </div>
+        <div class="afb-card afb-iii">
+            <strong>AFB III: Evaluation</strong>
+            <span class="afb-desc">Bewertung & eigene Meinung. <br><em>"Was denke ich darüber?"</em></span>
+        </div>
+    </div>
+</div>
 
 <div class="controls">
     <button class="filter-btn active" data-filter="all">Alle</button>
@@ -28,7 +135,7 @@
     </main>
 
 <footer>
-    <p>Erstellt für den Englischunterricht im Bundesland Bremen.</p>
+    <p>&copy; 2025 Oberstufen-Guide Englisch</p>
 </footer>
 
 <div class="modal-overlay" id="modalOverlay">
