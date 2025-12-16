@@ -1,17 +1,15 @@
 // data-skills.js
 // Version: FINAL REMASTERED
 // Includes: AFB I, II, III, Enhanced Tools (Speaking/Checklist), Operators in Grading
-
-const skillsContent = [
-    /* ============================================================
+/* ============================================================
        AFB I: COMPREHENSION
        ============================================================ */
-    {
+       {
         title: "Summarize / Write a summary",
         cat: "AFB I",
         short: "Concise account of main points (1/3 length).",
         content: `
-            <h3>Summary</h3>
+            <h3>Summarize / Write a Summary</h3>
             <p class="intro-text"><em>A summary is the art of saying much with few words. Your goal is to strip the text down to its bare bones without losing the core message. Think: <strong>Maximum information in minimum words.</strong></em></p>
             
             <h4>The Golden Rule</h4>
@@ -26,12 +24,25 @@ const skillsContent = [
             </table>
             </div>
 
-            <h4>Structure</h4>
-            <p><strong>1. Introduction:</strong><br>
-            <em>Template: "The article '[Title]' by [Author], published in [Source] on [Date], deals with [Topic]."</em></p>
+            <h4>Structure & Useful Phrases</h4>
+            <p><strong>1. Introduction (T.A.T.T.)</strong><br>
+            State the facts clearly. Do not start analyzing yet.</p>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Template</strong></td><td>"The article '<strong>[Title]</strong>' by <strong>[Author]</strong>, published in <strong>[Source]</strong> on <strong>[Date]</strong>, deals with / discusses <strong>[Topic]</strong>."</td></tr>
+            </table>
+            </div>
             
-            <p><strong>2. Main Part:</strong><br>
-            Summarize paragraph by paragraph. Use <strong>connectives</strong> (However, Furthermore, Consequently) to create a smooth flow.</p>
+            <p><strong>2. Main Part (Connectives)</strong><br>
+            Summarize paragraph by paragraph. Avoid the "Then... then... then..." trap. Use these instead:</p>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Beginning</strong></td><td>"The author starts by stating that...", "First of all,..."</td></tr>
+                <tr><td><strong>Adding</strong></td><td>"Furthermore...", "Moreover...", "In addition...", "Another important point is..."</td></tr>
+                <tr><td><strong>Contrasting</strong></td><td>"However...", "In contrast to...", "On the other hand..."</td></tr>
+                <tr><td><strong>Results</strong></td><td>"As a result...", "Consequently...", "Therefore..."</td></tr>
+            </table>
+            </div>
 
             <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
                 <strong>⚠️ Summary NO-GOs (Checklist):</strong><br>
@@ -58,13 +69,23 @@ const skillsContent = [
                 <li><strong>Write:</strong> List the findings in full sentences (Simple Present).</li>
             </ol>
 
-            <h4>Structure</h4>
+            <h4>Structure & Useful Phrases</h4>
             <p><strong>1. Introduction:</strong><br>
-            State the text info and the <strong>specific topic</strong>.<br>
-            <em>Template: "The article '[Title]' by [Author] deals with [General Topic]. In the following, the author's arguments regarding [Specific Task Topic] will be outlined."</em></p>
+            State the text info and the <strong>specific topic</strong> (not just the general topic!).</p>
+            <ul>
+                <li><em>"The article '[Title]' by [Author] deals with [General Topic]. In the following, the author's arguments regarding <strong>[Specific Task Topic]</strong> will be outlined."</em></li>
+            </ul>
 
             <p><strong>2. Main Part:</strong><br>
-            Group the findings logically. Use structure words: <em>"First of all...", "Furthermore...", "Finally..."</em>.</p>
+            List the findings logically. Use structure words to guide the reader:</p>
+            <ul>
+                <li>"The text focuses on..."</li>
+                <li>"The author lists several reasons for..."</li>
+                <li>"First of all, it is stated that..."</li>
+                <li>"Another aspect mentioned is..."</li>
+                <li>"Furthermore, the author points out..."</li>
+                <li>"Finally, regarding [Topic], the text says that..."</li>
+            </ul>
 
             <div class="highlight-box">
                 <strong>Crucial Difference to Summary:</strong><br>
@@ -104,9 +125,15 @@ const skillsContent = [
                 <li><strong>Step 2:</strong> Sort it logically (e.g., chronologically or by importance), not just by line number.</li>
                 <li><strong>Step 3:</strong> Write a cohesive text (use connectives).</li>
             </ul>
+            
+            <h4>Useful Phrases</h4>
+            <ul>
+                <li>"The text provides information on..."</li>
+                <li>"Regarding the aspect of..., the author notes that..."</li>
+                <li>"The situation is described as..."</li>
+            </ul>
         `
     },
-
     /* ============================================================
        AFB II: ANALYSIS
        ============================================================ */
@@ -116,35 +143,33 @@ const skillsContent = [
         short: "Analyze character traits & development.",
         content: `
             <h3>How to write a Characterization</h3>
-            <p class="intro-text"><em>Characters are the heart of every story. Understanding them helps you understand the whole plot. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
+            <p class="intro-text"><em>Characters are the heart of every story. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
 
             <h4>1. Elements of Analysis</h4>
-            <p>To fully understand a character, you must analyze two different layers:</p>
             <ul>
-                <li><strong>Direct Characterization (Explicit):</strong> The narrator tells you <em>exactly</em> what the character is like (e.g., "He was a cruel and rich man").</li>
-                <li><strong>Indirect Characterization (Implicit):</strong> The author only shows you details. You must draw your own conclusions from the character's <strong>appearance, behavior, and language</strong>.</li>
+                <li><strong>Direct (Explicit):</strong> The narrator tells you exactly what the character is like.</li>
+                <li><strong>Indirect (Implicit):</strong> You conclude traits from <strong>appearance, behavior, and language</strong>.</li>
             </ul>
 
             <h4>2. Preparation (The Grid Method)</h4>
-            <p>Before writing, scan the text for both direct and indirect clues and sort them into a grid:</p>
             <div class="table-wrap">
                 <table>
-                    <thead><tr><th>Type</th><th>Evidence (Quote/Line)</th><th>Trait (Conclusion)</th></tr></thead>
+                    <thead><tr><th>Type</th><th>Evidence</th><th>Trait (Conclusion)</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Direct</strong></td><td>"was a lonely boy" (l. 1)</td><td>lonely, isolated</td></tr>
-                        <tr><td><strong>Indirect</strong> (Appearance)</td><td>"wore a dirty shirt" (l. 5)</td><td>neglected, poor</td></tr>
-                        <tr><td><strong>Indirect</strong> (Behavior)</td><td>"screams at teacher" (l. 12)</td><td>aggressive, disrespectful</td></tr>
+                        <tr><td>Direct</td><td>"was a lonely boy"</td><td>lonely</td></tr>
+                        <tr><td>Indirect</td><td>"screams at teacher"</td><td>disrespectful</td></tr>
                     </tbody>
                 </table>
             </div>
 
-            <h4>3. Writing Structure (P.E.E.)</h4>
-            <p>Use this chain for every trait you analyze. Never just list adjectives!</p>
-            <ul>
-                <li><strong>Point (Name it):</strong> "The character appears to be very aggressive..."</li>
-                <li><strong>Evidence (Quote it):</strong> "...which becomes clear when he shouts at the teacher (l. 12)."</li>
-                <li><strong>Explanation (Explain it):</strong> "This behavior highlights his total lack of respect for authority figures."</li>
-            </ul>
+            <h4>3. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Describing Traits</strong></td><td>"The character is portrayed as..."<br>"He/She appears to be..."<br>"This trait becomes evident when..."<br>"His behavior suggests that..."</td></tr>
+                <tr><td><strong>Connecting to Text</strong></td><td>"This is highlighted by the fact that..."<br>"The quote '...' underlines his/her..."</td></tr>
+                <tr><td><strong>Development</strong></td><td>"In the course of the story, the character changes from... to..."<br>"There is a sharp contrast between..."</td></tr>
+            </table>
+            </div>
         `
     },
     {
@@ -153,142 +178,120 @@ const skillsContent = [
         short: "Identify narrator type & analyze effect.",
         content: `
             <h3>Analyzing Narrative Perspective</h3>
-            <p class="intro-text"><em>The narrator is the "camera" through which we see the story. By choosing a specific perspective, the author controls what we know and how we feel. Your job is to find out <strong>how</strong> this influence works.</em></p>
+            <p class="intro-text"><em>The narrator is the "camera". By choosing a perspective, the author controls what we know and how we feel.</em></p>
             
             <div class="table-wrap">
             <table>
-                <thead><tr><th>Type</th><th>Signal Words</th><th>Effect / Function</th></tr></thead>
+                <thead><tr><th>Type</th><th>Effect / Function</th></tr></thead>
                 <tbody>
-                    <tr>
-                        <td><strong>First-Person</strong><br>(I-Narrator)</td>
-                        <td>"I", "me", "my"</td>
-                        <td><strong>Subjective.</strong> Creates intimacy and identification. We see the world through <em>their</em> eyes.  Can be an <em>unreliable narrator</em>.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Omniscient</strong><br>(All-knowing)</td>
-                        <td>"He/She" + knows ALL</td>
-                        <td><strong>Objective / Trustworthy.</strong> Has an "Olympian view". Can jump between places/times and judge events from above.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Limited</strong><br>(Personal)</td>
-                        <td>"He/She" + knows ONE</td>
-                        <td><strong>Identification / Suspense.</strong> The reader feels close to this "reflector figure" but has limited knowledge (doesn't know what others think).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Objective</strong><br>(Neutral)</td>
-                        <td>Only actions/dialogue</td>
-                        <td><strong>Distance.</strong> No insight into feelings. The reader must judge the characters solely by their actions.</td>
-                    </tr>
+                    <tr><td><strong>First-Person</strong> ("I")</td><td>Subjective; creates intimacy; reader identifies with narrator.</td></tr>
+                    <tr><td><strong>Third-Person Omniscient</strong></td><td>Reliable; "God-like" view; knows thoughts of everyone; objective distance.</td></tr>
+                    <tr><td><strong>Third-Person Limited</strong></td><td>Creates suspense; reader feels close to the "reflector figure" but has limited knowledge.</td></tr>
                 </tbody>
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-top: 20px;">
-                <strong>⚠️ Crucial Rule:</strong><br>
-                Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
-            </div>
-
-            <h4>3. Writing the Analysis (The Formula)</h4>
-            <p>Don't just name the perspective. Explain what it <em>does</em> to the reader.</p>
-            <p class="highlight-box">
-                <strong>1. Identify:</strong> "The story is told by a third-person limited narrator..."<br>
-                <strong>2. Connect:</strong> "...who focuses on the protagonist's thoughts (l. 15)."<br>
-                <strong>3. Effect:</strong> "This creates suspense, as the reader shares the character's fear but does not know what the antagonist is planning."
-            </p>
+            <h4>Useful Phrases for the Effect</h4>
+            <p><strong>Use these to score points! Don't just name the type.</strong></p>
+            <ul>
+                <li>"This perspective <strong>allows the reader to identify with</strong> the protagonist."</li>
+                <li>"It <strong>restricts the reader's knowledge</strong>, creating suspense."</li>
+                <li>"The narrator <strong>creates a distance</strong> between the reader and the events."</li>
+                <li>"The reader <strong>shares the character's feelings</strong> and inner thoughts."</li>
+                <li>"Since we only see the action through X's eyes, the narration is <strong>subjective</strong> / biased."</li>
+            </ul>
+            
         `
     },
     {
         title: "Cartoon Analysis",
         cat: "AFB II",
-        short: "Analyze visuals (Description &rarr; Symbols &rarr; Message).",
+        short: "Analyze visuals (Word Box & Steps).",
         content: `
             <h3>Cartoon Analysis</h3>
-            <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It does not just show a picture; it tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
+            <p class="intro-text"><em>A cartoon is a satirical comment. Decode the story: Introduction &rarr; Description &rarr; Analysis &rarr; Evaluation.</em></p>
 
             <h4>1. Introduction</h4>
-            <p>State the basic facts (title (if there is one), author, date, source) and the general topic.<br>
-            <em>"The cartoon by [Artist], published in [Source] on [Date], deals with [Topic]."</em></p>
+            <p>"The cartoon drawn by [Artist] was published in [Source] in the year... It deals with the topic of..."</p>
 
-            <h4>2. Description (The "Camera View")</h4>
-            <p>Describe <strong>objectively</strong> what you see. Do not interpret yet!</p>
-            <ul>
-                <li><strong>Locate elements:</strong> "In the foreground/background...", "In the centre...", "On the left/right..."</li>
-                <li><strong>Describe action:</strong> Use <strong>Present Progressive</strong>! ("The politician <strong>is holding</strong> a bag of money.").</li>
-                <li><strong>Mention details:</strong> Facial expressions, gestures, clothing, setting.</li>
-            </ul>
-
-            <h4>3. Analysis (The Decoding)</h4>
-            <p>Explain the meaning of the elements you described. Use the formula:</p>
-            <div class="highlight-box">
-                <strong>Element (Description) &rarr; Meaning (Interpretation)</strong><br>
-                <em>"The giant bag of money <strong>symbolizes/stands for</strong> the greed of the corporation."</em>
+            <h4>2. Description (The "Word Box")</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Overview</strong></td><td>"The cartoon shows..."<br>"In the cartoon you can see (that)..."</td></tr>
+                <tr><td><strong>Location</strong></td><td>"In the centre...", "In the foreground/background...", "On the right/left-hand side...", "At the top/bottom..."</td></tr>
+                <tr><td><strong>Text</strong></td><td>"There is a caption below the cartoon which says '...'"<br>"The text in the speech bubble is spoken by..."</td></tr>
+            </table>
             </div>
-            <p><strong>Look for these specific devices:</strong></p>
+
+            <h4>3. Analysis (Decoding Symbols)</h4>
             <ul>
-                <li><strong>Caricature:</strong> Are specific features exaggerated (e.g., long nose = Pinocchio/Liar)?</li>
-                <li><strong>Symbolism:</strong> Dove = Peace, Chains = Oppression, Donkey = Democrats (USA), Elephant = Republicans (USA).</li>
-                <li><strong>Labelling:</strong> Words written on objects to identify them.</li>
-                <li><strong>Irony:</strong> Is the text (Caption/Speech bubble) the opposite of the picture?</li>
+                <li>"The figure is a <strong>caricature</strong> of..." (exaggerated traits).</li>
+                <li>"The person's body language / facial expression shows that..."</li>
+                <li>"The element X <strong>symbolises / stands for</strong>..."</li>
+                <li>"The cartoonist's <strong>message</strong> might be that..."</li>
+                <li>"He is making a humorous/ironic comment on..."</li>
+                <li>"He is making fun of..."</li>
             </ul>
 
-            <h4>4. The Message</h4>
-            <p>Summarize the cartoonist's intention in one sentence.</p>
+            <h4>4. Evaluation</h4>
             <ul>
-                <li>"The cartoonist wants to criticize..."</li>
-                <li>"The cartoon wants to show that..."</li>
-                <li>"The artist makes fun of..."</li>
+                <li>"I think the cartoon is effective because..."</li>
+                <li>"In my opinion, the cartoon is easy to understand because..."</li>
+                <li>"I agree with the point the cartoonist is making because..."</li>
             </ul>
         `
     },
     {
         title: "Style, Tone & Register",
         cat: "AFB II",
-        short: "Analyze language (Style = Diction + Syntax + Tone).",
+        short: "Analyze language (Devices & Functions).",
         content: `
             <h3>Language Analysis</h3>
-            <p class="intro-text"><em>Authors never choose words by accident. Language analysis is not just listing metaphors; it is about uncovering the <strong>Style</strong> (How is it written?), the <strong>Tone</strong> (What is the vibe?), and the <strong>Register</strong> (Who is it for?).</em></p>
+            <p class="intro-text"><em>Language analysis means uncovering the <strong>Style</strong> (How?), the <strong>Tone</strong> (Vibe?), and the <strong>Register</strong> (Who for?).</em></p>
 
-            <h4>1. Style (The "How")</h4>
-            <p>Style is the umbrella term for the specific way an author uses language. It consists of three main pillars:</p>
+            <h4>1. The Three Pillars</h4>
             <ul>
-                <li><strong>Diction (Word Choice):</strong>
-                    <br>&rarr; <em>Positively/Negatively connoted words:</em> Do words evoke fear ("crisis", "disaster") or hope ("opportunity", "bright future")?
-                    <br>&rarr; <em>Keywords:</em> Are there repetitive key terms emphasizing a message?
-                </li>
-                <li><strong>Syntax (Sentence Structure):</strong>
-                    <br>&rarr; <em>Parataxis (Short sentences):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
-                    <br>&rarr; <em>Hypotaxis (Complex sentences):</em> Used for detailed explanations, complex arguments, or to show high education.
-                </li>
-                <li><strong>Rhetorical Devices:</strong>
-                    <br>Metaphors, similes, anaphora, etc. belong here. They are the "spices" of the style.
-                </li>
+                <li><strong>Diction:</strong> Positive/negative words? Keywords?</li>
+                <li><strong>Syntax:</strong> Short sentences (speed/drama) or complex sentences (details)?</li>
+                <li><strong>Rhetorical Devices:</strong> Metaphors, anaphora, etc.</li>
             </ul>
 
-            <h4>2. Tone (The Atmosphere)</h4>
-            <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the audience. It can change throughout the text!</p>
-            <div class="highlight-box">
-                <strong>Useful Adjectives:</strong><br>
-                optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, emotional, objective, solemn, cynical.
+            <h4>2. Useful Phrases (Device + Function)</h4>
+            <p>Always connect the device to its effect!</p>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Identifying</strong></td>
+                    <td><strong>Explaining Effect</strong></td>
+                </tr>
+                <tr>
+                    <td>"The <strong>metaphor</strong> '...' ..."</td>
+                    <td>"...<strong>emphasizes</strong> the danger of the situation."</td>
+                </tr>
+                <tr>
+                    <td>"The use of <strong>repetition</strong>..."</td>
+                    <td>"...<strong>highlights</strong> the importance of this message."</td>
+                </tr>
+                <tr>
+                    <td>"The author uses <strong>emotive adjectives</strong>..."</td>
+                    <td>"...to appeal to the reader's emotions."</td>
+                </tr>
+                <tr>
+                    <td>"This choice of words..."</td>
+                    <td>"...<strong>creates an atmosphere of</strong> fear/hope/urgency."</td>
+                </tr>
+            </table>
             </div>
-
-            <h4>3. Register (The Formality)</h4>
-            <p>Register describes the level of formality. It tells you about the relationship between author and reader.</p>
-            <ul>
-                <li><strong>Formal (High Register):</strong> Passive voice, complex syntax, advanced vocabulary.
-                    <br>&rarr; <em>Effect:</em> Professional, objective, distant, authoritative. (e.g., Scientific Articles, Serious Newspapers).</li>
-                <li><strong>Neutral (Standard Register):</strong> Clear, correct standard English, accessible to everyone.
-                    <br>&rarr; <em>Effect:</em> Informative, factual. (e.g., News Reports).</li>
-                <li><strong>Informal (Low Register):</strong> Slang, short forms ("can't"), colloquialisms, direct address ("you").
-                    <br>&rarr; <em>Effect:</em> Authentic, emotional, creates closeness/intimacy. (e.g., Blogs, Comments, speeches to young people).</li>
-            </ul>
         `
     },
-   
 
     /* ============================================================
        AFB III: WRITING / TEXT PRODUCTION
        ============================================================ */
-    {
+ /* ============================================================
+       AFB III: WRITING / TEXT PRODUCTION
+       ============================================================ */
+       {
         title: "Comment",
         cat: "AFB III",
         short: "Express your opinion (One-sided argument).",
@@ -296,7 +299,7 @@ const skillsContent = [
             <h3>Writing a Comment</h3>
             <p class="intro-text"><em>In a comment, you don't need to be neutral. Your goal is to convince the reader of <strong>your</strong> opinion on a controversial topic.</em></p>
 
-            <h4>Structure</h4>
+            <h4>1. Structure</h4>
             <ol>
                 <li><strong>Introduction:</strong>
                     <ul>
@@ -309,7 +312,7 @@ const skillsContent = [
                     <ul>
                         <li>Write one paragraph per argument.</li>
                         <li><strong>Pattern:</strong> Statement &rarr; Explanation &rarr; Example.</li>
-                        <li><strong>Pro-Tip (The Rebuttal):</strong> Mention a counter-argument ("Some people claim...") and destroy it immediately ("...however, this is wrong because..."). This makes you sound very convincing.</li>
+                        <li><strong>Pro-Tip (The Rebuttal):</strong> Mention a counter-argument and destroy it immediately to sound convincing.</li>
                     </ul>
                 </li>
                 <li><strong>Conclusion:</strong>
@@ -319,6 +322,15 @@ const skillsContent = [
                     </ul>
                 </li>
             </ol>
+
+            <h4>2. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Phrases for Opinion</strong></td><td>"In my opinion...", "I am convinced that...", "To my mind...", "I firmly believe that..."</td></tr>
+                <tr><td><strong>Phrases for Rebuttal</strong></td><td>"Some people claim that... However, this is not true because..."<br>"Opponents might argue that..., but..."<br>"A crucial counter-argument is..."</td></tr>
+                <tr><td><strong>Conclusion</strong></td><td>"All in all...", "Taking everything into account...", "Consequently, we should..."</td></tr>
+            </table>
+            </div>
         `
     },
     {
@@ -329,19 +341,28 @@ const skillsContent = [
             <h3>Writing a Discussion</h3>
             <p class="intro-text"><em>Unlike a comment, a discussion requires you to take a step back and look at <strong>both sides</strong> (Pro & Con) objectively before reaching a verdict.</em></p>
 
-            <h4>The Sandwich Method</h4>
+            <h4>1. The Sandwich Method</h4>
             <p>This structure ensures your opinion stays in the reader's mind at the end.</p>
             <ol>
                 <li><strong>Introduction:</strong> Present the controversial issue without taking sides yet.</li>
                 <li><strong>Counter-Arguments (The side you disagree with):</strong>
                     <br>Start with their strongest argument and end with the weakest.
                 </li>
-                <li><strong>Turning Point:</strong> Use a connective like <em>"However...", "On the other hand...", "Looking at the facts..."</em></li>
+                <li><strong>Turning Point:</strong> Use a connective like <em>"However...", "On the other hand..."</em></li>
                 <li><strong>Your Arguments (The side you support):</strong>
                     <br>Start with your weakest argument and build up to your <strong>strongest argument</strong> (Save the best for last!).
                 </li>
                 <li><strong>Conclusion:</strong> Weigh the arguments and give a well-founded verdict.</li>
             </ol>
+
+            <h4>2. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Weighing Pros & Cons</strong></td><td>"On the one hand... on the other hand..."<br>"In contrast to...", "Whereas...", "While..."<br>"Looking at the pros and cons..."</td></tr>
+                <tr><td><strong>Adding Arguments</strong></td><td>"Furthermore...", "In addition...", "Moreover...", "Another aspect is..."</td></tr>
+                <tr><td><strong>Concluding</strong></td><td>"Weighing the arguments, I come to the conclusion that..."<br>"Looking at the facts, it becomes clear that..."</td></tr>
+            </table>
+            </div>
         `
     },
     {
@@ -352,7 +373,7 @@ const skillsContent = [
             <h3>Writing a Newspaper Article</h3>
             <p class="intro-text"><em>A newspaper article must grab the reader's attention immediately. Use the <strong>Inverted Pyramid</strong> principle: The most important info comes first.</em></p>
 
-            <h4>Layout Elements (Don't forget these!)</h4>
+            <h4>1. Layout Elements (Don't forget these!)</h4>
             <ul>
                 <li><strong>Headline:</strong> Catchy, short, often no verbs (e.g., "Climate Crisis Escalates").</li>
                 <li><strong>Subheading:</strong> A one-sentence summary of the topic.</li>
@@ -360,13 +381,22 @@ const skillsContent = [
                 <li><strong>Cross-headings:</strong> Small sub-headlines inside the text to structure long paragraphs.</li>
             </ul>
 
-            <h4>Structure</h4>
+            <h4>2. Structure</h4>
             <ol>
                 <li><strong>Lead Paragraph:</strong> Answer the <strong>W-Questions</strong> (Who, What, Where, When). The reader must understand the event after reading just this paragraph.</li>
                 <li><strong>Body:</strong> Explain the <strong>Why</strong> and <strong>How</strong>. Provide background info and details.
                     <br><em>Tip:</em> Use quotes from (invented) experts or eyewitnesses to make it look authentic.</li>
                 <li><strong>Conclusion:</strong> Consequences and outlook ("What happens next?").</li>
             </ol>
+
+            <h4>3. Useful Phrases (Fake Objectivity)</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Sources & Experts</strong></td><td>"According to experts...", "Recent statistics show that...", "Sources claim that..."</td></tr>
+                <tr><td><strong>Eyewitnesses</strong></td><td>"Eyewitnesses report that...", "One resident stated: '...'", "Local authorities confirmed..."</td></tr>
+                <tr><td><strong>Neutrality</strong></td><td>"It is often claimed that...", "Critics point out that...", "It remains to be seen how..."</td></tr>
+            </table>
+            </div>
         `
     },
     {
@@ -453,14 +483,14 @@ const skillsContent = [
             <h3>Writing a Blog Entry</h3>
             <p class="intro-text"><em>Blogs are personal and interactive. You are not just writing a text; you are starting a conversation with your readers.</em></p>
 
-            <h4>Key Characteristics</h4>
+            <h4>1. Key Characteristics</h4>
             <ul>
                 <li><strong>Tone:</strong> Personal ("I"-perspective). Can be informal ("Hey guys") or semi-formal, depending on the task.</li>
                 <li><strong>Catchy Title:</strong> Make them want to click.</li>
                 <li><strong>Interaction:</strong> Address the reader directly ("What do you think?", "Have you ever...?").</li>
             </ul>
 
-            <h4>Structure</h4>
+            <h4>2. Structure</h4>
             <ol>
                 <li><strong>Intro:</strong> Greeting & Hook (anecdote/question).</li>
                 <li><strong>Body:</strong> Your thoughts, experiences, or arguments. Use paragraphs!</li>
@@ -469,6 +499,15 @@ const skillsContent = [
                     <br><strong>Call to Action:</strong> "Leave a comment below!", "Share your story!"
                 </li>
             </ol>
+
+            <h4>3. Useful Phrases (Interactive)</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Opening & Hook</strong></td><td>"Hi guys!", "Welcome back to my blog.", "Have you ever experienced...?", "Have you ever wondered...?"</td></tr>
+                <tr><td><strong>Body (Personal)</strong></td><td>"I was shocked when I found out...", "To be honest...", "Believe it or not...", "I recently realized that..."</td></tr>
+                <tr><td><strong>Closing (CTA)</strong></td><td>"What do you think?", "Let me know in the comments below!", "Drop a comment!", "Share your story!"</td></tr>
+            </table>
+            </div>
         `
     },
     {
@@ -548,7 +587,6 @@ const skillsContent = [
             </div>
         `
     },
-
     /* ============================================================
        TOOLS & METHODS
        ============================================================ */
