@@ -1,5 +1,5 @@
 // data-grading.js
-// Version: FINAL COMPLETE (Schreiben, Mediation + Notenberechnung)
+// Version: FINAL FIXED (Row Headers are TH, Content is TD)
 
 const gradingContent = [
   // 1. SCHREIBEN (SPRACHE)
@@ -31,8 +31,8 @@ const gradingContent = [
             </thead>
             <tbody>
               <tr>
-                <td rowspan="3">Kommunikative Textgestaltung</td>
-                <td>Textaufbau</td>
+                <th rowspan="3">Kommunikative Textgestaltung</th>
+                <th>Textaufbau</th>
                 <td>durchgängig zielgerichteter, strukturierter, kohärenter Text; geschickter Gebrauch von Verknüpfungsmitteln</td>
                 <td>zielgerichteter, strukturierter, kohärenter Text; angemessener Gebrauch von Verknüpfungsmitteln</td>
                 <td>noch zielgerichteter, nicht durchgängig strukturierter Text; weitgehend angemessener Gebrauch von Verknüpfungsmitteln</td>
@@ -41,7 +41,7 @@ const gradingContent = [
                 <td>völlig unstrukturierter und inkohärenter Text; Gebrauch von Verknüpfungsmitteln nicht vorhanden</td>
               </tr>
               <tr>
-                <td>Textsortenspezifik</td>
+                <th>Textsortenspezifik</th>
                 <td>besonders überzeugende und treffende Umsetzung der Textsortenmerkmale</td>
                 <td>überzeugende und treffende Umsetzung der Textsortenmerkmale</td>
                 <td>teilweise gelungene Umsetzung der Textsortenmerkmale</td>
@@ -50,7 +50,7 @@ const gradingContent = [
                 <td>Textsortenmerkmale nicht erkennbar</td>
               </tr>
               <tr>
-                <td>Adressatenbezug</td>
+                <th>Adressatenbezug</th>
                 <td>durchgängig situationsangemessen und äußerst treffend</td>
                 <td>situationsangemessen und treffend</td>
                 <td>Situationsangemessenheit teilweise gegeben</td>
@@ -59,8 +59,8 @@ const gradingContent = [
                 <td>keine Situationsangemessenheit</td>
               </tr>
               <tr>
-                <td rowspan="3">Ausdrucksvermögen / Sprachrichtigkeit</td>
-                <td>Wortschatz</td>
+                <th rowspan="3">Ausdrucksvermögen / Sprachrichtigkeit</th>
+                <th>Wortschatz</th>
                 <td>besonders präzise, differenzierte und idiomatische Wortwahl; sehr abwechslungsreich</td>
                 <td>präzise, differenzierte und idiomatische Wortwahl; abwechslungsreich</td>
                 <td>treffende, verständliche Wortwahl; allgemeiner Wortschatz; teils Wiederholungen</td>
@@ -69,7 +69,7 @@ const gradingContent = [
                 <td>Wortwahl unpassend; Verständnis massiv gestört</td>
               </tr>
               <tr>
-                <td>Satzbau</td>
+                <th>Satzbau</th>
                 <td>durchgängig variabler und funktionaler Satzbau; komplexe Strukturen (Hypotaxe)</td>
                 <td>variabler und funktionaler Satzbau; komplexe Strukturen</td>
                 <td>teilweise variabler und funktionaler Satzbau; einfachere Strukturen überwiegen</td>
@@ -78,7 +78,7 @@ const gradingContent = [
                 <td>unverständlicher Satzbau</td>
               </tr>
               <tr>
-                <td>Korrektheit</td>
+                <th>Korrektheit</th>
                 <td>hohes Maß an Korrektheit in Grammatik und Orthografie; nur vereinzelte Fehler</td>
                 <td>gutes Maß an Korrektheit; Fehler beeinträchtigen Lesefluss nicht</td>
                 <td>im Wesentlichen korrekt; Fehler beeinträchtigen das Verständnis kaum</td>
@@ -124,7 +124,7 @@ const gradingContent = [
             </thead>
             <tbody>
               <tr>
-                <td>Aufgabenerfüllung</td>
+                <th>Aufgabenerfüllung</th>
                 <td>Aufgabe vollständig, differenziert und operatorgerecht bearbeitet. Keine Redundanz.</td>
                 <td>Aufgabe vollständig und operatorgerecht bearbeitet.</td>
                 <td>Aufgabe weitgehend vollständig und im Wesentlichen operatorgerecht.</td>
@@ -133,7 +133,7 @@ const gradingContent = [
                 <td>Aufgabe nicht erfüllt.</td>
               </tr>
               <tr>
-                <td>Verständlichkeit & Struktur</td>
+                <th>Verständlichkeit & Struktur</th>
                 <td>Durchgehend sachgerecht, logisch und sehr klar strukturiert.</td>
                 <td>Sachgerecht, logisch und klar strukturiert.</td>
                 <td>Weitgehend sachgerecht und strukturiert.</td>
@@ -142,7 +142,7 @@ const gradingContent = [
                 <td>Unstrukturiert und unlogisch.</td>
               </tr>
               <tr>
-                <td>Analyse (AFB II)</td>
+                <th>Analyse (AFB II)</th>
                 <td>detailliertes und umfassendes Deuten der sprachlichen Form und ihrer Wirkung; Belege (Zitate) korrekt und funktional</td>
                 <td>umfassendes Deuten der sprachlichen Form und ihrer Wirkung; Belege vorhanden</td>
                 <td>Deuten der sprachlichen Form und ihrer Wirkung im Wesentlichen gelungen; Belege meist vorhanden</td>
@@ -151,7 +151,7 @@ const gradingContent = [
                 <td>keine Analyseleistung</td>
               </tr>
               <tr>
-                <td>Argumentation (AFB III)</td>
+                <th>Argumentation (AFB III)</th>
                 <td>differenziert, widerspruchsfrei, überzeugend begründet; vielschichtig und gedanklich stringent</td>
                 <td>widerspruchsfrei, überzeugend begründet; gedanklich stringent</td>
                 <td>weitgehend widerspruchsfrei, begründet; im Wesentlichen nachvollziehbar</td>
@@ -160,7 +160,7 @@ const gradingContent = [
                 <td>fehlende Argumentation; keine Schlussfolgerungen / eigene Meinung</td>
               </tr>
               <tr>
-                <td>Kreatives Schreiben</td>
+                <th>Kreatives Schreiben</th>
                 <td>eigenständige, sehr kreative und in jeder Hinsicht schlüssige Verarbeitung</td>
                 <td>weitgehend eigenständige, kreative und nachvollziehbare Verarbeitung</td>
                 <td>im Wesentlichen eigenständige, zum Teil kreative und meist nachvollziehbare Verarbeitung</td>
@@ -169,7 +169,7 @@ const gradingContent = [
                 <td>keine eigenständige, keine kreative und eine nicht nachvollziehbare Verarbeitung</td>
               </tr>
               <tr>
-                <td>Reflexion</td>
+                <th>Reflexion</th>
                 <td>umfassende Reflexion und sehr überzeugende Begründung</td>
                 <td>schlüssige Reflexion und überzeugende Begründung</td>
                 <td>im Wesentlichen noch schlüssige Reflexion und in Teilen überzeugende Begründung</td>
@@ -214,7 +214,7 @@ const gradingContent = [
             </thead>
             <tbody>
               <tr>
-                <td>Informationsverarbeitung</td>
+                <th>Informationsverarbeitung</th>
                 <td>alle im Sinne der Aufgabenstellung relevanten Informationen vollständig erfasst und präzise wiedergegeben</td>
                 <td>alle im Sinne der Aufgabenstellung relevanten Informationen nahezu vollständig erfasst und treffend wiedergegeben</td>
                 <td>die im Sinne der Aufgabenstellung relevanten Informationen mehrheitlich erfasst und überwiegend treffend wiedergegeben</td>
@@ -223,7 +223,7 @@ const gradingContent = [
                 <td>die im Sinne der Aufgabenstellung relevanten Aussagen nicht erfasst bzw. falsch und überwiegend unverständlich wiedergegeben</td>
               </tr>
               <tr>
-                <td>Adressatenbezug / Situationsangemessenheit</td>
+                <th>Adressatenbezug / Situationsangemessenheit</th>
                 <td>Adressatenbezug äußerst treffend und durchgängig situationsangemessen</td>
                 <td>Adressatenbezug treffend und überwiegend situationsangemessen</td>
                 <td>Adressatenbezug und Situationsangemessenheit im Wesentlichen berücksichtigt</td>
@@ -232,7 +232,7 @@ const gradingContent = [
                 <td>kein Adressatenbezug und nicht situationsangemessen</td>
               </tr>
               <tr>
-                <td>Textsortenmerkmale</td>
+                <th>Textsortenmerkmale</th>
                 <td>besonders überzeugende Umsetzung der Textsortenmerkmale</td>
                 <td>überwiegend überzeugende Umsetzung der Textsortenmerkmale</td>
                 <td>teilweise gelungene Umsetzung der Textsortenmerkmale</td>
@@ -241,7 +241,7 @@ const gradingContent = [
                 <td>keine Textsortenmerkmale</td>
               </tr>
               <tr>
-                <td>kulturspezifische Erläuterungen</td>
+                <th>kulturspezifische Erläuterungen</th>
                 <td>relevante kulturspezifische Erläuterungen präzise formuliert, überaus zielführend</td>
                 <td>relevante kulturspezifische Erläuterungen nachvollziehbar formuliert, zielführend</td>
                 <td>relevante kulturspezifische Erläuterungen im Wesentlichen nachvollziehbar formuliert, teils zielführend</td>
@@ -250,7 +250,7 @@ const gradingContent = [
                 <td>keine bzw. irrelevante kulturspezifischen Erläuterungen</td>
               </tr>
               <tr>
-                <td>Textorganisation und Lesbarkeit</td>
+                <th>Textorganisation und Lesbarkeit</th>
                 <td>klare und logische Darstellung/ Gliederung; hervorragend lesbar</td>
                 <td>weitgehend logische und zusammenhängende Darstellung / Gliederung; problemlos lesbar</td>
                 <td>meist logische und zusammenhängende Darstellung / Gliederung; zumeist problemlos lesbar</td>
@@ -259,7 +259,7 @@ const gradingContent = [
                 <td>zusammenhangslose Darstellung; Lesbarkeit sehr stark beeinträchtigt</td>
               </tr>
               <tr>
-                <td>Korrektheit der Zielsprache</td>
+                <th>Korrektheit der Zielsprache</th>
                 <td>nahezu durchgängig korrekte, variable sprachliche Strukturen und Konnektoren, differenzierte, präzise und idiomatische Wortwahl</td>
                 <td>weitgehend korrekte und abwechslungsreiche sprachliche Strukturen und Konnektoren, zumeist treffende Wortwahl</td>
                 <td>größtenteils korrekte sprachliche Strukturen und Konnektoren, einfache und verständliche Wortwahl</td>
@@ -268,7 +268,7 @@ const gradingContent = [
                 <td>unverständliche, schwerwiegend fehlerhafte Zielsprache</td>
               </tr>
               <tr>
-                <td>Strategien / Umgang mit der Textvorlage</td>
+                <th>Strategien / Umgang mit der Textvorlage</th>
                 <td>überaus eigenständiger idiomatischer Text, besonders geschickte Nutzung von Kompensationsstrategien (Paraphrasen, Hyperonyme etc.)</td>
                 <td>weitgehend eigenständig produzierter und idiomatischer Text, überwiegend geschickte Nutzung von Kompensationsstrategien</td>
                 <td>zumeist eigenständig produzierter Text, im Wesentlichen gelungene Nutzung von Kompensationsstrategien</td>
