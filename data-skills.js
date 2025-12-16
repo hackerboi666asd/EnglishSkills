@@ -110,7 +110,7 @@ const skillsContent = [
     /* ============================================================
        AFB II: ANALYSIS
        ============================================================ */
-    {
+       {
         title: "Characterization",
         cat: "AFB II",
         short: "Analyze character traits & development.",
@@ -118,31 +118,32 @@ const skillsContent = [
             <h3>How to write a Characterization</h3>
             <p class="intro-text"><em>Characters are the heart of every story. Understanding them helps you understand the whole plot. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
 
-            <h4>1. Distinction: Direct vs. Indirect</h4>
+            <h4>1. Elements of Analysis</h4>
+            <p>To fully understand a character, you must analyze two different layers:</p>
             <ul>
-                <li><strong>Direct (Explicit):</strong> The narrator tells you exactly what the character is like ("He was a cruel man").</li>
-                <li><strong>Indirect (Implicit):</strong> You must draw conclusions from the character's <strong>appearance, behavior, and language</strong>.</li>
+                <li><strong>Direct Characterization (Explicit):</strong> The narrator tells you <em>exactly</em> what the character is like (e.g., "He was a cruel and rich man").</li>
+                <li><strong>Indirect Characterization (Implicit):</strong> The author only shows you details. You must draw your own conclusions from the character's <strong>appearance, behavior, and language</strong>.</li>
             </ul>
 
             <h4>2. Preparation (The Grid Method)</h4>
-            <p>Before writing, sort your findings in a grid:</p>
+            <p>Before writing, scan the text for both direct and indirect clues and sort them into a grid:</p>
             <div class="table-wrap">
                 <table>
-                    <thead><tr><th>Category</th><th>Evidence (Quote/Line)</th><th>Trait (Adjective)</th></tr></thead>
+                    <thead><tr><th>Type</th><th>Evidence (Quote/Line)</th><th>Trait (Conclusion)</th></tr></thead>
                     <tbody>
-                        <tr><td><strong>Appearance</strong></td><td>"wore a dirty shirt" (l. 5)</td><td>neglected, poor</td></tr>
-                        <tr><td><strong>Behavior</strong></td><td>"screams at teacher" (l. 12)</td><td>aggressive, disrespectful</td></tr>
-                        <tr><td><strong>Language</strong></td><td>"uses slang, swears"</td><td>uneducated, rude</td></tr>
+                        <tr><td><strong>Direct</strong></td><td>"was a lonely boy" (l. 1)</td><td>lonely, isolated</td></tr>
+                        <tr><td><strong>Indirect</strong> (Appearance)</td><td>"wore a dirty shirt" (l. 5)</td><td>neglected, poor</td></tr>
+                        <tr><td><strong>Indirect</strong> (Behavior)</td><td>"screams at teacher" (l. 12)</td><td>aggressive, disrespectful</td></tr>
                     </tbody>
                 </table>
             </div>
 
-            <h4>3. Writing Structure (P.E.E. / Name-Quote-Explain)</h4>
+            <h4>3. Writing Structure (P.E.E.)</h4>
             <p>Use this chain for every trait you analyze. Never just list adjectives!</p>
             <ul>
-                <li><strong>Point (Name it):</strong> "The character is very aggressive..."</li>
+                <li><strong>Point (Name it):</strong> "The character appears to be very aggressive..."</li>
                 <li><strong>Evidence (Quote it):</strong> "...which becomes clear when he shouts at the teacher (l. 12)."</li>
-                <li><strong>Explanation (Explain it):</strong> "This behavior shows his total lack of respect for authority."</li>
+                <li><strong>Explanation (Explain it):</strong> "This behavior highlights his total lack of respect for authority figures."</li>
             </ul>
         `
     },
@@ -154,11 +155,6 @@ const skillsContent = [
             <h3>Analyzing Narrative Perspective</h3>
             <p class="intro-text"><em>The narrator is the "camera" through which we see the story. By choosing a specific perspective, the author controls what we know and how we feel. Your job is to find out <strong>how</strong> this influence works.</em></p>
             
-            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e;">
-                <strong>⚠️ Crucial Rule:</strong><br>
-                Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
-            </div>
-
             <div class="table-wrap">
             <table>
                 <thead><tr><th>Type</th><th>Signal Words</th><th>Effect / Function</th></tr></thead>
@@ -166,7 +162,7 @@ const skillsContent = [
                     <tr>
                         <td><strong>First-Person</strong><br>(I-Narrator)</td>
                         <td>"I", "me", "my"</td>
-                        <td><strong>Subjective.</strong> Creates intimacy and identification. We see the world through <em>their</em> eyes. Can be an <em>unreliable narrator</em>.</td>
+                        <td><strong>Subjective.</strong> Creates intimacy and identification. We see the world through <em>their</em> eyes.  Can be an <em>unreliable narrator</em>.</td>
                     </tr>
                     <tr>
                         <td><strong>Third-Person Omniscient</strong><br>(All-knowing)</td>
@@ -186,6 +182,19 @@ const skillsContent = [
                 </tbody>
             </table>
             </div>
+
+            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-top: 20px;">
+                <strong>⚠️ Crucial Rule:</strong><br>
+                Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
+            </div>
+
+            <h4>3. Writing the Analysis (The Formula)</h4>
+            <p>Don't just name the perspective. Explain what it <em>does</em> to the reader.</p>
+            <p class="highlight-box">
+                <strong>1. Identify:</strong> "The story is told by a third-person limited narrator..."<br>
+                <strong>2. Connect:</strong> "...who focuses on the protagonist's thoughts (l. 15)."<br>
+                <strong>3. Effect:</strong> "This creates suspense, as the reader shares the character's fear but does not know what the antagonist is planning."
+            </p>
         `
     },
     {
@@ -197,7 +206,7 @@ const skillsContent = [
             <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It does not just show a picture; it tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
 
             <h4>1. Introduction</h4>
-            <p>State the basic facts (T.A.T.T.) and the general topic.<br>
+            <p>State the basic facts (title (if there is one), author, date, source) and the general topic.<br>
             <em>"The cartoon by [Artist], published in [Source] on [Date], deals with [Topic]."</em></p>
 
             <h4>2. Description (The "Camera View")</h4>
@@ -234,65 +243,47 @@ const skillsContent = [
     {
         title: "Style, Tone & Register",
         cat: "AFB II",
-        short: "Analyze language (Tone, Register, Syntax).",
+        short: "Analyze language (Style = Diction + Syntax + Tone).",
         content: `
             <h3>Language Analysis</h3>
-            <p class="intro-text"><em>Authors never choose words by accident. Every metaphor, every short sentence, and every specific word is a tool used to manipulate the reader's emotions or emphasize a message. Language analysis means uncovering these hidden tools.</em></p>
+            <p class="intro-text"><em>Authors never choose words by accident. Language analysis is not just listing metaphors; it is about uncovering the <strong>Style</strong> (How is it written?), the <strong>Tone</strong> (What is the vibe?), and the <strong>Register</strong> (Who is it for?).</em></p>
 
-            <h4>1. Tone (The Atmosphere)</h4>
-            <p><em>Question: What is the author's attitude towards the topic?</em><br>
-            <strong>Adjectives:</strong> optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, solemn.</p>
-
-            <h4>2. Register (The Formality)</h4>
-            <p><em>Question: Who is the text written for?</em></p>
+            <h4>1. Style (The "How")</h4>
+            <p>Style is the umbrella term for the specific way an author uses language. It consists of three main pillars:</p>
             <ul>
-                <li><strong>Formal:</strong> Passive voice, complex sentences, advanced vocab. &rarr; <em>Effect: Professional, objective, distant.</em></li>
-                <li><strong>Informal:</strong> Slang, short forms ("can't"), direct address. &rarr; <em>Effect: Authentic, emotional, creates closeness.</em></li>
-            </ul>
-
-            <h4>3. Syntax & Word Choice</h4>
-            <ul>
-                <li><strong>Syntax (Sentence Structure):</strong>
-                    <br>- <em>Parataxis (Short sentences):</em> Creates speed, urgency, or simplicity.
-                    <br>- <em>Hypotaxis (Complex sentences):</em> Used for complex, explaining arguments.
+                <li><strong>Diction (Word Choice):</strong>
+                    <br>&rarr; <em>Positively/Negatively connoted words:</em> Do words evoke fear ("crisis", "disaster") or hope ("opportunity", "bright future")?
+                    <br>&rarr; <em>Keywords:</em> Are there repetitive key terms emphasizing a message?
                 </li>
-                <li><strong>Word Choice:</strong> Are words positive/negative? Technical terms? Old-fashioned?</li>
+                <li><strong>Syntax (Sentence Structure):</strong>
+                    <br>&rarr; <em>Parataxis (Short sentences):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
+                    <br>&rarr; <em>Hypotaxis (Complex sentences):</em> Used for detailed explanations, complex arguments, or to show high education.
+                </li>
+                <li><strong>Rhetorical Devices:</strong>
+                    <br>Metaphors, similes, anaphora, etc. belong here. They are the "spices" of the style.
+                </li>
             </ul>
 
-            <h4>4. The Analysis Formula</h4>
-            <p>Never just say "There is a metaphor". Use this structure:</p>
-            <p class="highlight-box"><strong>Feature</strong> (The author uses a metaphor...) <br>+ <strong>Quote</strong> ("...") <br>+ <strong>Function</strong> (to create an image of / to emphasize / to criticize...).</p>
-        `
-    },
-    {
-        title: "General Analysis Structure",
-        cat: "AFB II",
-        short: "The Master Plan for any Analysis Essay.",
-        content: `
-            <h3>Analysis Essay Structure</h3>
-            <p>Use this structure for any analysis task (Characterization, Atmosphere, Language, etc.).</p>
+            <h4>2. Tone (The Atmosphere)</h4>
+            <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the audience. It can change throughout the text!</p>
+            <div class="highlight-box">
+                <strong>Useful Adjectives:</strong><br>
+                optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, emotional, objective, solemn, cynical.
+            </div>
 
-            <h4>1. Introduction</h4>
+            <h4>3. Register (The Formality)</h4>
+            <p>Register describes the level of formality. It tells you about the relationship between author and reader.</p>
             <ul>
-                <li><strong>T.A.T.T.:</strong> Title, Author, Text Type, Topic.</li>
-                <li><strong>Thesis Statement:</strong> A brief sentence summarizing your main finding (e.g. "The author uses a gloomy tone to criticize the protagonist's behavior.").</li>
-            </ul>
-
-            <h4>2. Body Paragraphs</h4>
-            <p>Write one paragraph for each aspect (e.g. one for "Tone", one for "Stylistic Devices"). Use the <strong>P.E.E.</strong> method inside the paragraphs.</p>
-            <ul>
-                <li>Use <strong>connectives</strong> (Furthermore, In addition, However).</li>
-                <li>Always refer to the text (lines!).</li>
-            </ul>
-
-            <h4>3. Conclusion</h4>
-            <ul>
-                <li>Summarize your main findings (Do not repeat word for word).</li>
-                <li>Relate back to your thesis statement.</li>
-                <li><strong>No new arguments</strong> here!</li>
+                <li><strong>Formal (High Register):</strong> Passive voice, complex syntax, advanced vocabulary.
+                    <br>&rarr; <em>Effect:</em> Professional, objective, distant, authoritative. (e.g., Scientific Articles, Serious Newspapers).</li>
+                <li><strong>Neutral (Standard Register):</strong> Clear, correct standard English, accessible to everyone.
+                    <br>&rarr; <em>Effect:</em> Informative, factual. (e.g., News Reports).</li>
+                <li><strong>Informal (Low Register):</strong> Slang, short forms ("can't"), colloquialisms, direct address ("you").
+                    <br>&rarr; <em>Effect:</em> Authentic, emotional, creates closeness/intimacy. (e.g., Blogs, Comments, speeches to young people).</li>
             </ul>
         `
     },
+   
 
     /* ============================================================
        AFB III: WRITING / TEXT PRODUCTION
@@ -381,25 +372,76 @@ const skillsContent = [
     {
         title: "Speech",
         cat: "AFB III",
-        short: "Write a speech (Audience & Rhetoric).",
+        short: "Write a speech (Structure, Rhetoric & Delivery).",
         content: `
             <h3>Writing a Speech</h3>
-            <p class="intro-text"><em>A speech is written for the ear, not the eye. It must be emotional, clear, and directly address the audience to convince them.</em></p>
+            <p class="intro-text"><em>A speech is written for the ear, not the eye. It must be emotional, convincing, and easy to follow. Your goal is not just to inform, but to <strong>persuade</strong> and <strong>mobilize</strong> your audience.</em></p>
 
-            <h4>Structure</h4>
+            <h4>1. Structure</h4>
             <ul>
-                <li><strong>Intro:</strong> Welcome the audience. Use a "Hook" (joke, personal story, shock). State your topic clearly.</li>
-                <li><strong>Body:</strong> Use "Signposting" (First, secondly, finally). Connect facts with emotions. Use <strong>rhetorical devices</strong> (Anaphora, rhetorical questions).</li>
-                <li><strong>Conclusion:</strong> Summarize. End with a strong <strong>Call to Action</strong> ("Let's change this today!"). Thank the audience.</li>
+                <li><strong>Introduction:</strong>
+                    <br>&rarr; <strong>Salutation:</strong> Address your specific audience (Formal vs. Informal).
+                    <br>&rarr; <strong>Hook:</strong> Grab attention immediately (Rhetorical question, shocking statistic, personal anecdote).
+                    <br>&rarr; <strong>Topic:</strong> Clearly state why you are standing here today.
+                </li>
+                <li><strong>Body (The Arguments):</strong>
+                    <br>&rarr; <strong>Signposting:</strong> Guide the listener ("First...", "Another crucial point is...").
+                    <br>&rarr; <strong>Connection:</strong> Use "We" instead of "I" to create a bond with the audience.
+                    <br>&rarr; <strong>Climax:</strong> Save your strongest argument for the end.
+                </li>
+                <li><strong>Conclusion:</strong>
+                    <br>&rarr; <strong>Summary:</strong> Briefly sum up the main message (don't repeat details).
+                    <br>&rarr; <strong>Call to Action (CTA):</strong> Tell the audience exactly what they should do now.
+                    <br>&rarr; <strong>Clincher:</strong> A memorable final sentence.
+                </li>
             </ul>
 
-            <h4>Useful Phrases (from your guide)</h4>
+            <h4>2. The Rhetoric Toolkit (Must-Haves)</h4>
+            <p>A speech without rhetorical devices is just a text read aloud. Use these tools:</p>
+            <ul>
+                <li><strong>Inclusive Language:</strong> "We must act together!" (Creates unity).</li>
+                <li><strong>Anaphora:</strong> "We need hope. We need action. We need change." (Creates rhythm).</li>
+                <li><strong>Rhetorical Questions:</strong> "Do we really want to ignore this?" (Engages the listener).</li>
+                <li><strong>Contrast (Antithesis):</strong> "Not words, but actions." (Simplifies complex issues).</li>
+            </ul>
+
+            <h4>3. Useful Phrases</h4>
             <div class="table-wrap">
             <table>
-                <tr><td><strong>Involving</strong></td><td>"Imagine...", "As you all know...", "Have you ever thought about...?"</td></tr>
-                <tr><td><strong>Emphasizing</strong></td><td>"It is undeniable that...", "There is no doubt that...", "It is well known that..."</td></tr>
-                <tr><td><strong>Call to Action</strong></td><td>"We have to ensure that...", "Let us make the effort to...", "It is about time that..."</td></tr>
+                <tr>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Greeting</strong></td>
+                    <td>
+                        <em>Formal:</em> "Honourable guests, ladies and gentlemen..."<br>
+                        <em>School:</em> "Fellow students, teachers..."<br>
+                        <em>Casual:</em> "Hi everyone, thanks for coming..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>The Hook</strong></td>
+                    <td>"Imagine a world where..."<br>"Have you ever wondered why...?"<br>"Looking at the facts, one thing is shocking:..."</td>
+                </tr>
+                <tr>
+                    <td><strong>Structuring</strong></td>
+                    <td>"Let me start by saying..."<br>"This leads me to my next point..."<br>"Let's look at the other side of the coin."</td>
+                </tr>
+                <tr>
+                    <td><strong>Emphasizing</strong></td>
+                    <td>"It is undeniable that..."<br>"Make no mistake:..."<br>"Let me be clear:..."<br>"What is even more important is..."</td>
+                </tr>
+                <tr>
+                    <td><strong>Call to Action & Closing</strong></td>
+                    <td>"We have to ensure that..."<br>"I ask you to..."<br>"Let's make a difference today!"<br>"Thank you for listening."</td>
+                </tr>
             </table>
+            </div>
+
+            <div class="highlight-box">
+                <strong>💡 Pro-Tip: The "Ear-Test"</strong><br>
+                Use short sentences. Long, complex sentences (Hypotaxis) are hard to understand when listening. If you run out of breath while reading a sentence, it is too long!
             </div>
         `
     },
@@ -432,19 +474,28 @@ const skillsContent = [
     {
         title: "Formal Letter",
         cat: "AFB III",
-        short: "Formal communication (Layout & Salutations).",
+        short: "Formal communication (Layout, Structure & Phrases).",
         content: `
             <h3>Writing a Formal Letter</h3>
-            <p class="intro-text"><em>In a formal letter, precision and politeness are key. Adhere strictly to the layout and conventions.</em></p>
+            <p class="intro-text"><em>In a formal letter, precision and politeness are key. The reader usually doesn't know you, so you must be objective, factual, and strictly adhere to the layout conventions.</em></p>
             
-            <h4>Layout Checklist</h4>
+            <h4>1. The Layout Checklist</h4>
             <ul>
-                <li><strong>Top Right:</strong> Sender's Address (You) + Date.</li>
-                <li><strong>Left (below):</strong> Recipient's Address.</li>
-                <li><strong>Subject Line:</strong> Short and bold (e.g., <strong>Subject: Application for...</strong>).</li>
+                <li><strong>Top Right:</strong> Sender's Address (You).</li>
+                <li><strong>Right (below Sender):</strong> Date (e.g., 12 May 2024).</li>
+                <li><strong>Left (below Date):</strong> Recipient's Address.</li>
+                <li><strong>Subject Line:</strong> Short and bold (e.g., <strong>Subject: Application for internship</strong>).</li>
+                <li><strong>Signature:</strong> Sign by hand, then print your name underneath.</li>
             </ul>
 
-            <h4>Salutations (The Golden Rules)</h4>
+            <h4>2. Structure (The 3-Step-Plan)</h4>
+            <ul>
+                <li><strong>Para 1: The Reason.</strong> State immediately why you are writing. (Do not start with "How are you?").</li>
+                <li><strong>Para 2 & 3: The Details.</strong> Give facts, arguments, or qualifications. Use <strong>connectives</strong> (Moreover, However).</li>
+                <li><strong>Para 4: The Action.</strong> What should happen next? (A reply? An interview? A refund?).</li>
+            </ul>
+
+            <h4>3. Salutations (The Golden Rules)</h4>
             <div class="table-wrap">
             <table>
                 <tr><th>Recipient</th><th>Greeting</th><th>Closing</th></tr>
@@ -453,7 +504,23 @@ const skillsContent = [
             </table>
             </div>
             
-            <p><strong>Style:</strong> No short forms (I am, do not). Use polite phrases ("Would it be possible to..." instead of "I want").</p>
+            <h4>4. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr><td><strong>Opening</strong></td><td>"I am writing to apply for..."<br>"I am writing to complain about..."<br>"I am writing to inquire about..."</td></tr>
+                <tr><td><strong>Closing</strong></td><td>"I look forward to hearing from you."<br>"Thank you in advance for your assistance."</td></tr>
+                <tr><td><strong>Attachments</strong></td><td>"Please find attached my CV / the documents."</td></tr>
+            </table>
+            </div>
+
+            <h4>5. Style: Diplomatic Language</h4>
+            <p>Never be aggressive, even if you are angry. Use the passive voice to sound objective.</p>
+            <div class="highlight-box">
+                ❌ <strong>Don't say:</strong> "You made a mistake!"<br>
+                ✅ <strong>Say:</strong> "It seems that a mistake has been made."<br><br>
+                ❌ <strong>Don't say:</strong> "I want my money back."<br>
+                ✅ <strong>Say:</strong> "I would be grateful if you could refund the amount."
+            </div>
         `
     },
     {
