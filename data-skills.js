@@ -835,10 +835,15 @@ const skillsContent = [
                 <li>"That is a complex issue. Let me think..."</li>
                 <li>"How shall I put it..."</li>
             </ul>
+
+            <div class="highlight-box" style="margin-top: 20px;">
+                <strong>💡 Pro-Tip: Improve Your Pronunciation</strong><br>
+                Not sure how to pronounce a word? Check out <a href="https://youglish.com/" target="_blank" style="text-decoration: underline; color: #2563eb;">YouGlish.com</a>. It shows you real-life examples from YouTube videos!
+            </div>
         `
     },
     {
-        title: "Practicing Speaking (AI & Life)",
+        title: "Practicing Speaking",
         cat: "Tools",
         short: "Train fluency with AI Voice Mode & Real Life tips.",
         content: `

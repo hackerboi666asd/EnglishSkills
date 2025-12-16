@@ -288,89 +288,81 @@ const gradingContent = [
 
   // 4. NOTENBERECHNUNG (NEU)
   {
-      title: "Notenberechnung (Sek II)",
-      cat: "Grading",
-      short: "Wie die Endnote entsteht (BE & Gewichtung).",
-      content: `
-          <h3>Berechnung der Klausurnoten (Sek II)</h3>
-          
-          <div style="background-color: #f8f9fa; border-left: 4px solid #17a2b8; padding: 10px; margin-bottom: 15px; font-size: 0.9rem; color: #333;">
-              <strong>Begriffserklärung:</strong><br>
-              <strong>BE</strong> = Bewertungseinheiten (die "Währung" der Oberstufe)<br>
-              <strong>ARI</strong> = Abiturrichtlinien
-          </div>
+    title: "Notenberechnung (Sek II)",
+    cat: "Grading",
+    short: "Wie die Endnote entsteht (BE & Gewichtung).",
+    content: `
+        <h3>Berechnung der Klausurnoten (Sek II)</h3>
+        
+        <div style="background-color: #f8f9fa; border-left: 4px solid #17a2b8; padding: 10px; margin-bottom: 15px; font-size: 0.9rem; color: #333;">
+            <strong>Begriffserklärung:</strong><br>
+            <strong>BE</strong> = Bewertungseinheiten (die "Punkte" der Aufgabe)<br>
+            <strong>Rohpunkte</strong> = z.B. Anzahl der richtigen Kreuze beim Hörverstehen.
+        </div>
 
-          <h4>Schritt 1: Die Einzelteile (Kompetenzen)</h4>
-          <p>Jede Klausur setzt sich aus verschiedenen Teilen zusammen. Die Lehrkraft legt vorher die Gewichtung fest (z.B. Schreiben zählt 50%).</p>
-          
-          <h4>Schritt 2: Ermittlung der BE</h4>
-          <ul>
-              <li><strong>Hör-/Leseverstehen:</strong> Rohpunkte (z.B. 24 Kreuze richtig) werden in BE umgerechnet.<br>
-              <em>(Faustregel: 100% = 20 BE, 95% = 19 BE usw. gemäß ARI Tabelle S. 15).</em></li>
-              <li><strong>Sprachmittlung:</strong> Wird direkt mit max. 10 BE bewertet.</li>
-              <li><strong>Schreiben:</strong> Hier gibt es max. 25 BE pro Aufgabe.
-                  <br>&rarr; <strong>60% Sprache</strong> (max. 15 BE)
-                  <br>&rarr; <strong>40% Inhalt</strong> (max. 10 BE)
-              </li>
-          </ul>
+        <h4>Schritt 1: Die Gewichtung</h4>
+        <p>Die Lehrkraft legt fest, wie viel jeder Teil zählt. In diesem Beispiel:</p>
+        <ul>
+            <li><strong>Schreiben:</strong> 60%</li>
+            <li><strong>Hörverstehen:</strong> 40%</li>
+        </ul>
 
-          <h4>Schritt 3: Das Rechenbeispiel</h4>
-          <p>So wird am Ende gerechnet (Beispiel für eine Klausur mit Hörverstehen):</p>
-          
-          <div class="table-wrap">
-          <table class="grading-table" style="font-size: 0.9em;">
-              <thead>
-                  <tr>
-                      <th>Teilbereich</th>
-                      <th>Erreichte BE</th>
-                      <th>Gewichtung</th>
-                      <th>Rechnung</th>
-                      <th>Ergebnis</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td><strong>Hörverstehen</strong></td>
-                      <td>17 von 20 (85%)</td>
-                      <td>35% (0,35)</td>
-                      <td>17 * 3,5 <sup>1</sup></td>
-                      <td><strong>29,75</strong></td>
-                  </tr>
-                  <tr>
-                      <td><strong>Leseverstehen</strong></td>
-                      <td>10 von 10 (100%)</td>
-                      <td>15% (0,15)</td>
-                      <td>10 * 1,5 <sup>1</sup></td>
-                      <td><strong>15,00</strong></td>
-                  </tr>
-                  <tr>
-                      <td><strong>Schreiben</strong></td>
-                      <td>20 von 25 (80%)</td>
-                      <td>50% (0,50)</td>
-                      <td>20 * 2,0 <sup>1</sup></td>
-                      <td><strong>40,00</strong></td>
-                  </tr>
-                  <tr style="background-color: #e2e8f0; font-weight: bold;">
-                      <td>GESAMT</td>
-                      <td></td>
-                      <td>100%</td>
-                      <td>Summe</td>
-                      <td>84,75 BE</td>
-                  </tr>
-              </tbody>
-          </table>
-          </div>
-          <p style="font-size: 0.8rem; margin-top: 5px;"><em><sup>1</sup> Die Faktoren (3,5 / 1,5 / 2,0) ergeben sich, um die Teil-BE auf eine 100er-Skala hochzurechnen entsprechend der Gewichtung. (Vereinfacht: Anteil * Gewichtung).</em></p>
+        <h4>Schritt 2: Das Rechenbeispiel</h4>
+        <p>Zuerst wird ausgerechnet, wie viel <strong>Prozent</strong> man in einem Teil erreicht hat. Dieser Wert wird dann mit der <strong>Gewichtung</strong> malgenommen.</p>
+        
+        <div class="table-wrap">
+        <table class="grading-table" style="font-size: 0.9em;">
+            <thead>
+                <tr>
+                    <th>Teilbereich</th>
+                    <th>Erreichte BE</th>
+                    <th>Prozent</th>
+                    <th>Gewichtung</th>
+                    <th>Rechnung</th>
+                    <th>Wert</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Hörverstehen</strong></td>
+                    <td>17 von 20</td>
+                    <td>85%</td>
+                    <td>40% (0,4)</td>
+                    <td>85 * 0,4</td>
+                    <td><strong>34,0</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Schreiben</strong></td>
+                    <td>20 von 25</td>
+                    <td>80%</td>
+                    <td>60% (0,6)</td>
+                    <td>80 * 0,6</td>
+                    <td><strong>48,0</strong></td>
+                </tr>
+                <tr style="background-color: #e2e8f0; font-weight: bold;">
+                    <td>GESAMT</td>
+                    <td></td>
+                    <td></td>
+                    <td>100%</td>
+                    <td>Summe</td>
+                    <td>82,0</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
 
-          <h4>Schritt 4: Die Note (00-15 P)</h4>
-          <p>Die Summe (im Beispiel 84,75) wird anhand der ARI-Tabelle (S. 21) in Notenpunkte umgewandelt. <br>
-          <em>(Grob gesagt: >95 BE = 15 P., >85 BE = 13 P. usw.)</em></p>
+        <h4>Schritt 3: Die Note (00-15 P)</h4>
+        <p>Der Gesamtwert (hier 82,0) wird anhand der offiziellen Tabelle in Notenpunkte umgerechnet:</p>
+        <ul>
+            <li><strong>82,0</strong> entspricht in der Tabelle <strong>12 Punkten</strong> (Note 2+).</li>
+        </ul>
+        <p style="font-size: 0.85rem; color: #555;">(Ab 95 = 15 Pkt | Ab 85 = 13 Pkt | Ab 80 = 12 Pkt | Ab 75 = 11 Pkt | Ab 70 = 10 Pkt etc.)</p>
 
-          <p style="font-size: 0.8rem; color: #666; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
-              Quelle: <a href="https://www.bildung.bremen.de/sixcms/media.php/13/HandreichungFS.pdf" target="_blank" style="color: #666; text-decoration: underline;">Handreichungen zu den Abiturrichtlinien (ARI)</a>
-          </p>
-      `
-  }
+        <p style="font-size: 0.8rem; color: #666; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
+            Quelle: Handreichungen zu den Abiturrichtlinien (ARI) & Interne Berechnungslogik[cite: 187, 193].
+        </p>
+    `
+}
 ];
 
 // In das globale Array pushen
