@@ -1,6 +1,7 @@
 // data-skills.js
 // Version: FINAL REMASTERED
 // Includes: AFB I, II, III, Enhanced Tools (Speaking/Checklist), Operators in Grading
+const skillsContent = [
 /* ============================================================
        AFB I: COMPREHENSION
        ============================================================ */
@@ -284,10 +285,6 @@
             </div>
         `
     },
-
-    /* ============================================================
-       AFB III: WRITING / TEXT PRODUCTION
-       ============================================================ */
  /* ============================================================
        AFB III: WRITING / TEXT PRODUCTION
        ============================================================ */
