@@ -290,25 +290,33 @@ const gradingContent = [
   {
     title: "Notenberechnung (Sek II)",
     cat: "Grading",
-    short: "Wie die Endnote entsteht (BE & Gewichtung).",
+    short: "Wie die Endnote entsteht (Rohpunkte &rarr; BE &rarr; Note).",
     content: `
         <h3>Berechnung der Klausurnoten (Sek II)</h3>
         
         <div style="background-color: #f8f9fa; border-left: 4px solid #17a2b8; padding: 10px; margin-bottom: 15px; font-size: 0.9rem; color: #333;">
             <strong>Begriffserklärung:</strong><br>
-            <strong>BE</strong> = Bewertungseinheiten (die "Punkte" der Aufgabe)<br>
-            <strong>Rohpunkte</strong> = z.B. Anzahl der richtigen Kreuze beim Hörverstehen.
+            <strong>Rohpunkte</strong> = Deine "echten" Punkte (z.B. 24 richtige Kreuze).<br>
+            <strong>BE</strong> = Bewertungseinheiten (Standardisierte Punkte).
         </div>
 
-        <h4>Schritt 1: Die Gewichtung</h4>
-        <p>Die Lehrkraft legt fest, wie viel jeder Teil zählt. In diesem Beispiel:</p>
-        <ul>
-            <li><strong>Schreiben:</strong> 60%</li>
-            <li><strong>Hörverstehen:</strong> 40%</li>
-        </ul>
+        <h4>Schritt 1: Von Rohpunkten zu BE</h4>
+        <p>Im <strong>Hör- und Leseverstehen</strong> zählen deine richtigen Kreuze (Rohpunkte). Diese werden nach einer festen Tabelle in maximal 20 BE umgerechnet.</p>
+        <div class="table-wrap">
+        <table style="width: 100%; font-size: 0.9em; border-collapse: collapse; text-align: center;">
+            <tr style="background: #e2e8f0;"><th>Anteil Rohpunkte</th><th>Erreichte BE</th></tr>
+            <tr><td>100 %</td><td>20 BE</td></tr>
+            <tr><td>95 %</td><td>19 BE</td></tr>
+            <tr><td>90 %</td><td>18 BE</td></tr>
+            <tr><td>...</td><td>...</td></tr>
+            <tr><td>45 %</td><td>09 BE (glatt 4)</td></tr>
+            <tr><td>< 20 %</td><td>00 BE</td></tr>
+        </table>
+        </div>
+        <p style="font-size: 0.8rem;">(Diese Tabelle gilt nur für Hör-/Leseverstehen. Beim Schreiben gibt es die BE direkt.)</p>
 
         <h4>Schritt 2: Das Rechenbeispiel</h4>
-        <p>Zuerst wird ausgerechnet, wie viel <strong>Prozent</strong> man in einem Teil erreicht hat. Dieser Wert wird dann mit der <strong>Gewichtung</strong> malgenommen.</p>
+        <p>Nun wird dein Ergebnis mit der <strong>Gewichtung</strong> verrechnet (hier im Beispiel: 40% Hörverstehen, 60% Schreiben).</p>
         
         <div class="table-wrap">
         <table class="grading-table" style="font-size: 0.9em;">
@@ -352,14 +360,12 @@ const gradingContent = [
         </div>
 
         <h4>Schritt 3: Die Note (00-15 P)</h4>
-        <p>Der Gesamtwert (hier 82,0) wird anhand der offiziellen Tabelle in Notenpunkte umgerechnet:</p>
-        <ul>
-            <li><strong>82,0</strong> entspricht in der Tabelle <strong>12 Punkten</strong> (Note 2+).</li>
-        </ul>
-        <p style="font-size: 0.85rem; color: #555;">(Ab 95 = 15 Pkt | Ab 85 = 13 Pkt | Ab 80 = 12 Pkt | Ab 75 = 11 Pkt | Ab 70 = 10 Pkt etc.)</p>
+        <p>Der Gesamtwert (hier 82,0) wird in Notenpunkte umgewandelt:<br>
+        <strong>82,0 entspricht 12 Notenpunkten (2+).</strong></p>
+        <p style="font-size: 0.85rem; color: #555;">(Orientierung: >95 = 15P | >85 = 13P | >80 = 12P | >70 = 10P | >55 = 07P | >45 = 05P)</p>
 
         <p style="font-size: 0.8rem; color: #666; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
-            Quelle: Handreichungen zu den Abiturrichtlinien (ARI) & Interne Berechnungslogik[cite: 187, 193].
+            Basierend auf: <a href="https://www.bildung.bremen.de/sixcms/media.php/13/HandreichungFS.pdf" target="_blank" style="color: #666; text-decoration: underline;">Handreichung Fremdsprachen (ARI)</a>
         </p>
     `
 }
