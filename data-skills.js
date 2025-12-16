@@ -26,7 +26,7 @@ const skillsContent = [
             </div>
 
             <h4>Structure & Useful Phrases</h4>
-            <p><strong>1. Introduction (T.A.T.T.)</strong><br>
+            <p><strong>1. Introduction</strong><br>
             State the facts clearly. Do not start analyzing yet.</p>
             <div class="table-wrap">
             <table>

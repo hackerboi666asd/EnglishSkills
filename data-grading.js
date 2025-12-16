@@ -293,25 +293,25 @@ const gradingContent = [
     short: "Berechnung gemäß Abiturrichtlinien (ARI).",
     content: `
         <h3>Berechnung der Klausurnoten</h3>
-        [cite_start]<p class="intro-text"><em>Die Note setzt sich aus Bewertungseinheiten (BE) und einer vorher festgelegten Gewichtung der Kompetenzen zusammen[cite: 4, 6].</em></p>
+       <p class="intro-text"><em>Die Note setzt sich aus Bewertungseinheiten (BE) und einer vorher festgelegten Gewichtung der Kompetenzen zusammen.</em></p>
 
         <h4>1. Ermittlung der BE (Bewertungseinheiten)</h4>
         <ul>
             <li><strong>Schreiben (Writing):</strong>
-                [cite_start]Hier gibt es maximal <strong>25 BE</strong>[cite: 17]. Diese teilen sich auf in:
-                <br>&rarr; [cite_start]60% Sprache (max. 15 BE) [cite: 15, 16]
-                <br>&rarr; [cite_start]40% Inhalt (max. 10 BE) [cite: 15, 16]
+                Hier gibt es maximal <strong>25 BE</strong>. Diese teilen sich auf in:
+                <br>&rarr; 60% Sprache (max. 15 BE)
+                <br>&rarr; 40% Inhalt (max. 10 BE)
             </li>
             <li><strong>Hör-/Leseverstehen:</strong>
-                [cite_start]Hier werden "Items" (Rohpunkte) vergeben (1 Punkt pro Aufgabenteil)[cite: 10]. [cite_start]Diese werden per Tabelle in BE umgerechnet (z.B. entsprechen 100% der Rohpunkte 20 BE)[cite: 11, 12, 13].
+               Hier werden "Items" (Rohpunkte) vergeben (1 Punkt pro Aufgabenteil). Diese werden per Tabelle in BE umgerechnet (z.B. entsprechen 100% der Rohpunkte 20 BE).
             </li>
             <li><strong>Sprachmittlung (Mediation):</strong>
-                [cite_start]Maximal 10 BE[cite: 14].
+                Maximal 10 BE.
             </li>
         </ul>
 
         <h4>2. Das Rechenbeispiel</h4>
-        [cite_start]<p>In diesem Beispiel hat die Lehrkraft folgende Gewichtung festgelegt: <strong>Hörverstehen 35%, Leseverstehen 15%, Schreiben 50%</strong>[cite: 7, 8, 9].</p>
+        <p>In diesem Beispiel hat die Lehrkraft folgende Gewichtung festgelegt: <strong>Hörverstehen 35%, Leseverstehen 15%, Schreiben 50%</strong>.</p>
         
         <div class="table-wrap">
         <table class="grading-table" style="font-size: 0.9em;">
@@ -332,7 +332,7 @@ const gradingContent = [
                     <td>85%</td>
                     <td>35% (0,35)</td>
                     <td>85 * 0,35</td>
-                    [cite_start]<td><strong>29,75</strong> [cite: 21]</td>
+                    <td><strong>29,75</strong></td>
                 </tr>
                 <tr>
                     <td><strong>Leseverstehen</strong></td>
@@ -340,7 +340,7 @@ const gradingContent = [
                     <td>100%</td>
                     <td>15% (0,15)</td>
                     <td>100 * 0,15</td>
-                    [cite_start]<td><strong>15,00</strong> [cite: 22]</td>
+                   <td><strong>15,00</strong></td>
                 </tr>
                 <tr>
                     <td><strong>Schreiben</strong></td>
@@ -348,7 +348,7 @@ const gradingContent = [
                     <td>80%</td>
                     <td>50% (0,50)</td>
                     <td>80 * 0,5</td>
-                    [cite_start]<td><strong>40,00</strong> [cite: 23]</td>
+                    <td><strong>40,00</strong></td>
                 </tr>
                 <tr style="background-color: #e2e8f0; font-weight: bold;">
                     <td>GESAMT</td>
@@ -356,7 +356,7 @@ const gradingContent = [
                     <td></td>
                     <td>100%</td>
                     <td>Summe</td>
-                    [cite_start]<td>84,75 [cite: 24]</td>
+                    <td>84,75</td>
                 </tr>
             </tbody>
         </table>
@@ -364,20 +364,20 @@ const gradingContent = [
 
         <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-top: 10px;">
             <strong>⚠️ Wichtig: Nicht runden!</strong><br>
-            Es wird nicht auf- oder abgerundet. [cite_start]Die Ergebnisse gehen mit allen Kommastellen in die Berechnung ein[cite: 28, 29].
+            Es wird nicht auf- oder abgerundet. Die Ergebnisse gehen mit allen Kommastellen in die Berechnung ein.
         </div>
 
         <h4>3. Die Endnote</h4>
-        [cite_start]<p>Der Gesamtwert (hier <strong>84,75</strong>) wird nun anhand der Tabelle aus den Abiturrichtlinien (ARI, Seite 21) in Notenpunkte umgewandelt[cite: 25, 26].</p>
+        <p>Der Gesamtwert (hier <strong>84,75</strong>) wird nun anhand der Tabelle aus den Abiturrichtlinien (ARI, Seite 21) in Notenpunkte umgewandelt.</p>
         
-        [cite_start]<p><strong>Ergebnis: 12 Punkte (Note 2+)</strong> [cite: 27]</p>
+        <p><strong>Ergebnis: 12 Punkte (Note 2+)</strong></p>
         
         <p style="font-size: 0.8rem; margin-top: 10px;">
             <em>(Auszug Tabelle: Ab 95% = 15 Pkt, Ab 90% = 14 Pkt ... Ab 80% = 12 Pkt)</em>
         </p>
 
         <p style="font-size: 0.8rem; color: #666; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
-            [cite_start]Quelle: <a href="https://www.bildung.bremen.de/sixcms/media.php/13/HandreichungFS.pdf" target="_blank" style="color: #666; text-decoration: underline;">Handreichung Fremdsprachen (ARI)</a> [cite: 3]
+            Quelle: <a href="https://www.bildung.bremen.de/sixcms/media.php/13/HandreichungFS.pdf" target="_blank" style="color: #666; text-decoration: underline;">Moderne Fremdsprachen - Handreichung zu den Abiturrichtlinien</a>
         </p>
     `
 }
