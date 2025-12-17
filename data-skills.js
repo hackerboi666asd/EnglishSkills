@@ -578,7 +578,7 @@ const skillsContent = [
         `
     },
     {
-        title: "Newspaper Article",
+        title: "(Newspaper) Article",
         cat: "AFB III",
         short: "Write a report (Inverted Pyramid & Layout).",
         content: `
@@ -1115,7 +1115,7 @@ const skillsContent = [
        GRADING / OPERATORS
        ============================================================ */
     {
-        title: "Operators (Official List)",
+        title: "Operators",
         cat: "Grading",
         short: "Official definitions (AFB I-III).",
         content: `
