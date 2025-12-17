@@ -406,7 +406,7 @@ const gradingContent = [
           <li><strong>Abholung:</strong> Ihr werdet abgeholt und in den Prüfungsraum gebracht.</li>
           <li><strong>Gesundheitsfrage:</strong> Wahrheitsgemäß antworten. "Nein" = Abbruch & Arzt. "Ja" = Prüfung zählt.</li>
           <li><strong>Teil 1 (Vortrag):</strong> Eure Präsentation der Ergebnisse (ca. 10–12 min). Danach: 5–7 min Rückfragen.</li>
-          <li><strong>Teil 2 (Prüfungsgespräch):</strong> Überleitung zum anderen Semesterthema (ca. 6–8 min). Keine Vorbereitungszeit, spontanes Antworten.</li>
+          <li><strong>Teil 2 (Prüfungsgespräch):</strong> Überleitung zum anderen Abiturschwerpunktthema (ca. 6–8 min). Keine Vorbereitungszeit, spontanes Antworten.</li>
       </ul>
 
       <h4>3. Nach der Prüfung</h4>
@@ -418,15 +418,15 @@ const gradingContent = [
 
       <hr style="margin: 30px 0; border-top: 1px solid #ccc;">
 
-      <h3>Bewertungsraster (Erwartungshorizont 2025)</h3>
+      <h3>Beispielhaftes Bewertungsraster einer mündlichen Prüfung</h3>
       <p class="intro-text"><em>Detaillierte Übersicht der Anforderungsbereiche (AFB) und der Darstellungsleistung.</em></p>
 
       <div class="table-wrap">
       <table class="grading-table" style="font-size: 0.8em; min-width: 800px;"> <thead>
               <tr>
                   <th rowspan="2" style="width: 40px;">Note</th>
-                  [cite_start]<th colspan="3" style="text-align: center; background: #eef2ff;">Fachliche Leistungen (Inhalt) [cite: 66, 68]</th>
-                  [cite_start]<th rowspan="2" style="background: #f0fdf4;">Kommunikative Leistung (Sprache) [cite: 66, 68]</th>
+                  <th colspan="3" style="text-align: center; background:rgb(122, 140, 200);">Fachliche Leistungen (Inhalt)</th>
+                  <th rowspan="2" style="background:rgb(124, 214, 151);">Kommunikative Leistung (Sprache)</th>
               </tr>
               <tr>
                   <th style="background: #eef2ff;">Kenntnisse (AFB I)</th>
@@ -436,43 +436,43 @@ const gradingContent = [
           </thead>
           <tbody>
               <tr>
-                  <td><strong>1<br>Sehr gut</strong></td>
-                  <td>In allen Teilen hervorragend gelöst, sehr fundiert und umfassend. Differenzierte Detailkenntnisse, umfassende Methodenkenntnis, treffender Gebrauch der Fachsprache.</td>
+                  <td><strong>1<br>Sehr gut, in allen Teilen hervorragend gelöst</strong></td>
+                  <td>sehr fundiert und umfassend. Differenzierte Detailkenntnisse, umfassende Methodenkenntnis, treffender Gebrauch der Fachsprache.</td>
                   <td>Methodisch überzeugende Umsetzung, eigenständige Ansätze, Originalität, umfassende Problemsicht, große Vielfalt an Bezügen.</td>
                   <td>Differenzierte Lösungen, eigenständige Schwerpunktsetzung, begründete eigenständige Wertungen und kritische Einschätzungen.</td>
                   <td>Sehr klar gegliedert, sehr flüssiger Vortrag, hohes Abstraktionsniveau, überzeugende Argumentation, besondere Dialogfähigkeit.</td>
               </tr>
               <tr>
-                  <td><strong>2<br>Gut</strong></td>
-                  <td>In allen Teilen gelöst, fundiert, sicher und umfangreich. Kaum Ungenauigkeiten, nahezu fehlerfreier Gebrauch der Fachsprache.</td>
+                  <td><strong>2<br>Gut, in allen Teilen gelöst</strong></td>
+                  <td>fundiert, sicher und umfangreich. Kaum Ungenauigkeiten, nahezu fehlerfreier Gebrauch der Fachsprache.</td>
                   <td>Methodisch richtige Umsetzung, passende Ansätze, differenzierte Problemsicht, Vielfalt an Bezügen.</td>
                   <td>Angebot eigenständiger Lösungen, angemessene Kriterien, einige eigenständige Schwerpunktsetzungen und Wertungen.</td>
                   <td>Klar gegliedert, flüssiger Vortrag, angemessenes Abstraktionsniveau, schlüssige Argumentation, gute Gesprächsfähigkeit.</td>
               </tr>
               <tr>
-                  <td><strong>3<br>Befriedigend</strong></td>
-                  <td>Weitgehend gelöst (teils mit leichten Hilfen), im Allgemeinen sicher. Solide Methodenkenntnis, kleinere Mängel in der Fachsprache.</td>
+                  <td><strong>3<br>Befriedigend, weitgehend gelöst (teils mit leichten Hilfen)</strong></td>
+                  <td>im Allgemeinen sicher. Solide Methodenkenntnis, kleinere Mängel in der Fachsprache.</td>
                   <td>Im Allgemeinen richtiges methodisches Vorgehen, angemessene Problemsicht, Transferleistung mit gewissen Vorgaben.</td>
                   <td>Einige brauchbare Lösungen, einige Kriterien, Ansätze begründeter eigenständiger Wertungen.</td>
                   <td>Im Allgemeinen strukturiert, zusammenhängender Vortrag, wenig Redundanz, meist schlüssige Argumentation.</td>
               </tr>
               <tr>
-                  <td><strong>4<br>Ausreichend</strong></td>
-                  <td>Mit Einschränkungen/Hilfen gelöst. Problembezogene Grundkenntnisse, einige Sachfehler, einige Mängel in der Fachsprache.</td>
+                  <td><strong>4<br>Ausreichend, mit Einschränkungen/Hilfen gelöst</strong></td>
+                  <td>Problembezogene Grundkenntnisse, einige Sachfehler, einige Mängel in der Fachsprache.</td>
                   <td>Richtige Ansätze, überwiegend richtiges Vorgehen, eingeschränkte Problemsicht, teilweise Ungenauigkeiten.</td>
                   <td>Nur teilweise gelingendes Bemühen um Lösungen, wenige Kriterien, überwiegend pauschale Wertungen.</td>
                   <td>Nicht konsequent gegliedert, zögerlich, deutliche Redundanz, einige Mängel im Sprachgebrauch.</td>
               </tr>
               <tr>
-                  <td><strong>5<br>Mangelhaft</strong></td>
-                  <td>Nur zum geringen Teil gelöst. Wenige Grundkenntnisse, weitgehend oberflächlich, erhebliche Mängel in der Fachsprache.</td>
+                  <td><strong>5<br>Mangelhaft, nur zum geringen Teil gelöst, kaum Eingehen auf Hilfen</strong></td>
+                  <td>Wenige Grundkenntnisse, weitgehend oberflächlich, erhebliche Mängel in der Fachsprache.</td>
                   <td>Überwiegend falsches methodisches Vorgehen, geringe Fähigkeit zum Umgang mit Material, meist falsche Lösungen.</td>
                   <td>Wenige Teillösungen mit Hilfen, Kriterien nur mit Hilfen, keine eigene Schwerpunktbildung.</td>
                   <td>Kaum gegliedert, falsche Begriffe, deutliche Mängel im Sprachgebrauch, kaum Eingehen auf Hilfen.</td>
               </tr>
               <tr>
-                  <td><strong>6<br>Ungenügend</strong></td>
-                  <td>Keine Erfüllung der Leistung. Keine Grundkenntnisse, große Verständnismängel.</td>
+                  <td><strong>6<br>Ungenügend, keine Erfüllung der geforderten Leistung. </strong></td>
+                  <td>Keine Grundkenntnisse, große Verständnismängel.</td>
                   <td>Kein brauchbarer Arbeitsansatz, keine oder falsche Einordnungen.</td>
                   <td>Keine Kriterien.</td>
                   <td>Ungegliedert, unbeholfen, stockend. Grobe Verstöße gegen Sprachgebrauch.</td>
@@ -480,10 +480,6 @@ const gradingContent = [
           </tbody>
       </table>
       </div>
-      
-      <p style="font-size: 0.8rem; color: #666; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
-          Basierend auf: <a href="https://www.bildung.bremen.de/sixcms/media.php/13/HandreichungFS.pdf" target="_blank" style="color: #666; text-decoration: underline;">Handreichungen zu den Abiturrichtlinien (ARI)</a> sowie den internen Arbeitshilfen (2025).
-      </p>
   `
 }
 ];
