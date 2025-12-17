@@ -42,7 +42,7 @@ function renderCards() {
             if(item.cat.includes('II')) badgeColor = '#8b5cf6';  // Lila
             if(item.cat.includes('III')) badgeColor = '#ef4444'; // Rot
             if(item.cat === 'Tools') badgeColor = '#0ea5e9';     // Blau
-            if(item.cat === 'Grading') badgeColor = '#f59e0b';   // Orange
+            if(item.cat === 'Grading') displayCat = 'Benotung'; badgeColor = '#f59e0b';   // Orange
 
             // HTML Inhalt der Kachel
             card.innerHTML = `
