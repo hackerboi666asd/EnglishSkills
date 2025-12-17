@@ -96,7 +96,7 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
 .modal-overlay.open { display: flex; }
 
 .modal {
-    background: white; width: 95%; max-width: 1300px; max-height: 90vh;
+    background: white; width: 95%; max-width: 2000px; max-height: 90vh;
     border-radius: 20px; overflow-y: auto; position: relative;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
 }

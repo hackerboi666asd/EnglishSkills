@@ -37,23 +37,25 @@ function renderCards() {
             card.className = 'skill-card'; // Muss zur CSS-Klasse passen
             
             // Farbe für den kleinen Badge bestimmen
-            let badgeColor = '#94a3b8'; // Standard Grau
-            if(item.cat.includes('I')) badgeColor = '#10b981';   // Grün
-            if(item.cat.includes('II')) badgeColor = '#8b5cf6';  // Lila
-            if(item.cat.includes('III')) badgeColor = '#ef4444'; // Rot
-            if(item.cat === 'Tools') badgeColor = '#0ea5e9';     // Blau
-            if(item.cat === 'Grading') displayCat = 'Benotung'; badgeColor = '#f59e0b';   // Orange
+            let badgeColor = '#94a3b8'; 
+            if(item.cat.includes('I')) badgeColor = '#10b981';   
+            if(item.cat.includes('II')) badgeColor = '#8b5cf6';  
+            if(item.cat.includes('III')) badgeColor = '#ef4444'; 
+            if(item.cat === 'Tools') badgeColor = '#06b6d4';     
+            if(item.cat === 'Grading') badgeColor = '#ec4899';
 
+            let displayCat = item.cat === 'Grading' ? 'Benotung' : item.cat;
+                        
             // HTML Inhalt der Kachel
             card.innerHTML = `
-                <div style="margin-bottom: 10px;">
-                    <span class="badge" style="background:${badgeColor}; color:white; padding:4px 8px; border-radius:4px; font-size:0.75rem; font-weight:bold;">
-                        ${item.cat}
-                    </span>
-                </div>
-                <h3>${item.title}</h3>
-                <p>${item.short}</p>
-            `;
+            <div style="margin-bottom: 10px;">
+                <span class="badge" style="background:${badgeColor}; color:white; padding:4px 8px; border-radius:4px; font-size:0.75rem; font-weight:bold;">
+                    ${displayCat}
+                </span>
+            </div>
+            <h3>${item.title}</h3>
+            <p>${item.short}</p>
+        `;
             
             // Klick-Event für Modal (WICHTIG: Wir übergeben den Original-Index!)
             card.onclick = () => openModal(index);
@@ -118,12 +120,15 @@ function openModal(index) {
 
     // Inhalt füllen
     document.getElementById('mTitle').innerText = item.title;
-    document.getElementById('mCat').innerText = item.cat;
+    
+    // Anzeige von Grading zu Benotung ändern
+    document.getElementById('mCat').innerText = item.cat === 'Grading' ? 'Benotung' : item.cat;
+    
     document.getElementById('mBody').innerHTML = item.content;
     
     // Öffnen
     modalOverlay.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Scrollen verhindern
+    document.body.style.overflow = 'hidden'; 
 }
 
 // Global verfügbar machen für den Schließen-Button im HTML
