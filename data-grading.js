@@ -380,7 +380,7 @@ const gradingContent = [
             Quelle: <a href="https://www.bildung.bremen.de/sixcms/media.php/13/HandreichungFS.pdf" target="_blank" style="color: #666; text-decoration: underline;">Moderne Fremdsprachen - Handreichung zu den Abiturrichtlinien</a>
         </p>
     `
-}
+},
 // 5. MÜNDLICHE PRÜFUNG (NEU)
 {
   title: "Mündliche Abiturprüfung",
