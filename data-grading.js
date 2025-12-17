@@ -381,6 +381,95 @@ const gradingContent = [
         </p>
     `
 }
+// 5. MÜNDLICHE PRÜFUNG (NEU)
+{
+  title: "Mündliche Abiturprüfung",
+  cat: "Grading",
+  short: "Ablauf & Bewertungskriterien (Beispiel 2025).",
+  content: `
+      <h3>Ablauf der mündlichen Abiturprüfung</h3>
+      
+      <div style="background-color: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 10px; margin-bottom: 15px; font-size: 0.9rem; color: #333;">
+          <strong>Wichtig:</strong> Dieser Ablauf beschreibt den typischen Prüfungstag für Schülerinnen und Schüler.
+      </div>
+
+      <h4>1. Vor der Prüfung</h4>
+      <ul>
+          <li>Ihr geht zur richtigen Zeit zum richtigen Raum.</li>
+          <li>Tretet in den Raum ein, auch wenn die Tür zu ist.</li>
+          <li>Geht zur aufsichtführenden Lehrkraft, nennt euren Namen (damit ihr anwesend seid und die richtige Aufgabe später bekommt).</li>
+          <li>Gebt euer Handy ab (am besten mit Namen draufgeklebt oder so).</li>
+          <li>Ihr bekommt dann zu eurer euch zugewiesenen Anfangszeit die vorzubereitende Aufgabe zugeteilt. Entweder geht es um das 1. Abiturschwerpunktthema oder das 2. (Aber nicht beide).</li>
+          <li>Dann habt ihr <strong>20 min</strong> Zeit, die Aufgabe (und das dazugehörige Material) durchzulesen, zu bearbeiten und Notizen dazu zu machen.</li>
+          <li><strong>Ziel:</strong> Einen ca. 10–12 min „Vortrag“ über eure Lösungsideen der Aufgaben halten zu können.</li>
+      </ul>
+
+      <h4>2. Während der Prüfung</h4>
+      <ul>
+          <li>Ihr werdet zum Ende der Vorbereitungszeit abgeholt. Danach setzen wir uns alle in den Prüfungsraum.</li>
+          <li><strong>Gesundheitsfrage:</strong> Ihr werdet befragt, ob ihr gesundheitlich in der Lage seid, die Prüfung zu absolvieren – antwortet wahrheitsgemäß. Wenn ihr „nein“ sagt, wird die Prüfung abgebrochen (Arzt/Attest nötig), ansonsten gilt die Prüfung bei schlechter Leistung als nicht bestanden.</li>
+          <li><strong>Teil 1 (Vortrag):</strong> Fangt mit eurem „Vortrag“ (der Beantwortung der Aufgaben) an. Dieser sollte ca. 10–12 min dauern. Danach werden euch noch ca. 5–7 min Rückfragen dazu gestellt.</li>
+          <li><strong>Teil 2 (Prüfungsgespräch):</strong> Überleitung auf das 2. Abiturschwerpunktthema. Hierzu habt ihr <strong>keine Vorbereitungszeit</strong>. Ich stelle eine Frage / gebe einen Impuls, ihr dürft kurz überlegen (es ist dann still), dann antwortet ihr. Die Prüfung dauert somit insgesamt 20–25 min.</li>
+      </ul>
+
+      <h4>3. Nach der Prüfung</h4>
+      <ul>
+          <li>Ihr geht während der Noten-Besprechung wieder in den Vorbereitungsraum (Handyverbot!).</li>
+          <li><strong>Beratung:</strong> Der Fachausschuss legt die Note fest. (Bei Nichteinigung wird gemittelt).</li>
+          <li><strong>Verkündung:</strong> Ihr werdet wieder reingeholt. Die Note und die wesentlichen Gründe werden kurz mitgeteilt. <strong>Es gibt keine Möglichkeit für Nachfragen.</strong></li>
+          <li>Ihr wartet wieder im Vorbereitungsraum, bis der letzte Prüfling mit der gleichen Aufgabe fertig ist. Erst dann bekommt ihr die Handys zurück und dürft gehen.</li>
+      </ul>
+
+      <hr style="margin: 30px 0; border-top: 1px solid #ccc;">
+
+      <h3>Bewertungsraster (Beispiel 2025)</h3>
+      <p class="intro-text"><em>Hierbei handelt es sich um einen beispielhaften und generischen Erwartungshorizont aus dem Jahr 2025.</em></p>
+
+      <div class="table-wrap">
+      <table class="grading-table" style="font-size: 0.85em;">
+          <thead>
+              <tr>
+                  <th style="width: 15%;">Note</th>
+                  <th>Fachliche Leistungen<br><span style="font-weight:normal; font-size:0.8em;">(Kenntnisse, Anwendung, Urteil)</span></th>
+                  <th>Kommunikative Leistung<br><span style="font-weight:normal; font-size:0.8em;">(Darstellung, Sprache)</span></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><strong>1<br>Sehr gut</strong></td>
+                  <td>In allen Teilen hervorragend gelöst, sehr fundiert und umfassend. Differenzierte Detailkenntnisse, umfassende Methodenkenntnis, eigenständige Ansätze, Originalität, umfassende Problemsicht.</td>
+                  <td>Sehr klar gegliedert, sehr flüssiger Vortrag, treffender Gebrauch der Fachsprache, überzeugende Argumentation, besondere Dialogfähigkeit.</td>
+              </tr>
+              <tr>
+                  <td><strong>2<br>Gut</strong></td>
+                  <td>In allen Teilen gelöst, fundiert, sicher und umfangreich. Kaum Ungenauigkeiten, problemgemäße Methodenkenntnis, passende Ansätze, differenzierte Problemsicht.</td>
+                  <td>Klar gegliedert, flüssiger Vortrag, nahezu fehlerfreier Gebrauch der Fachsprache, schlüssige Argumentation, gute Gesprächsfähigkeit.</td>
+              </tr>
+              <tr>
+                  <td><strong>3<br>Befriedigend</strong></td>
+                  <td>Weitgehend gelöst (teils mit leichten Hilfen), im Allgemeinen sicher. Kleinere Ungenauigkeiten, solide Methodenkenntnis, angemessene Problemsicht.</td>
+                  <td>Insgesamt zusammenhängender Vortrag, wenig Redundanz, meist schlüssige Argumentation, im Allgemeinen richtiger Sprachgebrauch.</td>
+              </tr>
+              <tr>
+                  <td><strong>4<br>Ausreichend</strong></td>
+                  <td>In vielen Teilen mit Einschränkungen oder deutlichen Hilfen gelöst. Grundkenntnisse vorhanden, einige Sachfehler, teilweise oberflächlich.</td>
+                  <td>Nicht konsequent gegliedert, zögerlich, deutliche Redundanz, einige Mängel in der Fachsprache und im Sprachgebrauch.</td>
+              </tr>
+              <tr>
+                  <td><strong>5<br>Mangelhaft</strong></td>
+                  <td>Nur zum geringen Teil gelöst, kaum Eingehen auf Hilfen. Wenige Grundkenntnisse, weitgehend oberflächlich, schwerwiegende Mängel, meist falsche Lösungen.</td>
+                  <td>Kaum differenziert und gegliedert, falsche Begriffe, erhebliche Mängel in der Fachsprache, deutliche Mängel im Sprachgebrauch.</td>
+              </tr>
+              <tr>
+                  <td><strong>6<br>Ungenügend</strong></td>
+                  <td>Keine Erfüllung der geforderten Leistung. Keine Grundkenntnisse, große Verständnismängel. Kein brauchbarer Arbeitsansatz.</td>
+                  <td>Ungegliedert, unbeholfen, stockend. Grobe Verstöße gegen den angemessenen Sprachgebrauch. Kein Eingehen auf Hilfen.</td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+  `
+}
 ];
 
 // In das globale Array pushen
