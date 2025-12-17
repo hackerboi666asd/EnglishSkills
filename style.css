@@ -28,7 +28,15 @@ header {
 header h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 0.5rem; }
 header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
 
-/* Controls */
+/* AFB Header Cards (Klickbare Karten oben) */
+.afb-card.active {
+    border-color: var(--accent) !important;
+    background-color: #f0f7ff !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2) !important;
+    transform: translateY(-3px);
+}
+
+/* Controls (Buttons unten) */
 .controls {
     display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;
     padding: 0 20px 40px; position: sticky; top: 20px; z-index: 100;
@@ -40,87 +48,91 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
     transition: all 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 .filter-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); color: var(--primary); }
-.filter-btn.active { color: white; border-color: transparent; }
-.filter-btn[data-filter="all"].active { background: var(--primary); }
-.filter-btn[data-filter="AFB I"].active { background: var(--afb1); }
-.filter-btn[data-filter="AFB II"].active { background: var(--afb2); }
-.filter-btn[data-filter="AFB III"].active { background: var(--afb3); }
-.filter-btn[data-filter="Tools"].active { background: var(--tools); }
-.filter-btn[data-filter="Grading"].active { background: var(--grading); }
+
+/* Aktive Buttons (Wenn über app.js gesteuert) */
+.filter-btn.active { 
+    background: var(--primary) !important; 
+    color: white !important; 
+    border-color: transparent; 
+}
 
 /* Grid */
 .grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem; max-width: 1400px; margin: 0 auto; padding: 0 2rem;
 }
-.card {
+
+/* Skill Card (Haupt-Kacheln im Grid) */
+.skill-card {
     background: var(--card-bg); border-radius: 20px; padding: 2rem;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: all 0.3s ease;
     cursor: pointer; border: 1px solid #f1f5f9; display: flex; flex-direction: column;
     position: relative; overflow: hidden; height: 100%;
 }
-.card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-.card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 6px; }
-.card[data-cat="AFB I"]::before { background: var(--afb1); }
-.card[data-cat="AFB II"]::before { background: var(--afb2); }
-.card[data-cat="AFB III"]::before { background: var(--afb3); }
-.card[data-cat="Tools"]::before { background: var(--tools); }
-.card[data-cat="Grading"]::before { background: var(--grading); }
+.skill-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+
+/* Farbbalken oben an der Kachel via dynamischem CSS Check */
+.skill-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: #cbd5e1; }
+.skill-card:has(.badge[style*="10b981"])::before { background: var(--afb1); }
+.skill-card:has(.badge[style*="8b5cf6"])::before { background: var(--afb2); }
+.skill-card:has(.badge[style*="ef4444"])::before { background: var(--afb3); }
+.skill-card:has(.badge[style*="0ea5e9"])::before { background: var(--tools); }
+.skill-card:has(.badge[style*="f59e0b"])::before { background: var(--grading); }
 
 .badge {
     align-self: flex-start; padding: 5px 10px; border-radius: 8px;
     font-size: 0.7rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1rem; color: white;
 }
-.card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 700; }
-.card p { color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
-.card-link { font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
-.card-link::after { content: "→"; transition: transform 0.2s; }
-.card:hover .card-link::after { transform: translateX(5px); }
+.skill-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-main); font-weight: 700; }
+.skill-card p { color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; margin-bottom: 1.5rem; }
 
 /* Modal */
 .modal-overlay {
     position: fixed; inset: 0; background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(5px); z-index: 1000;
-    display: flex; align-items: center; justify-content: center;
-    opacity: 0; pointer-events: none; transition: opacity 0.3s;
+    display: none; /* Steuerung via app.js .open */
+    align-items: center; justify-content: center;
 }
-.modal-overlay.active { opacity: 1; pointer-events: all; }
+.modal-overlay.open { display: flex; }
+
 .modal {
     background: white; width: 95%; max-width: 1000px; max-height: 90vh;
     border-radius: 20px; overflow-y: auto; position: relative;
-    transform: translateY(30px); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
 }
-.modal-overlay.active .modal { transform: translateY(0); }
 .modal-header {
     padding: 2rem 3rem; background: #fff; border-bottom: 1px solid #f1f5f9;
     position: sticky; top: 0; z-index: 20;
 }
 .modal-header h2 { font-size: 2rem; color: var(--primary); margin: 0; }
 .modal-header .sub { color: var(--text-muted); font-weight: 600; text-transform: uppercase; font-size: 0.9rem; }
+
 .close-modal {
     position: absolute; top: 2rem; right: 2rem; background: #f1f5f9; border: none;
     width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem;
     display: flex; align-items: center; justify-content: center; transition: 0.2s;
 }
-.close-modal:hover { background: var(--grading); color: white; transform: rotate(90deg); }
-.modal-content { padding: 3rem; font-size: 1rem; color: #334155; }
+.close-modal:hover { background: var(--afb3); color: white; transform: rotate(90deg); }
+
+.modal-content { padding: 3rem; font-size: 1.1rem; color: #334155; line-height: 1.7; }
 
 /* Content Typography */
-.modal-content h3 { color: var(--accent); margin: 2.5rem 0 1rem; font-size: 1.5rem; border-left: 5px solid var(--accent); padding-left: 1rem; }
+.modal-content h3 { color: var(--accent); margin: 2.5rem 0 1rem; font-size: 1.6rem; border-left: 5px solid var(--accent); padding-left: 1rem; }
 .modal-content h3:first-child { margin-top: 0; }
-.modal-content h4 { color: var(--primary); margin: 1.5rem 0 0.5rem; font-size: 1.1rem; font-weight: 700; }
+.modal-content h4 { color: var(--primary); margin: 1.5rem 0 0.5rem; font-size: 1.2rem; font-weight: 700; }
 .modal-content ul, .modal-content ol { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+.modal-content li { margin-bottom: 0.5rem; }
+
 .highlight-box { background: #eff6ff; border: 1px solid #bfdbfe; padding: 1.5rem; border-radius: 12px; margin: 2rem 0; color: #1e3a8a; }
 
 /* Tables */
 .table-wrap { overflow-x: auto; margin: 2rem 0; border: 1px solid #e2e8f0; border-radius: 8px; }
-table { width: 100%; border-collapse: collapse; min-width: 800px; font-size: 0.9rem; background: white; }
-th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+table { width: 100%; border-collapse: collapse; min-width: 800px; font-size: 0.95rem; background: white; }
+th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
 th { background: #f8fafc; color: var(--primary); font-weight: 700; position: sticky; top: 0; }
 tr:hover td { background: #f1f5f9; }
 
-/* Grading Specifics */
+/* Grading & Operator Tables */
 .grading-table th { background: var(--primary); color: white; text-align: center; border: 1px solid rgba(255,255,255,0.2); }
 .grading-table td { border: 1px solid #cbd5e1; }
 
@@ -128,4 +140,5 @@ tr:hover td { background: #f1f5f9; }
     header h1 { font-size: 2.2rem; }
     .modal-content { padding: 1.5rem; }
     .modal-header { padding: 1.5rem; }
+    .grid { grid-template-columns: 1fr; padding: 0 1rem; }
 }

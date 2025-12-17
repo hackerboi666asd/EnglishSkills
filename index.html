@@ -14,7 +14,7 @@
         /* Intro Section Styles */
         .intro-section {
             max-width: 900px;
-            margin: 0 auto 40px auto;
+            margin: 0 auto 20px auto;
             text-align: center;
             padding: 0 20px;
         }
@@ -43,51 +43,113 @@
             display: flex;
             gap: 15px;
             justify-content: center;
-            flex-wrap: wrap; /* Damit es auf Handy umbricht */
+            flex-wrap: wrap; 
         }
 
         .afb-card {
             flex: 1;
             min-width: 220px;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e5e7eb;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb; /* Dickerer Rand für Klick-Optik */
             text-align: left;
             background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-            transition: transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+            cursor: pointer; /* WICHTIG: Zeigt an, dass es klickbar ist */
+            position: relative;
         }
 
         .afb-card:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            border-color: #cbd5e1;
+        }
+
+        /* AKTIV-STATUS für die Karten (wenn ausgewählt) */
+        .afb-card.active {
+            background-color: #eff6ff; /* Ganz helles Blau */
+            border-color: #3b82f6;     /* Kräftiges Blau */
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+        }
+        
+        /* Checkmark Icon wenn aktiv (optional) */
+        .afb-card.active::after {
+            content: "✓";
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.2rem;
+            color: #3b82f6;
+            font-weight: bold;
         }
 
         .afb-card strong {
             display: block;
             margin-bottom: 5px;
             color: #1e293b;
-            font-weight: 700;
+            font-weight: 800;
+            font-size: 1.1rem;
         }
 
         .afb-desc {
             color: #64748b;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             line-height: 1.4;
             display: block;
         }
 
         .afb-desc em {
             display: block;
-            margin-top: 6px;
+            margin-top: 8px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             color: #334155;
+            background: #f1f5f9;
+            padding: 4px 8px;
+            border-radius: 6px;
+            display: inline-block;
         }
 
-        /* Farbliche Codierung zur Orientierung */
-        .afb-i { border-left: 5px solid #10b981; }   /* Leichtes Blau */
-        .afb-ii { border-left: 5px solid #8b5cf6; }  /* Leichtes Gelb */
-        .afb-iii { border-left: 5px solid #ef4444; } /* Leichtes Rot */
+        /* Die Controls (nur noch für Tools/Grading) */
+        .controls {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 10px;
+        }
+        
+        .divider-text {
+            display: block;
+            margin: 15px 0 10px 0;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        /* Damit Modal und Grid funktionieren, falls styles fehlen */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 50px 20px;
+        }
+        
+        /* Modal Styles (Basic) */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-overlay.open { display: flex; }
+        .modal { background: white; width: 90%; max-width: 800px; max-height: 90vh; overflow-y: auto; border-radius: 12px; padding: 30px; position: relative; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2rem; background: none; border: none; cursor: pointer; color: #64748b; }
+        
+        /* Tabellen Styles im Modal */
+        .table-wrap { overflow-x: auto; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        th, td { border: 1px solid #e2e8f0; padding: 10px; text-align: left; }
+        th { background-color: #f8fafc; font-weight: 600; }
+        .highlight-box { background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 15px; margin: 20px 0; border-radius: 4px; }
 
     </style>
 </head>
@@ -100,21 +162,21 @@
 </header>
 
 <div class="intro-section">
-        <p class="intro-text">
-        Willkommen beim digitalen Methoden-Guide für das Abitur. <br> Hier findest du alles, 
-        was du für die schriftliche und mündliche Prüfung brauchst.<br><br> AFB = Anforderungsbereich. 
+    <p class="intro-text">
+        Wähle einen Bereich aus, um die passenden Operatoren und Hilfen anzuzeigen.<br>
+        Klicke erneut auf eine Karte, um die Auswahl aufzuheben.
     </p>
 
     <div class="afb-explainer">
-        <div class="afb-card afb-i">
+        <div class="afb-card" onclick="filterContent('AFB I', this)">
             <strong>AFB I: Comprehension</strong>
             <span class="afb-desc">Reproduktion & Zusammenfassung. <br><em>"Was steht im Text?"</em></span>
         </div>
-        <div class="afb-card afb-ii">
+        <div class="afb-card" onclick="filterContent('AFB II', this)">
             <strong>AFB II: Analysis</strong>
             <span class="afb-desc">Analyse & Reorganisation. <br><em>"Wie macht der Autor das?"</em></span>
         </div>
-        <div class="afb-card afb-iii">
+        <div class="afb-card" onclick="filterContent('AFB III', this)">
             <strong>AFB III: Evaluation</strong>
             <span class="afb-desc">Bewertung & eigene Meinung. <br><em>"Was denke ich darüber?"</em></span>
         </div>
@@ -122,12 +184,10 @@
 </div>
 
 <div class="controls">
-    <button class="filter-btn active" data-filter="all">Alle</button>
-    <button class="filter-btn" data-filter="AFB I">AFB I</button>
-    <button class="filter-btn" data-filter="AFB II">AFB II</button>
-    <button class="filter-btn" data-filter="AFB III">AFB III</button>
-    <button class="filter-btn" data-filter="Tools">Tools</button>
-    <button class="filter-btn" data-filter="Grading">Benotung</button>
+    <span class="divider-text">Weitere Ressourcen</span>
+    <button class="filter-btn" onclick="filterContent('Tools', this)">Tools</button>
+    <button class="filter-btn" onclick="filterContent('Grading', this)">Benotung</button>
+    <button class="filter-btn" onclick="filterContent('all', this)" style="margin-left: 15px; background: transparent; border: 1px solid #ccc; color: #666;">Alle anzeigen</button>
 </div>
 
 <main class="grid" id="grid">
@@ -141,15 +201,15 @@
     <div class="modal">
         <button class="close-modal" onclick="closeModal()">&times;</button>
         <div class="modal-header">
-            <h2 id="mTitle">Title</h2>
-            <span class="sub" id="mCat">Category</span>
+            <h2 id="mTitle" style="margin-top:0;">Title</h2>
+            <span class="sub" id="mCat" style="background:#e2e8f0; padding:4px 8px; border-radius:4px; font-size:0.8rem;">Category</span>
         </div>
-        <div class="modal-content" id="mBody"></div>
+        <div class="modal-content" id="mBody" style="margin-top:20px; line-height:1.6;"></div>
     </div>
 </div>
 
 <script>
-    // Wir initialisieren das Array global, damit die anderen Dateien es füllen können
+    // Globales Array initialisieren - WICHTIG!
     window.contentData = []; 
 </script>
 
