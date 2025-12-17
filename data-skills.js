@@ -97,18 +97,56 @@ const skillsContent = [
     {
         title: "Point out / State",
         cat: "AFB I",
-        short: "Identify and present clearly.",
+        short: "Identify and present clearly (No analysis!).",
         content: `
             <h3>Point out / State</h3>
             <p class="intro-text"><em>Sometimes, less is more. These operators don't ask for an essay; they ask for precision. Point at the information and name it.</em></p>
 
-            <h4>The "Fingerpointing" Technique</h4>
+            <h4>1. The "Fingerpointing" Technique</h4>
             <ul>
-                <li><strong>Locate</strong> the specific information in the text.</li>
-                <li><strong>Translate</strong> it into your own words.</li>
-                <li><strong>Write it down</strong> clearly and briefly.</li>
-                <li><strong>Stop!</strong> Do not explain "why" or analyze the background (unless the task asks for it).</li>
+                <li><strong>Locate:</strong> Find the specific information in the text (scan for keywords).</li>
+                <li><strong>Paraphrase:</strong> Put the information into <strong>your own words</strong>. Do not just copy the sentence!</li>
+                <li><strong>Write:</strong> Write it down clearly and briefly using full sentences.</li>
+                <li><strong>Stop!</strong> Do not explain "why", do not analyze rhetorical devices, and do not give your opinion.</li>
             </ul>
+
+            <h4>2. Useful Phrases</h4>
+            <p>Use these sentence starters to present your findings clearly:</p>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Referring to the Author</strong></td>
+                    <td>
+                        "The author states/points out that..."<br>
+                        "According to the author, ..."<br>
+                        "The writer refers to..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Referring to the Text</strong></td>
+                    <td>
+                        "The text mentions..."<br>
+                        "It is stated that..."<br>
+                        "Regarding the aspect of [Topic], the article says..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Listing Facts</strong></td>
+                    <td>
+                        "First of all,..."<br>
+                        "Furthermore, it is mentioned that..."<br>
+                        "Finally, the author notes that..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534; margin-top: 15px;">
+                <strong>💡 Crucial Difference: "State" vs. "Explain"</strong><br>
+                <strong>State:</strong> You answer the <em>WHAT</em>. (Just the facts).<br>
+                <strong>Explain:</strong> You answer the <em>WHY</em> or <em>HOW</em>. (Reasons and connections).<br>
+                <em>If the operator is "State", keep it short!</em>
+            </div>
         `
     },
     {
@@ -385,6 +423,157 @@ const skillsContent = [
                 <tr><td><strong>Adding Arguments</strong></td><td>"Furthermore...", "In addition...", "Moreover...", "Another aspect is..."</td></tr>
                 <tr><td><strong>Concluding</strong></td><td>"Weighing the arguments, I come to the conclusion that..."<br>"Looking at the facts, it becomes clear that..."</td></tr>
             </table>
+            </div>
+        `
+    },
+    {
+        title: "Reflect on",
+        cat: "AFB III",
+        short: "Express thoughts carefully & deeply.",
+        content: `
+            <h3>Reflect on</h3>
+            <p class="intro-text"><em>To reflect means to hold up a mirror to a topic. It is not just about shouting your opinion; it is about <strong>exploring</strong> an issue, considering its implications, and connecting it to your own world or society.</em></p>
+
+            <h4>The "Deep Dive" Method</h4>
+            <p>Don't stay on the surface. Follow these steps to go deep:</p>
+            <ul>
+                <li><strong>1. Contextualize:</strong> Briefly state what the issue is.</li>
+                <li><strong>2. Personalize:</strong> How does this affect you, your generation, or society? Why does it matter?</li>
+                <li><strong>3. Analyze:</strong> Look at the consequences, the moral values, or the future outlook.</li>
+                <li><strong>4. Conclude:</strong> What is the lesson learned?</li>
+            </ul>
+
+            <h4>Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Starting the Process</strong></td>
+                    <td>
+                        "When considering the issue of..."<br>
+                        "At first glance, it seems that..."<br>
+                        "This topic raises the crucial question of..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Going Deeper</strong></td>
+                    <td>
+                        "On a deeper level, this implies that..."<br>
+                        "One might wonder if..."<br>
+                        "It is striking that..."<br>
+                        "From a moral / ethical perspective,..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Connecting to Society</strong></td>
+                    <td>
+                        "Looking at our society today,..."<br>
+                        "This mirrors the current situation in..."<br>
+                        "For my generation, this means..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="highlight-box" style="background: #fdf2f8; border: 1px solid #fbcfe8; color: #831843; margin-top: 15px;">
+                <strong>💡 Difference to "Comment":</strong><br>
+                A <strong>Comment</strong> tries to <em>persuade</em> the reader (Arguments: Pro/Con).<br>
+                A <strong>Reflection</strong> tries to <em>understand</em> the topic (Thoughts: Implications/Values).<br>
+                <em>You are allowed to use "I", but keep the register formal!</em>
+            </div>
+        `
+    },
+    {
+        title: "Contrast",
+        cat: "AFB II",
+        short: "Emphasize differences (No similarities!).",
+        content: `
+            <h3>Contrast</h3>
+            <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict (differences).</em></p>
+
+            <h4>1. The Strategy: "Ping-Pong" vs. "Block"</h4>
+            <p>To get full points, do not just summarize Text A and then Text B. Connect them!</p>
+            <ul>
+                <li><strong>The Block Method (Okay):</strong> You describe all features of Object A. Then you describe all features of Object B and say how they differ. (Easier, but less effective).</li>
+                <li><strong>The Ping-Pong Method (Best):</strong> You pick one aspect (e.g. "Tone") and immediately contrast A with B. Then you move to the next aspect.
+                <br><em>"While Text A is formal, Text B uses slang."</em></li>
+            </ul>
+
+            <h4>2. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Connectives (The Switch)</strong></td>
+                    <td>
+                        "<strong>In contrast to</strong> Text A, Text B..."<br>
+                        "<strong>Unlike</strong> the author of text A,..."<br>
+                        "<strong>However</strong>, the second text..."<br>
+                        "<strong>Whereas</strong> / <strong>While</strong> Text A says..., Text B claims..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Verbs & Nouns</strong></td>
+                    <td>
+                        "Text A <strong>differs from</strong> Text B in terms of..."<br>
+                        "There is a <strong>sharp contrast</strong> between..."<br>
+                        "This view <strong>contradicts</strong> the opinion in..."<br>
+                        "The <strong>main difference</strong> is that..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
+                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
+                <strong>Compare:</strong> Find Similarities AND Differences.<br>
+                <strong>Contrast:</strong> Find Differences ONLY.<br>
+                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
+            </div>
+        `
+    },
+    {
+        title: "Illustrate / Show",
+        cat: "AFB II",
+        short: "Use examples to explain or make clear.",
+        content: `
+            <h3>Illustrate / Show</h3>
+            <p class="intro-text"><em>"Show, don't just tell." These operators require you to prove a general statement by picking a specific, concrete example from the text. You are not drawing a picture; you are shining a spotlight on evidence.</em></p>
+
+            <h4>1. The "Claim & Proof" Method</h4>
+            <p>Never leave a claim standing alone. Always back it up:</p>
+            <ul>
+                <li><strong>The Claim (General):</strong> "The protagonist is very impulsive."</li>
+                <li><strong>The Bridge (Signal):</strong> "This is illustrated by the fact that..."</li>
+                <li><strong>The Proof (Specific):</strong> "...he smashes his phone against the wall in line 14."</li>
+            </ul>
+
+            <h4>2. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Starting the Example</strong></td>
+                    <td>
+                        "This becomes apparent when..."<br>
+                        "This is illustrated by..."<br>
+                        "To illustrate this point, the author uses..."<br>
+                        "A striking example of this is..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Connecting to Meaning</strong></td>
+                    <td>
+                        "This example clearly shows that..."<br>
+                        "By describing [X], the author makes clear that..."<br>
+                        "This incident serves as proof for..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin-top: 15px;">
+                <strong>💡 Pro-Tip: Precision</strong><br>
+                Don't retell the whole scene. Just pick the <strong>one detail</strong> that proves your point perfectly. Be as specific as possible!<br>
+                <em>Bad: "He does crazy things."</em><br>
+                <em>Good: "This is illustrated by his reckless driving in chapter 3."</em>
             </div>
         `
     },

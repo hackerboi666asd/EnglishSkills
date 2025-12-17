@@ -6,7 +6,7 @@ const gradingContent = [
   {
       title: "Bewertungskriterien: Schreiben (Sprache)",
       cat: "Grading",
-      short: "Sprachliche Darstellungsleistung (15-0 BE).",
+      short: "Sprachliche Leistungskriterien.",
       content: `
           <h3>Kompetenzbereich Schreiben: Sprache</h3>
           
@@ -100,7 +100,7 @@ const gradingContent = [
   {
       title: "Bewertungskriterien: Schreiben (Inhalt)",
       cat: "Grading",
-      short: "Inhaltliche Leistung (Vollständige Tabelle).",
+      short: "Inhaltliche Leistungskriterien.",
       content: `
           <h3>Kompetenzbereich Schreiben: Inhalt</h3>
           
@@ -191,7 +191,7 @@ const gradingContent = [
   {
       title: "Bewertungskriterien: Sprachmittlung (Mediation)",
       cat: "Grading",
-      short: "Bewertung Mediation (Inhalt & Sprache).",
+      short: "Bewertungsraster Mediation",
       content: `
           <h3>Kompetenzbereich Sprachmittlung</h3>
           
@@ -293,7 +293,7 @@ const gradingContent = [
     short: "Berechnung gemäß Abiturrichtlinien (ARI).",
     content: `
         <h3>Berechnung der Klausurnoten</h3>
-       <p class="intro-text"><em>Die Note setzt sich aus Bewertungseinheiten (BE) und einer vorher festgelegten Gewichtung der Kompetenzen zusammen.</em></p>
+       <p class="intro-text"><em>Die Note setzt sich aus Bewertungseinheiten (BE) und einer vorher von der Lehrkraft festgelegten Gewichtung der Kompetenzen zusammen. Die rechtliche Grundlage sind die Handreichungen zu den Abiturrichtlinien für Moderne Fremdsprachen (Quelle unten).</em></p>
 
         <h4>1. Ermittlung der BE (Bewertungseinheiten)</h4>
         <ul>
@@ -385,7 +385,7 @@ const gradingContent = [
 {
   title: "Mündliche Abiturprüfung",
   cat: "Grading",
-  short: "Ablauf & Detailliertes Bewertungsraster (2025).",
+  short: "Ablauf & Bewertungsraster.",
   content: `
       <h3>Ablauf der mündlichen Abiturprüfung</h3>
       
