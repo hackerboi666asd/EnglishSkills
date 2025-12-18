@@ -91,6 +91,52 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
     border-color: transparent; 
 }
 
+.origin-badge {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #475569;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.intro-section {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.intro-text {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+/* Beschreibungstexte in den Kacheln */
+.afb-explainer {
+    display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; 
+}
+.afb-desc {
+    color: #64748b; font-size: 0.9rem; line-height: 1.4; display: block;
+}
+.afb-desc em {
+    display: block; margin-top: 8px; font-style: normal; font-weight: 600;
+    color: #334155; background: #f1f5f9; padding: 4px 8px;
+    border-radius: 6px; display: inline-block;
+}
+
+/* Das Häkchen bei aktiver Kachel */
+.afb-card.active::after {
+    content: "✓";
+    position: absolute; top: 10px; right: 15px;
+    font-size: 1.2rem; color: #3b82f6; font-weight: bold;
+}
+
 /* Grid */
 .grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
