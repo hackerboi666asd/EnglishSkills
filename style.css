@@ -36,6 +36,41 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
     transform: translateY(-3px);
 }
 
+/* --- NEU: Farbige Balken für die oberen AFB-Erklär-Karten --- */
+
+/* Damit der Balken oben an der Karte klebt */
+.afb-card {
+    position: relative;
+    overflow: hidden; /* Wichtig: Schneidet den Balken an den runden Ecken ab */
+}
+
+/* Der Balken selbst (Standard grau) */
+.afb-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px; 
+    background: #e2e8f0; 
+    transition: background 0.3s ease;
+}
+
+/* 1. Karte (AFB I) -> Grün */
+.afb-explainer .afb-card:nth-child(1)::before {
+    background: var(--afb1);
+}
+
+/* 2. Karte (AFB II) -> Lila */
+.afb-explainer .afb-card:nth-child(2)::before {
+    background: var(--afb2);
+}
+
+/* 3. Karte (AFB III) -> Rot */
+.afb-explainer .afb-card:nth-child(3)::before {
+    background: var(--afb3);
+}
+
 /* Controls (Buttons unten) */
 .controls {
     display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;
@@ -127,7 +162,7 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
 
 /* Tables */
 .table-wrap { overflow-x: auto; margin: 2rem 0; border: 1px solid #e2e8f0; border-radius: 8px; }
-table { width: 100%; border-collapse: collapse; min-width: 800px; font-size: 0.95rem; background: white; }
+table { width: 100%; border-collapse: collapse; min-width: 1000px; font-size: 0.95rem; background: white; }
 th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
 th { background: #f8fafc; color: var(--primary); font-weight: 700; position: sticky; top: 0; }
 tr:hover td { background: #f1f5f9; }

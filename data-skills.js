@@ -1291,7 +1291,7 @@ const skillsContent = [
         content: `
                        <h3>Offizielle Liste der Operatoren</h3>
                         <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px;">
-                Source: <a href="https://bildung.bremen.de/sixcms/media.php/13/e_03-2015_a.pdf" target="_blank" style="color: #666; text-decoration: underline;">Bildungsplan Bremen (Pages 21-22)</a>
+                Quelle: <a href="https://bildung.bremen.de/sixcms/media.php/13/e_03-2015_a.pdf" target="_blank" style="color: #666; text-decoration: underline;">Bildungsplan Bremen (Seiten 21-22)</a>
             </p>
             
             <div class="table-wrap">
