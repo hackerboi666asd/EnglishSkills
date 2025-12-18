@@ -878,39 +878,105 @@ const skillsContent = [
     {
         title: "Mediation Skills",
         cat: "Tools",
-        short: "Mediate texts DE -> EN (Strategies & Structure).",
+        short: "Mediate texts DE -> EN (Strategies & Phrases).",
         content: `
             <h3>Mediation: The Master Guide</h3>
-            <p class="intro-text"><em>Mediation means transmitting information to a specific addressee. <strong>No word-for-word translation!</strong> Summarize the relevant points in English.</em></p>
+            <p class="intro-text"><em>Mediation means transmitting information to a specific addressee who does not understand the original language. <strong>It is NOT a translation!</strong> You act as a cultural bridge.</em></p>
 
-            <h4>1. The Golden Rules</h4>
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-bottom: 20px;">
+                <strong>⚠️ Major Trap: Translation vs. Mediation</strong><br>
+                Do not translate word-for-word. Do not keep the German sentence structure.<br>
+                <strong>Focus:</strong> What does the addressee <em>really</em> need to know? Filter out unnecessary details!
+            </div>
+
+            <h4>1. Preparation: The "TASK" Check</h4>
+            <p>Before writing, define your strategy:</p>
             <ul>
-                <li><strong>Length:</strong> Approx. <strong>1/3</strong> of the original text.</li>
-                <li><strong>Tense:</strong> Use <strong>Simple Present</strong>.</li>
-                <li><strong>Neutrality:</strong> No personal opinion, no interpretation.</li>
-                <li><strong>Audience:</strong> Address the reader at the beginning and end!</li>
+                <li><strong>T - Type:</strong> Blog, Email, Article? &rarr; Determines the format.</li>
+                <li><strong>A - Addressee:</strong> Friend, Teacher, International Audience? &rarr; Determines the register (formal/informal).</li>
+                <li><strong>S - Source:</strong> Who wrote the original? When? Where?</li>
+                <li><strong>K - Key Info:</strong> Underline only the facts relevant to the task.</li>
             </ul>
 
-            <h4>2. Preparation (The "Wh" Questions)</h4>
+            <h4>2. The Structure (The Sandwich)</h4>
             <ul>
-                <li><strong>WHO</strong> is the addressee? &rarr; Register (Formal vs. Informal).</li>
-                <li><strong>WHAT</strong> text type? (Email, Blog, Article).</li>
-                <li><strong>WHICH</strong> info is relevant? &rarr; Filter out details!</li>
+                <li><strong>Header/Salutation:</strong>
+                    <br><em>Formal:</em> Headline / "Dear Mr Smith,"
+                    <br><em>Informal:</em> Cool Headline / "Hi Sam,"
+                </li>
+                <li><strong>Introduction:</strong>
+                    State what the text is about and mention the source (Title, Author, Date).
+                    <br><em>"I recently read an interesting article by [Author] about..."</em>
+                </li>
+                <li><strong>Body (The Content):</strong>
+                    Group ideas logically (not necessarily chronologically). Use your own words (paraphrasing). Explain cultural terms.
+                </li>
+                <li><strong>Conclusion/Closing:</strong>
+                    <br><em>Formal:</em> "Yours sincerely,"
+                    <br><em>Informal:</em> "Best wishes," / "Let me know what you think!"
+                </li>
             </ul>
 
-            <h4>3. Compensation Strategies (Don't panic!)</h4>
-            <ul>
-                <li><strong>Paraphrase:</strong> Explain the meaning in simple words.</li>
-                <li><strong>Generalize:</strong> "Riesling & Silvaner" &rarr; "German wines".</li>
-                <li><strong>Explain Culture:</strong> "Abitur" &rarr; "German school leaving exam".</li>
-            </ul>
+            <h4>3. Compensation Strategies (The "Toolkit")</h4>
+            <p>Don't know a word? Don't panic. Use these tricks:</p>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Strategy</strong></td>
+                    <td><strong>Example</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Generalization</strong><br>(Oberbegriff)</td>
+                    <td>"Riesling, Silvaner & Müller-Thurgau"<br>&rarr; <em>"German white wines"</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Description</strong><br>(Umschreibung)</td>
+                    <td>"Fernweh"<br>&rarr; <em>"A longing for distant places"</em></td>
+                </tr>
+                <tr>
+                    <td><strong>Cultural Transfer</strong><br>(Erklärung)</td>
+                    <td>"Abitur"<br>&rarr; <em>"The German school leaving exam (A-Levels)"</em></td>
+                </tr>
+            </table>
+            </div>
 
             <h4>4. Useful Phrases</h4>
-            <ul>
-                <li><em>"According to the author..."</em></li>
-                <li><em>"The article deals with..." / "The text outlines..."</em></li>
-                <li><em>"With reference to the article..."</em></li>
-            </ul>
+            <div class="table-wrap">
+            <table style="font-size: 0.9em;">
+                <thead>
+                    <tr>
+                        <th>Function</th>
+                        <th>Phrases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Intro</strong></td>
+                        <td>
+                            "The article titled '...' by [Author] deals with..."<br>
+                            "The text outlines the problem of..."<br>
+                            "I found a German article that provides info on..."
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Connecting</strong></td>
+                        <td>
+                            "According to the author,..."<br>
+                            "Furthermore, it is pointed out that..."<br>
+                            "Another key aspect mentioned is..."
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Explaining</strong></td>
+                        <td>
+                            "This refers to..."<br>
+                            "In Germany, this is comparable to..."<br>
+                            "This term describes a situation where..."
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
         `
     },
     {
@@ -919,25 +985,73 @@ const skillsContent = [
         short: "Strategies for Pre-, While-, and Post-Listening.",
         content: `
             <h3>Listening Comprehension Guide</h3>
-            <p class="intro-text"><em>Success in listening exams is 50% strategy. Don't just listen passively – be an active detective.</em></p>
+            <p class="intro-text"><em>Success in listening exams is 50% strategy and 50% vocabulary. Don't just listen passively – be an active detective and watch out for traps!</em></p>
 
-            <h4>Phase 1: Pre-Listening (The most important minute)</h4>
+            <h4>Phase 1: Pre-Listening (The "Golden Minute")</h4>
+            <p>Use the time before the audio starts wisely:</p>
             <ul>
-                <li><strong>Read Instructions:</strong> Tick box? Fill gap? Full sentence?</li>
-                <li><strong>Predict Keywords:</strong> If the topic is "Airport", expect: <em>delay, gate, luggage, boarding</em>.</li>
+                <li><strong>Analyze the Format:</strong>
+                    <br>&rarr; <em>Gap Fill?</em> Check the word class needed (Noun? Number? Verb?).
+                    <br>&rarr; <em>Multiple Choice?</em> Underline the differences between A, B, and C.
+                </li>
+                <li><strong>Predict Content:</strong>
+                    If the question asks about "Climate Change", activate your inner vocabulary list: <em>global warming, emissions, carbon footprint, sea levels</em>.
+                </li>
             </ul>
 
-            <h4>Phase 2: While-Listening</h4>
-            <ul>
-                <li><strong>Gist first:</strong> Don't get stuck on one word. Keep listening!</li>
-                <li><strong>Signposting:</strong> Watch out for <em>"But...", "However..."</em> (often a trap!) or <em>"Most importantly..."</em> (the answer!).</li>
-                <li><strong>Notes:</strong> Use abbreviations and symbols (+, -, !). No sentences.</li>
+            <h4>Phase 2: While-Listening (The "Focus" Phase)</h4>
+            
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin: 15px 0;">
+                <strong>⚠️ WARNING: Distractors (The Traps)</strong><br>
+                Speakers often mention <em>all</em> options to confuse you.<br>
+                <em>Example:</em> "I wanted to take the <strong>train</strong> (Option A), but it was cancelled. So I took the <strong>bus</strong> (Option B)."<br>
+                &rarr; Wait for the specific confirmation!
+            </div>
+
+            <p><strong>Listen for "Signposts":</strong> These words tell you where the answer is hiding.</p>
+            <div class="table-wrap">
+            <table style="font-size: 0.9em;">
+                <tr>
+                    <th>Signal</th>
+                    <th>Meaning</th>
+                </tr>
+                <tr>
+                    <td><strong>"But...", "However...", "Actually..."</strong></td>
+                    <td><strong>Correction!</strong> The previous information was likely wrong or just a thought. The real answer follows now.</td>
+                </tr>
+                <tr>
+                    <td><strong>"Most importantly...", "The main point is..."</strong></td>
+                    <td><strong>Focus!</strong> The answer is coming right now.</td>
+                </tr>
+                <tr>
+                    <td><strong>"On the other hand..."</strong></td>
+                    <td><strong>Shift!</strong> A new perspective (or the next question) is starting.</td>
+                </tr>
+            </table>
+            </div>
+
+            <h4>3. Note-Taking Strategies</h4>
+            <p>Don't write sentences. Use shorthand symbols to be faster:</p>
+            <ul style="column-count: 2; column-gap: 20px;">
+                <li><strong>&uarr;</strong> = increase / go up</li>
+                <li><strong>&darr;</strong> = decrease / go down</li>
+                <li><strong>&ne;</strong> = difference / not</li>
+                <li><strong>+ / -</strong> = positive / negative</li>
+                <li><strong>b/c</strong> = because</li>
+                <li><strong>w/o</strong> = without</li>
+                <li><strong>gov</strong> = government</li>
+                <li><strong>env</strong> = environment</li>
             </ul>
 
-            <h4>Phase 3: Post-Listening</h4>
+            <h4>Phase 3: Post-Listening (The "Cleanup")</h4>
             <ul>
-                <li><strong>Gap Fills:</strong> Check Grammar! (e.g. "The boy is <em>running</em>", not "run").</li>
-                <li><strong>Logic Check:</strong> Does the answer make sense in context?</li>
+                <li><strong>The "Let it go" Rule:</strong> If you missed an answer, guess and move on. Don't panic, or you will miss the next three answers too.</li>
+                <li><strong>Grammar Check (Gap Fills):</strong>
+                    Does the word fit the sentence structure?
+                    <br><em>Wrong:</em> "The weather was <strong>danger</strong>."
+                    <br><em>Right:</em> "The weather was <strong>dangerous</strong>."
+                </li>
+                <li><strong>Spelling:</strong> Check for capitalization and correct spelling of key terms.</li>
             </ul>
         `
     },
@@ -1110,21 +1224,75 @@ const skillsContent = [
             </ul>
         `
     },
+    {
+        title: "Writing in the Abitur",
+        cat: "Tools",
+        short: "The 3-step structure of the Writing Part.",
+        content: `
+            <h3>The "Abitur" Writing Part</h3>
+            <p class="intro-text"><em>The exam almost always follows a classic 3-step structure. Knowing this pattern helps you predict what is coming.</em></p>
+
+            <h4>1. Comprehension (Task 1)</h4>
+            <p><strong>Goal:</strong> Filter and structure information.</p>
+            <ul>
+                <li><strong>Top Operator: Outline</strong> (Most frequent!)<br>
+                Don't just retell the story. Structure the main points (chronologically or thematically).</li>
+                <li><strong>Other common operators:</strong>
+                    <br>&rarr; <em>Describe</em> (Atmosphere, situations, pictures).
+                    <br>&rarr; <em>Point out</em> (Specific arguments/facts in non-fiction).
+                </li>
+            </ul>
+            <div style="background-color: #f8fafc; padding: 10px; border-left: 4px solid #64748b; margin-bottom: 20px; color: #475569;">
+                <strong>💡 Advice:</strong> Keep it neutral. No line references needed here unless specified in the task.
+            </div>
+
+            <h4>2. Analysis (Task 2)</h4>
+            <p><strong>Goal:</strong> Explain <em>how</em> the text works.</p>
+            <ul>
+                <li><strong>Top Operator: Analyse</strong><br>
+                Focus on <strong>Language, Style, and Tone</strong>. Identify stylistic devices (metaphors, register, sentence structure) and explain their effect.</li>
+                <li><strong>Runner-up: Examine</strong><br>
+                Often used for characters or feelings (e.g., "Examine the narrator's attitude...").</li>
+            </ul>
+            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0369a1; margin: 15px 0;">
+                <strong>🔑 The Golden Formula:</strong><br>
+                Feature + Quote + Label + Effect
+            </div>
+
+            <h4>3. Evaluation & Creativity (Task 3)</h4>
+            <p><strong>Goal:</strong> Give your opinion or apply knowledge.</p>
+            
+            <h5 style="color: #0f172a; margin-bottom: 5px;">Option A: Argumentative</h5>
+            <ul>
+                <li><strong>Comment on:</strong> Give your opinion on a quote/statement.</li>
+                <li><strong>Assess:</strong> Weigh pros and cons carefully. Requires balanced judgment.</li>
+                <li><strong>Pro tip:</strong> You can refer to your <strong>Course Studies</strong> (background knowledge).</li>
+            </ul>
+
+            <h5 style="color: #0f172a; margin-bottom: 5px; margin-top: 15px;">Option B: Creative / Text Production</h5>
+            <ul>
+                <li><strong>Top Format:</strong> Blog Entry.</li>
+                <li><strong>Others:</strong> Article, Formal Letter/Email.</li>
+            </ul>
+            
+            <div style="background-color: #fffbeb; padding: 10px; border-left: 4px solid #f59e0b; margin-top: 15px; color: #92400e;">
+                <strong>⚠️ Advice:</strong> Pay close attention to the <strong>register</strong> (formal vs. informal) and structure (headline, greeting, etc.).
+            </div>
+        `
+    },
 
     /* ============================================================
        GRADING / OPERATORS
        ============================================================ */
     {
-        title: "Operators",
+        title: "Operatoren",
         cat: "Grading",
-        short: "Official definitions (AFB I-III).",
+        short: "Offizielle Definitionen (AFB I-III).",
         content: `
-            <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px;">
+                       <h3>Offizielle Liste der Operatoren</h3>
+                        <p style="font-size: 0.8rem; color: #666; margin-bottom: 15px;">
                 Source: <a href="https://bildung.bremen.de/sixcms/media.php/13/e_03-2015_a.pdf" target="_blank" style="color: #666; text-decoration: underline;">Bildungsplan Bremen (Pages 21-22)</a>
             </p>
-
-            <h3>Official List of Operators</h3>
-            <p>Definitions based on the official guidelines.</p>
             
             <div class="table-wrap">
             <table class="op-table" style="font-size: 0.9em;">
