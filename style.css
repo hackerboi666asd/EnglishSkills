@@ -35,6 +35,8 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
 }
 
 /* --- INTRO & AFB KARTEN (OBEN) --- */
+/* Das sind die Styles, die vorher gefehlt haben! */
+
 .intro-section {
     max-width: 900px; margin: 0 auto 20px auto; text-align: center; padding: 0 20px;
 }
@@ -46,7 +48,7 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
     display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; 
 }
 
-/* Grunddesign der oberen Karten (Hier fehlte der Code!) */
+/* Grunddesign der oberen Karten (Wiederhergestellt) */
 .afb-card {
     flex: 1;
     min-width: 220px;
