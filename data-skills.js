@@ -447,6 +447,12 @@ const skillsContent = [
             <h3>Contrast</h3>
             <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict (differences).</em></p>
 
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
+                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
+                <strong>Compare:</strong> Find Similarities AND Differences.<br>
+                <strong>Contrast:</strong> Find Differences ONLY.<br>
+                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
+            </div>
             <h4>1. The Strategy: "Ping-Pong" vs. "Block"</h4>
             <p>To get full points, do not just summarize Text A and then Text B. Connect them!</p>
             <ul>
@@ -477,13 +483,6 @@ const skillsContent = [
                     </td>
                 </tr>
             </table>
-            </div>
-
-            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
-                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
-                <strong>Compare:</strong> Find Similarities AND Differences.<br>
-                <strong>Contrast:</strong> Find Differences ONLY.<br>
-                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
             </div>
         `
     },
