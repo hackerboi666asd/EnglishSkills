@@ -425,13 +425,13 @@ const gradingContent = [
       <table class="grading-table" style="font-size: 0.8em; min-width: 800px;"> <thead>
               <tr>
                   <th rowspan="2" style="width: 40px;">Note</th>
-                  <th colspan="3" style="text-align: center; background:rgb(122, 140, 200);">Fachliche Leistungen (Inhalt)</th>
+                  <th colspan="3" style="text-align: center; background:#7a8cc8;">Fachliche Leistungen (Inhalt)</th>
                   <th rowspan="2" style="background:rgb(124, 214, 151);">Kommunikative Leistung (Sprache)</th>
               </tr>
               <tr>
-                  <th style="background: #eef2ff;">Kenntnisse (AFB I)</th>
-                  <th style="background: #eef2ff;">Anwendung (AFB II)</th>
-                  <th style="background: #eef2ff;">Beurteilung (AFB III)</th>
+                  <th style="background: #7a8cc8;">Kenntnisse (AFB I)</th>
+                  <th style="background: #7a8cc8;">Anwendung (AFB II)</th>
+                  <th style="background: #7a8cc8;">Beurteilung (AFB III)</th>
               </tr>
           </thead>
           <tbody>

@@ -482,10 +482,11 @@ const skillsContent = [
             <h3>Operator: Compare</h3>
             <p class="intro-text"><strong>Definition:</strong> Show similarities <strong>and</strong> differences between two or more things, characters, or concepts.</p>
 
-            <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412;">
-                <strong>⚠️ Compare vs. Contrast:</strong><br>
-                <strong>Compare:</strong> Find similarities AND differences.<br>
-                <strong>Contrast:</strong> Find ONLY differences.
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
+                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
+                <strong>Compare:</strong> Find Similarities AND Differences.<br>
+                <strong>Contrast:</strong> Find Differences ONLY.<br>
+                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
             </div>
 
             <h4>How to structure your answer:</h4>
