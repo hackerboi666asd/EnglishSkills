@@ -7,9 +7,29 @@ const grid = document.getElementById('grid');
 const modalOverlay = document.getElementById('modalOverlay');
 
 // 2. INITIALISIERUNG
-// Wir warten kurz, bis data-skills.js und data-grading.js geladen sind
+// Wir warten kurz, bis die Daten geladen sind, und SORTIEREN sie dann.
 window.onload = function() {
-    console.log("App gestartet. Einträge geladen:", window.contentData.length);
+    
+    // Die gewünschte Reihenfolge festlegen
+    const sortOrder = { 
+        'AFB I': 1, 
+        'AFB II': 2, 
+        'AFB III': 3, 
+        'Tools': 4, 
+        'Grading': 5 
+    };
+
+    // Das Daten-Array sortieren
+    window.contentData.sort((a, b) => {
+        // Hole den Wert für die Kategorie (z.B. 2 für AFB II)
+        // Falls eine Kategorie unbekannt ist, bekommt sie den Wert 99 (ganz hinten)
+        let valA = sortOrder[a.cat] || 99;
+        let valB = sortOrder[b.cat] || 99;
+        
+        return valA - valB;
+    });
+
+    console.log("App gestartet. Einträge geladen und sortiert:", window.contentData.length);
     renderCards();
 };
 
