@@ -408,10 +408,23 @@ const skillsContent = [
             </ul>
 
             <h4>2. Tone (The Atmosphere)</h4>
-            <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the audience. It can change throughout the text!</p>
+            <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the emotions the text aims to convey. It can be <em>solemn</em> (feierlich), <em>alarming</em> (besorgniserregend), <em>ironic</em>, or something completely different.</p>
+            
             <div class="highlight-box">
                 <strong>Useful Adjectives:</strong><br>
                 optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, emotional, objective, solemn, cynical.
+            </div>
+
+            <p><strong>Guiding Questions:</strong></p>
+            <ul style="margin-bottom: 15px;">
+                <li>What is the overall feeling or attitude of the author toward the topic?</li>
+                <li>Does the author sound serious, humorous, or alarmed? <em>Why</em> do you think so?</li>
+                <li>Are there specific words or phrases that indicate these feelings?</li>
+            </ul>
+
+            <div style="background: #fff; padding: 12px; border-left: 4px solid #94a3b8; margin-bottom: 20px; font-size: 0.95rem;">
+                <strong>Example sentence (Analysis):</strong><br>
+                <em>"In the article on the climate crisis, the author chooses an <strong>alarming tone</strong>, in order to draw attention to the urgency of the issue."</em>
             </div>
 
             <h4>3. Register (The Formality)</h4>
@@ -1181,7 +1194,125 @@ const skillsContent = [
     /* ============================================================
        TOOLS & METHODS
        ============================================================ */
-    {
+       {
+        title: "Stylistic Devices",
+        cat: "Tools",
+        short: "Definitions, Examples & Effects.",
+        content: `
+            <h3>Stylistic Devices (Rhetorical Figures)</h3>
+            
+            <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412; margin-bottom: 20px;">
+                <strong>⚠️ Important Analysis Tip:</strong><br>
+                [cite_start]When analyzing the devices of a text, make sure to also point out its <strong>function or effect in its context</strong>[cite: 78].<br>
+                [cite_start]<em>Example:</em> A simile can create a picture in the mind of a reader, but <strong>which one exactly</strong> is it? [cite: 79] [cite_start]Or a personification can be mentioned, but <strong>what specific issue</strong> does it illustrate in the context of the text? [cite: 80]
+            </div>
+
+            <div class="table-wrap">
+            <table style="font-size: 0.9em;">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Device</th>
+                        <th style="width: 40%;">Definition & Example</th>
+                        <th style="width: 40%;">Function & Effect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Allegory</strong></td>
+                        [cite_start]<td>A symbol with a hidden meaning (often standing for the opposite) [cite: 6][cite_start].<br><em>Ex: Justitia (justice), Death as a skeleton[cite: 6].</em></td>
+                        <td>Aesthetic formulation; [cite_start]Create a picture in the mind of the listener[cite: 7].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alliteration</strong></td>
+                        [cite_start]<td>At least two consecutive words beginning with the same letters [cite: 9][cite_start].<br><em>Ex: "The Elfin from the green grass"[cite: 9].</em></td>
+                        <td>Emphasizes the urgency; Aesthetic formulation; [cite_start]Intensification[cite: 10].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anaphora</strong></td>
+                        [cite_start]<td>Repeating of a sequence of words at the beginning of a sentence or verse [cite: 12][cite_start].<br><em>Ex: "I have a dream (...). I have a dream that (...)"[cite: 13].</em></td>
+                        <td>Accentuate and emphasize something; Convincing the listener; [cite_start]Dramatization[cite: 14].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Antithesis</strong></td>
+                        [cite_start]<td>Contradictions are being emphasized within one sentence [cite: 16][cite_start].<br><em>Ex: "Ask not what your country can do for you — ask what you can do for your country."[cite: 17, 18].</em></td>
+                        [cite_start]<td>To strengthen an argument, or make a sentence more memorable[cite: 20].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Climax</strong></td>
+                        [cite_start]<td>A three-stepped increase of words or phrases [cite: 22][cite_start].<br><em>Ex: "Veni, vidi, vici."[cite: 23].</em></td>
+                        <td>Emphasizes the urgency; [cite_start]Dramatization[cite: 24].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enumeration</strong></td>
+                        [cite_start]<td>A completely ordered list of words or items [cite: 26][cite_start].<br><em>Ex: "Dear inhabitants from Europe, America, Asia, Africa..."[cite: 27].</em></td>
+                        <td>Create the feeling of wholeness; [cite_start]Accentuate and emphasize something[cite: 28].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Exclamation</strong></td>
+                        [cite_start]<td>Emotional, exclamatory phrase/outcry [cite: 30][cite_start].<br><em>Ex: "WHY!?", "No way!"[cite: 31].</em></td>
+                        [cite_start]<td>Stressing something with passion, wonder, fear or grief[cite: 32].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hyperbole</strong></td>
+                        [cite_start]<td>Exaggeration of a normal issue/circumstance [cite: 34][cite_start].<br><em>Ex: "dead tired", "snail pace"[cite: 35].</em></td>
+                        <td>Dramatization; [cite_start]Shock effect[cite: 35].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Metaphor</strong></td>
+                        [cite_start]<td>Pictorial comparison between two things that are interconnected [cite: 37][cite_start].<br><em>Ex: "looking for a needle in a haystack"[cite: 38].</em></td>
+                        <td>Create a picture in the mind of the listener; [cite_start]Illustration of an issue[cite: 39].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Onomatopoeia</strong></td>
+                        [cite_start]<td>Words that imitate sounds [cite: 41][cite_start].<br><em>Ex: "Pow", "Meow", "tick tock"[cite: 42].</em></td>
+                        [cite_start]<td>Aesthetic and tuneful formulation[cite: 42].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oxymoron</strong></td>
+                        [cite_start]<td>Two or more words which seem in combination totally impossible [cite: 44][cite_start].<br><em>Ex: "living dead", "open secret"[cite: 44].</em></td>
+                        <td>Shock effect; [cite_start]Make the reader think about the issue[cite: 45].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Paradox</strong></td>
+                        [cite_start]<td>Irresolvable contradictions of a set of facts [cite: 49][cite_start].<br><em>Ex: "War is peace, freedom is slavery..."[cite: 50].</em></td>
+                        <td>Aesthetic formulation; [cite_start]Make the reader think about the issue[cite: 50, 51].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Parallelism</strong></td>
+                        [cite_start]<td>Parallel or similar syntax in several sentences [cite: 53][cite_start].<br><em>Ex: "Talk is silver, silence is golden"[cite: 53].</em></td>
+                        <td>Intensification; [cite_start]Repeat something[cite: 54].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Personification</strong></td>
+                        [cite_start]<td>Humanisation of animals, things and lifeless objects [cite: 56][cite_start].<br><em>Ex: "The eye of the law", "Mother Nature"[cite: 57].</em></td>
+                        <td>Aesthetic formulation; [cite_start]Illustration of an issue[cite: 58].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Repetition</strong></td>
+                        [cite_start]<td>Repetition of the same word (in one or several sentences) [cite: 60][cite_start].<br><em>Ex: "Why, why, why?"[cite: 60].</em></td>
+                        [cite_start]<td>Make something very clear, obvious etc.[cite: 62].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rhetorical Question</strong></td>
+                        [cite_start]<td>Question where no response is expected [cite: 64][cite_start].<br><em>Ex: "Didn't I tell you before?"[cite: 65].</em></td>
+                        <td>Make sb. feel part of the speech; Dramatization; [cite_start]Involve the listener[cite: 66].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Simile</strong></td>
+                        [cite_start]<td>Comparison using "as", "like" or "than" [cite: 70][cite_start].<br><em>Ex: "hungry as a lion"[cite: 71].</em></td>
+                        <td>Create a picture in the mind; [cite_start]Connect two different things[cite: 72].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Symbol</strong></td>
+                        [cite_start]<td>An object which represents an idea or something else [cite: 74][cite_start].<br><em>Ex: White pigeon (freedom), Uncle Sam (USA)[cite: 75].</em></td>
+                        <td>Illustration of an issue; [cite_start]Aesthetic formulation[cite: 76].</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        `
+    },
+       {
         title: "Linking Words / Connectives",
         cat: "Tools",
         short: "Improve flow & logic (The Glue of your Essay).",
@@ -1323,6 +1454,15 @@ const skillsContent = [
                 </tbody>
             </table>
             </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>Practice / Real Examples</h4>
+            <p>Want to see what real exam tasks look like? The IQB provides a pool of official Abitur tasks:</p>
+            
+            <a href="https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-englisch/?Kompetenzbereich=1957" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 5px; transition: background 0.2s;">
+                &rarr; Open IQB Task Pool (Sprachmittlung)
+            </a>
         `
     },
     {
@@ -1399,6 +1539,15 @@ const skillsContent = [
                 </li>
                 <li><strong>Spelling:</strong> Check for capitalization and correct spelling of key terms.</li>
             </ul>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>Practice / Real Examples</h4>
+            <p>Want to see what real exam tasks look like? The IQB provides a pool of official Abitur tasks:</p>
+            
+            <a href="https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-englisch/?Kompetenzbereich=1594" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 5px; transition: background 0.2s;">
+                &rarr; Open IQB Task Pool (Hörverstehen)
+            </a>
         `
     },
     {
@@ -1612,7 +1761,7 @@ const skillsContent = [
             <ul>
                 <li><strong>Comment on:</strong> Give your opinion on a quote/statement.</li>
                 <li><strong>Assess:</strong> Weigh pros and cons carefully. Requires balanced judgment.</li>
-                <li><strong>Pro tip:</strong> You can refer to your <strong>Course Studies</strong> (background knowledge).</li>
+                <li>You can refer to your <strong>Course Studies</strong> (background knowledge).</li>
             </ul>
 
             <h5 style="color: #0f172a; margin-bottom: 5px; margin-top: 15px;">Option B: Creative / Text Production</h5>
@@ -1624,6 +1773,15 @@ const skillsContent = [
             <div style="background-color: #fffbeb; padding: 10px; border-left: 4px solid #f59e0b; margin-top: 15px; color: #92400e;">
                 <strong>⚠️ Advice:</strong> Pay close attention to the <strong>register</strong> (formal vs. informal) and structure (headline, greeting, etc.).
             </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>Practice / Real Examples</h4>
+            <p>Want to see what real exam tasks look like? The IQB provides a pool of official Abitur tasks:</p>
+            
+            <a href="https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-englisch/?Kompetenzbereich=1839" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 5px; transition: background 0.2s;">
+                &rarr; Open IQB Task Pool (Schreiben)
+            </a>
         `
     },
 
