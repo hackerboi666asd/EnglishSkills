@@ -6,7 +6,7 @@ const skillsContent = [
        AFB I: COMPREHENSION
        ============================================================ */
        {
-        title: "Summary",
+        title: "Summarize (Operator)",
         cat: "AFB I",
         short: "Concise account of a text's main points.",
         content: `
@@ -56,7 +56,7 @@ const skillsContent = [
         `
     },
     {
-        title: "Outline",
+        title: "Outline (Operator)",
         cat: "AFB I",
         short: "Structure specific info (Focus on one aspect).",
         content: `
@@ -95,7 +95,7 @@ const skillsContent = [
         `
     },
     {
-        title: "Point out / State",
+        title: "Point out / State (Operator)",
         cat: "AFB I",
         short: "Identify and present clearly (No analysis!).",
         content: `
@@ -150,7 +150,7 @@ const skillsContent = [
         `
     },
     {
-        title: "Present",
+        title: "Present (Operator)",
         cat: "AFB I",
         short: "(Re)structure and write down.",
         content: `
@@ -173,13 +173,90 @@ const skillsContent = [
             </ul>
         `
     },
+    {
+        title: "Describe / Depict (Operator)",
+        cat: "AFB I",
+        short: "Give a detailed account of what something is like.",
+        content: `
+            <h3>Operator: Describe / Depict</h3>
+            <p class="intro-text"><strong>Definition:</strong> Give a detailed account of what someone or something is like.</p>
+
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534;">
+                <strong>💡 Core Task:</strong> Look closely at the text and reproduce the relevant details in a structured way.
+            </div>
+
+            <h4>How to do it:</h4>
+            <ul>
+                <li><strong>Select:</strong> Scan the text for relevant details regarding the task.</li>
+                <li><strong>Structure:</strong> Don't just list facts chronologically as they appear in the text. Group them logically!
+                    <br><em>(e.g., Appearance first, then Behavior).</em>
+                </li>
+                <li><strong>Paraphrase:</strong> Use your own words. Do not copy long quotes.</li>
+                <li><strong>Neutrality:</strong> Stay objective. <strong>Do not analyze</strong> (don't explain <em>why</em> something is happening) and do not give your opinion.</li>
+            </ul>
+
+            <h4>Useful Phrases</h4>
+            <div class="table-wrap">
+            <table style="font-size: 0.95em;">
+                <tr>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Starting</strong></td>
+                    <td>
+                        "The text describes the protagonist as..."<br>
+                        "According to the text, the situation is..."<br>
+                        "The author depicts the setting as..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Appearance & Details</strong></td>
+                    <td>
+                        "His appearance is characterized by..."<br>
+                        "She is presented as a ... woman."<br>
+                        "A striking feature of the room is..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Behavior & Reaction</strong></td>
+                    <td>
+                        "The character reacts to the news by (verb + -ing)..."<br>
+                        "Consequently, he decides to..."<br>
+                        "Her behavior suggests that she is..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Structuring</strong></td>
+                    <td>
+                        "First of all,..." / "Furthermore,..."<br>
+                        "In addition to that,..."<br>
+                        "Finally,..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <h4>Examples:</h4>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px; background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <strong>"Describe the soldier’s outward appearance."</strong><br>
+                    <span style="color:#64748b; font-size: 0.9em;">&rarr; Focus on details like his uniform, height, dirt on his face, equipment, etc.</span>
+                </li>
+                <li style="background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <strong>"Describe the way in which the protagonist reacts to the news."</strong><br>
+                    <span style="color:#64748b; font-size: 0.9em;">&rarr; Focus on bodily reactions (trembling hands), facial expressions (pale), and verbal responses (shouting).</span>
+                </li>
+            </ul>
+        `
+    },
     /* ============================================================
        AFB II: ANALYSIS
        ============================================================ */
        {
         title: "Characterization",
         cat: "AFB II",
-        short: "Analyze character traits & development.",
+        short: "Operator: Describe the character of / give / write a characterization",
         content: `
                        <h3>How to write a Characterization</h3>
             <p class="intro-text"><em>Characters are the heart of every story. Understanding them helps you understand the whole plot. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
@@ -349,11 +426,232 @@ const skillsContent = [
             </ul>
         `
     },
+    {
+        title: "Contrast (Operator)",
+        cat: "AFB II",
+        short: "Emphasize differences (No similarities!).",
+        content: `
+            <h3>Contrast</h3>
+            <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict (differences).</em></p>
+
+            <h4>1. The Strategy: "Ping-Pong" vs. "Block"</h4>
+            <p>To get full points, do not just summarize Text A and then Text B. Connect them!</p>
+            <ul>
+                <li><strong>The Block Method (Okay):</strong> You describe all features of Object A. Then you describe all features of Object B and say how they differ. (Easier, but less effective).</li>
+                <li><strong>The Ping-Pong Method (Best):</strong> You pick one aspect (e.g. "Tone") and immediately contrast A with B. Then you move to the next aspect.
+                <br><em>"While Text A is formal, Text B uses slang."</em></li>
+            </ul>
+
+            <h4>2. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Connectives (The Switch)</strong></td>
+                    <td>
+                        "<strong>In contrast to</strong> Text A, Text B..."<br>
+                        "<strong>Unlike</strong> the author of text A,..."<br>
+                        "<strong>However</strong>, the second text..."<br>
+                        "<strong>Whereas</strong> / <strong>While</strong> Text A says..., Text B claims..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Verbs & Nouns</strong></td>
+                    <td>
+                        "Text A <strong>differs from</strong> Text B in terms of..."<br>
+                        "There is a <strong>sharp contrast</strong> between..."<br>
+                        "This view <strong>contradicts</strong> the opinion in..."<br>
+                        "The <strong>main difference</strong> is that..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
+                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
+                <strong>Compare:</strong> Find Similarities AND Differences.<br>
+                <strong>Contrast:</strong> Find Differences ONLY.<br>
+                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
+            </div>
+        `
+    },
+    {
+        title: "Compare (Operator)",
+        cat: "AFB II",
+        short: "Show similarities AND differences.",
+        content: `
+            <h3>Operator: Compare</h3>
+            <p class="intro-text"><strong>Definition:</strong> Show similarities <strong>and</strong> differences between two or more things, characters, or concepts.</p>
+
+            <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412;">
+                <strong>⚠️ Compare vs. Contrast:</strong><br>
+                <strong>Compare:</strong> Find similarities AND differences.<br>
+                <strong>Contrast:</strong> Find ONLY differences.
+            </div>
+
+            <h4>How to structure your answer:</h4>
+            <p>Do not just write a summary of Text A followed by a summary of Text B. Use the <strong>"Point-by-Point"</strong> method for a better grade:</p>
+            <ul>
+                <li><strong>Aspect 1 (e.g., Atmosphere):</strong> How is it in Text A? &harr; How is it in Text B?</li>
+                <li><strong>Aspect 2 (e.g., Language):</strong> Text A uses metaphors... &harr; whereas Text B is factual...</li>
+                <li><strong>Aspect 3 (e.g., Intention):</strong> Both texts aim to...</li>
+            </ul>
+
+            <h4>Useful Phrases</h4>
+            <p>The key to a good comparison is the use of <strong>linking words</strong>.</p>
+            <div class="table-wrap">
+            <table style="font-size: 0.95em;">
+                <tr>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Similarities</strong><br>(Gemeinsamkeiten)</td>
+                    <td>
+                        "Similarly,..." / "Likewise,..."<br>
+                        "Just as in text A, text B also..."<br>
+                        "Both texts deal with..."<br>
+                        "A common feature of both characters is..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Differences</strong><br>(Unterschiede)</td>
+                    <td>
+                        "However,..." / "In contrast to..."<br>
+                        "While character A is shy, character B is..."<br>
+                        "Whereas text A focuses on..., text B..."<br>
+                        "On the one hand..., on the other hand..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Conclusion</strong><br>(Fazit)</td>
+                    <td>
+                        "To sum up, while they share..., they differ in..."<br>
+                        "Despite these similarities, the main difference is..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+        `
+    },
+    {
+        title: "Illustrate / Show (Operator)",
+        cat: "AFB II",
+        short: "Use examples to explain or make clear.",
+        content: `
+            <h3>Illustrate / Show</h3>
+            <p class="intro-text"><em>"Show, don't just tell." These operators require you to prove a general statement by picking a specific, concrete example from the text. You are not drawing a picture; you are shining a spotlight on evidence.</em></p>
+
+            <h4>1. The "Claim & Proof" Method</h4>
+            <p>Never leave a claim standing alone. Always back it up:</p>
+            <ul>
+                <li><strong>The Claim (General):</strong> "The protagonist is very impulsive."</li>
+                <li><strong>The Bridge (Signal):</strong> "This is illustrated by the fact that..."</li>
+                <li><strong>The Proof (Specific):</strong> "...he smashes his phone against the wall in line 14."</li>
+            </ul>
+
+            <h4>2. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Starting the Example</strong></td>
+                    <td>
+                        "This becomes apparent when..."<br>
+                        "This is illustrated by..."<br>
+                        "To illustrate this point, the author uses..."<br>
+                        "A striking example of this is..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Connecting to Meaning</strong></td>
+                    <td>
+                        "This example clearly shows that..."<br>
+                        "By describing [X], the author makes clear that..."<br>
+                        "This incident serves as proof for..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin-top: 15px;">
+                <strong>💡 Pro-Tip: Precision</strong><br>
+                Don't retell the whole scene. Just pick the <strong>one detail</strong> that proves your point perfectly. Be as specific as possible!<br>
+                <em>Bad: "He does crazy things."</em><br>
+                <em>Good: "This is illustrated by his reckless driving in chapter 3."</em>
+            </div>
+        `
+    },
+    {
+        title: "Explain (Operator)",
+        cat: "AFB II",
+        short: "Make something clear by giving reasons and showing causes.",
+        content: `
+            <h3>Operator: Explain</h3>
+            <p class="intro-text"><strong>Definition:</strong> Describe and define the causes and effects of a problem or situation. Make relationships between ideas clear.</p>
+
+            <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
+                <strong>💡 The Difference:</strong> <br>
+                <strong>Describe</strong> = What does it look like? (Surface)<br>
+                <strong>Explain</strong> = Why is it like that? (Background, Reasons, Connections)
+            </div>
+
+            <h4>How to structure your answer:</h4>
+            <ul>
+                <li><strong>1. Thesis/Statement:</strong> State the phenomenon or behavior you are going to explain.</li>
+                <li><strong>2. Reasoning (The "Because"):</strong> Connect the event with its cause. Use logical linkers!</li>
+                <li><strong>3. Evidence:</strong> Refer to the text/context to prove <em>why</em> this explanation is correct.</li>
+                <li><strong>4. Own Words:</strong> Do not just quote. Show that you have understood the logic behind the events.</li>
+            </ul>
+
+            <h4>Useful Phrases</h4>
+            <div class="table-wrap">
+            <table style="font-size: 0.95em;">
+                <tr>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Cause & Reason</strong><br>(Ursache)</td>
+                    <td>
+                        "The reason for this behavior is..."<br>
+                        "This can be attributed to..."<br>
+                        "This is due to the fact that..."<br>
+                        "He reacts this way because..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Effect & Consequence</strong><br>(Wirkung)</td>
+                    <td>
+                        "As a result,..." / "Consequently,..."<br>
+                        "This leads to..."<br>
+                        "For this reason,..."<br>
+                        "This explains why..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Clarifying</strong><br>(Verdeutlichen)</td>
+                    <td>
+                        "This means that..."<br>
+                        "In other words,..."<br>
+                        "To put it simply,..."<br>
+                        "This implies that..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <h4>Example Task:</h4>
+            <div style="background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 0.95rem;">
+                <strong>Task:</strong> "Explain why the protagonist decides to leave his family."<br><br>
+                <strong>Don't just write:</strong> <em>"He leaves because he is sad."</em> (Too simple)<br>
+                <strong>Better:</strong> <em>"The protagonist decides to leave his family <strong>due to</strong> a deep feeling of alienation. <strong>This is shown when</strong> he refuses to speak to his parents. <strong>Consequently</strong>, he sees leaving as the only way to regain his freedom."</em>
+            </div>
+        `
+    },
  /* ============================================================
        AFB III: WRITING / TEXT PRODUCTION
        ============================================================ */
        {
-        title: "Comment",
+        title: "Comment (Operator)",
         cat: "AFB III",
         short: "Express your opinion (One-sided argument).",
         content: `
@@ -395,7 +693,7 @@ const skillsContent = [
         `
     },
     {
-        title: "Discussion",
+        title: "Discussion (Operator)",
         cat: "AFB III",
         short: "Weigh pros and cons (Dialectical essay).",
         content: `
@@ -427,7 +725,7 @@ const skillsContent = [
         `
     },
     {
-        title: "Reflect on",
+        title: "Reflect on (Operator)",
         cat: "AFB III",
         short: "Express thoughts carefully & deeply.",
         content: `
@@ -483,97 +781,144 @@ const skillsContent = [
         `
     },
     {
-        title: "Contrast",
-        cat: "AFB II",
-        short: "Emphasize differences (No similarities!).",
+        title: "Assess / Evaluate (Operator)",
+        cat: "AFB III",
+        short: "Weigh pros & cons to reach a well-founded judgment.",
         content: `
-            <h3>Contrast</h3>
-            <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict (differences).</em></p>
+            <h3>Operator: Assess / Evaluate</h3>
+            <p class="intro-text"><strong>Definition:</strong> Express a well-founded opinion about the nature, quality, or value of something after carefully considering all important aspects.</p>
 
-            <h4>1. The Strategy: "Ping-Pong" vs. "Block"</h4>
-            <p>To get full points, do not just summarize Text A and then Text B. Connect them!</p>
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
+                <strong>⚖️ The Difference to "Comment":</strong><br>
+                While a <em>Comment</em> asks for your personal opinion/attitude, <strong>Assess/Evaluate</strong> requires a more objective check against specific <strong>criteria</strong>.<br>
+                <em>Example:</em> "Evaluate the success" &rarr; You must check if the goals were actually reached.
+            </div>
+
+            <h4>How to structure your answer:</h4>
             <ul>
-                <li><strong>The Block Method (Okay):</strong> You describe all features of Object A. Then you describe all features of Object B and say how they differ. (Easier, but less effective).</li>
-                <li><strong>The Ping-Pong Method (Best):</strong> You pick one aspect (e.g. "Tone") and immediately contrast A with B. Then you move to the next aspect.
-                <br><em>"While Text A is formal, Text B uses slang."</em></li>
+                <li><strong>1. Introduction:</strong> Define the topic and the <strong>criteria</strong> you are using (e.g., economic success, environmental impact, long-term stability).</li>
+                <li><strong>2. Examination (The Scales):</strong> Weigh the arguments.
+                    <br>&rarr; What speaks <strong>for</strong> the success/importance?
+                    <br>&rarr; What speaks <strong>against</strong> it (limitations, risks)?
+                </li>
+                <li><strong>3. The Verdict (Conclusion):</strong> Formulate a nuanced judgment. Is it a complete success or only a partial one? Do the pros outweigh the cons?</li>
             </ul>
 
-            <h4>2. Useful Phrases</h4>
+            <h4>Useful Phrases</h4>
             <div class="table-wrap">
-            <table>
+            <table style="font-size: 0.95em;">
                 <tr>
-                    <td><strong>Connectives (The Switch)</strong></td>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Weighing Arguments</strong><br>(Abwägen)</td>
                     <td>
-                        "<strong>In contrast to</strong> Text A, Text B..."<br>
-                        "<strong>Unlike</strong> the author of text A,..."<br>
-                        "<strong>However</strong>, the second text..."<br>
-                        "<strong>Whereas</strong> / <strong>While</strong> Text A says..., Text B claims..."
+                        "One must consider both the benefits and the drawbacks."<br>
+                        "On the one hand..., on the other hand..."<br>
+                        "While it is true that..., one must not forget that..."<br>
+                        "Ideally..., but in reality..."
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Verbs & Nouns</strong></td>
+                    <td><strong>Evaluating</strong><br>(Bewerten)</td>
                     <td>
-                        "Text A <strong>differs from</strong> Text B in terms of..."<br>
-                        "There is a <strong>sharp contrast</strong> between..."<br>
-                        "This view <strong>contradicts</strong> the opinion in..."<br>
-                        "The <strong>main difference</strong> is that..."
+                        "A major advantage/shortcoming is..."<br>
+                        "This approach proves to be effective because..."<br>
+                        "In terms of efficiency, this measure is..."<br>
+                        "This argument is convincing/flawed because..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Concluding</strong><br>(Urteil fällen)</td>
+                    <td>
+                        "All in all, the positive aspects outweigh the negative ones."<br>
+                        "To sum up, it can be said that..."<br>
+                        "Therefore, I would assess this as a partial success."
                     </td>
                 </tr>
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
-                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
-                <strong>Compare:</strong> Find Similarities AND Differences.<br>
-                <strong>Contrast:</strong> Find Differences ONLY.<br>
-                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
-            </div>
+            <h4>Examples:</h4>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px; background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <strong>"Assess the importance of learning languages..."</strong><br>
+                    <span style="color:#64748b; font-size: 0.9em;">&rarr; Criteria: Career opportunities, cultural understanding vs. improvement of AI translation tools.</span>
+                </li>
+                <li style="background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <strong>"Evaluate the success of the steps taken to reduce rubbish."</strong><br>
+                    <span style="color:#64748b; font-size: 0.9em;">&rarr; Check: Did rubbish actually decrease? Are the measures too expensive or impractical?</span>
+                </li>
+            </ul>
         `
     },
     {
-        title: "Illustrate / Show",
-        cat: "AFB II",
-        short: "Use examples to explain or make clear.",
+        title: "Diary Entry",
+        cat: "AFB III",
+        short: "Creative writing: Thoughts, feelings & reflections.",
         content: `
-            <h3>Illustrate / Show</h3>
-            <p class="intro-text"><em>"Show, don't just tell." These operators require you to prove a general statement by picking a specific, concrete example from the text. You are not drawing a picture; you are shining a spotlight on evidence.</em></p>
+            <h3>Text Type: Diary Entry</h3>
+            <p class="intro-text"><strong>Definition:</strong> A personal record of events, thoughts, and feelings. It is highly subjective and written from the first-person perspective ("I").</p>
 
-            <h4>1. The "Claim & Proof" Method</h4>
-            <p>Never leave a claim standing alone. Always back it up:</p>
+            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e;">
+                <strong>💡 Golden Rule:</strong> Never just retell the plot! The focus lies on <strong>emotions, inner conflicts, and reflection</strong>. How does the character <em>feel</em> about what happened?
+            </div>
+
+            <h4>How to write it:</h4>
             <ul>
-                <li><strong>The Claim (General):</strong> "The protagonist is very impulsive."</li>
-                <li><strong>The Bridge (Signal):</strong> "This is illustrated by the fact that..."</li>
-                <li><strong>The Proof (Specific):</strong> "...he smashes his phone against the wall in line 14."</li>
+                <li><strong>Format:</strong> Date (top right or left), Salutation ("Dear Diary,"), Closing, Name/Signature.</li>
+                <li><strong>Register:</strong> Informal to semi-formal. You can use colloquial language, rhetorical questions, and exclamations (!).</li>
+                <li><strong>Tense:</strong>
+                    <br>&rarr; <em>Simple Past</em> for events that happened during the day.
+                    <br>&rarr; <em>Simple Present</em> for current feelings and thoughts.
+                    <br>&rarr; <em>Future forms</em> for plans or worries about tomorrow.
+                </li>
             </ul>
 
-            <h4>2. Useful Phrases</h4>
+            <h4>Useful Phrases</h4>
             <div class="table-wrap">
-            <table>
+            <table style="font-size: 0.95em;">
                 <tr>
-                    <td><strong>Starting the Example</strong></td>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Opening</strong></td>
                     <td>
-                        "This becomes apparent when..."<br>
-                        "This is illustrated by..."<br>
-                        "To illustrate this point, the author uses..."<br>
-                        "A striking example of this is..."
+                        "Dear Diary,"<br>
+                        "I can't believe what happened today."<br>
+                        "What a day! I don't even know where to start."<br>
+                        "I just have to get this off my chest."
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Connecting to Meaning</strong></td>
+                    <td><strong>Expressing Emotions</strong></td>
                     <td>
-                        "This example clearly shows that..."<br>
-                        "By describing [X], the author makes clear that..."<br>
-                        "This incident serves as proof for..."
+                        "I feel so frustrated / relieved / confused..."<br>
+                        "It drives me crazy that..."<br>
+                        "I was absolutely terrified when..."<br>
+                        "I'm still shaking."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Reflection & Speculation</strong></td>
+                    <td>
+                        "I wonder if I did the right thing."<br>
+                        "Maybe I should have said..."<br>
+                        "Why does this always happen to me?"<br>
+                        "I wish I could turn back time."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Closing</strong></td>
+                    <td>
+                        "I better get some sleep now."<br>
+                        "I'll write more tomorrow."<br>
+                        "Yours, [Name]"
                     </td>
                 </tr>
             </table>
-            </div>
-
-            <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin-top: 15px;">
-                <strong>💡 Pro-Tip: Precision</strong><br>
-                Don't retell the whole scene. Just pick the <strong>one detail</strong> that proves your point perfectly. Be as specific as possible!<br>
-                <em>Bad: "He does crazy things."</em><br>
-                <em>Good: "This is illustrated by his reckless driving in chapter 3."</em>
             </div>
         `
     },
