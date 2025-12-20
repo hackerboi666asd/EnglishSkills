@@ -573,11 +573,10 @@ const skillsContent = [
             <h3>Contrast</h3>
             <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict.</em></p>
 
-            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
-                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
-                <strong>Compare:</strong> Find Similarities AND Differences.<br>
-                <strong>Contrast:</strong> Find Differences ONLY.<br>
-                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
+       <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412;">
+                <strong>⚠️ Compare vs. Contrast:</strong><br>
+                <strong>Compare:</strong> Find similarities AND differences.<br>
+                <strong>Contrast:</strong> Find ONLY differences.
             </div>
 
             <h4>1. The Strategy: "Ping-Pong" vs. "Block"</h4>
@@ -683,7 +682,7 @@ const skillsContent = [
 
             <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin: 15px 0;">
                 <strong>💡 Pro-Tip: Precision</strong><br>
-                Don't retell the whole scene. Just pick the <strong>one detail</strong> that proves your point perfectly.
+                Don't retell the whole scene. Pick the one details that prove your point.
             </div>
 
             <h4>2. Useful Phrases</h4>
