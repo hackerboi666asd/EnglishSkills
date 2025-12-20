@@ -77,16 +77,36 @@ const skillsContent = [
 
             <p><strong>2. Main Part:</strong><br>
             List the findings logically. Use structure words to guide the reader:</p>
-            <ul>
-                <li>"The text focuses on..."</li>
-                <li>"The author lists several reasons for..."</li>
-                <li>"First of all, it is stated that..."</li>
-                <li>"Another aspect mentioned is..."</li>
-                <li>"Furthermore, the author points out..."</li>
-                <li>"Finally, regarding [Topic], the text says that..."</li>
-            </ul>
+            
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Starting</strong></td>
+                    <td>
+                        "The text focuses on..."<br>
+                        "The author lists several reasons for..."<br>
+                        "First of all, it is stated that..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Listing</strong></td>
+                    <td>
+                        "Another aspect mentioned is..."<br>
+                        "Furthermore, the author points out..."<br>
+                        "In addition to that..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Concluding</strong></td>
+                    <td>
+                        "Finally, regarding [Topic], the text says that..."<br>
+                        "To conclude the findings on [Topic]..."
+                    </td>
+                </tr>
+            </table>
+            </div>
 
-            <div class="highlight-box">
+            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0369a1;">
                 <strong>Crucial Difference to Summary:</strong><br>
                 In an outline, you state the point/argument, but you <strong>omit the examples</strong> used in the text. Keep it dry and factual. And: <strong>No quotes!</strong>
             </div>
@@ -164,11 +184,26 @@ const skillsContent = [
             </ul>
             
             <h4>Useful Phrases</h4>
-            <ul>
-                <li>"The text provides information on..."</li>
-                <li>"Regarding the aspect of..., the author notes that..."</li>
-                <li>"The situation is described as..."</li>
-            </ul>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Presenting Info</strong></td>
+                    <td>
+                        "The text provides information on..."<br>
+                        "Regarding the aspect of..., the author notes that..."<br>
+                        "The situation is described as..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Connecting Details</strong></td>
+                    <td>
+                        "Furthermore, it becomes clear that..."<br>
+                        "In addition to these facts,..."<br>
+                        "Summarizing these aspects, one can say..."
+                    </td>
+                </tr>
+            </table>
+            </div>
         `
     },
     {
@@ -256,18 +291,18 @@ const skillsContent = [
         cat: "AFB II",
         short: "Operator: Describe the character of / give / write a characterization",
         content: `
-                       <h3>How to write a Characterization</h3>
-            <p class="intro-text"><em>Characters are the heart of every story. Understanding them helps you understand the whole plot. In a characterization, you look beneath the surface to explain <strong>why</strong> a person acts the way they do.</em></p>
+            <h3>How to write a Characterization</h3>
+            <p class="intro-text"><em>Characters are the heart of every story. In a characterization, you look beneath the surface (Indirect Characterization) to explain <strong>why</strong> a person acts the way they do.</em></p>
+            
 
-            <h4>1. Elements of Analysis</h4>
-            <p>To fully understand a character, you must analyze two different layers:</p>
-            <ul>
-                <li><strong>Direct Characterization (Explicit):</strong> The narrator tells you <em>exactly</em> what the character is like (e.g., "He was a cruel and rich man").</li>
-                <li><strong>Indirect Characterization (Implicit):</strong> The author only shows you details. You must draw your own conclusions from the character's <strong>appearance, behavior, and language</strong>.</li>
-            </ul>
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534;">
+                <strong>💡 The Two Layers:</strong><br>
+                <strong>1. Direct (Explicit):</strong> The narrator tells you exactly what they are like ("He was cruel").<br>
+                <strong>2. Indirect (Implicit):</strong> You must guess the traits based on Appearance, Behavior, and Language.
+            </div>
 
-            <h4>2. Preparation (The Grid Method)</h4>
-            <p>Before writing, scan the text for both direct and indirect clues and sort them into a grid:</p>
+            <h4>1. Preparation (The Grid Method)</h4>
+            <p>Before writing, scan the text and sort your findings:</p>
             <div class="table-wrap">
                 <table>
                     <thead><tr><th>Type</th><th>Evidence (Quote/Line)</th><th>Trait (Conclusion)</th></tr></thead>
@@ -279,13 +314,41 @@ const skillsContent = [
                 </table>
             </div>
 
-            <h4>3. Writing Structure (P.E.E.)</h4>
+            <h4>2. Writing Structure (P.E.E. Chain)</h4>
             <p>Use this chain for every trait you analyze. Never just list adjectives!</p>
             <ul>
                 <li><strong>Point (Name it):</strong> "The character appears to be very aggressive..."</li>
                 <li><strong>Evidence (Quote it):</strong> "...which becomes clear when he shouts at the teacher (l. 12)."</li>
                 <li><strong>Explanation (Explain it):</strong> "This behavior highlights his total lack of respect for authority figures."</li>
             </ul>
+
+            <h4>3. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Introduction</strong></td>
+                    <td>
+                        "The character [Name] plays a central role in..."<br>
+                        "He/She is presented as a protagonist who..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Analyzing Traits</strong></td>
+                    <td>
+                        "His behavior suggests that..."<br>
+                        "This quote reveals his... nature."<br>
+                        "From this interaction, we can conclude that..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Development</strong></td>
+                    <td>
+                        "In the course of the story, her attitude changes..."<br>
+                        "Initially he is shy, but later he becomes..."
+                    </td>
+                </tr>
+            </table>
+            </div>
         `
     },
     {
@@ -294,48 +357,66 @@ const skillsContent = [
         short: "Identify narrator type & analyze effect.",
         content: `
             <h3>Analyzing Narrative Perspective</h3>
-            <p class="intro-text"><em>The narrator is the "camera" through which we see the story. By choosing a specific perspective, the author controls what we know and how we feel. Your job is to find out <strong>how</strong> this influence works.</em></p>
+            <p class="intro-text"><em>The narrator is the "camera" through which we see the story. By choosing a specific perspective, the author controls what we know and how we feel.</em></p>
             
+
+            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e;">
+                <strong>⚠️ Crucial Rule:</strong><br>
+                Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
+            </div>
+
+            <h4>1. Types of Narrators</h4>
             <div class="table-wrap">
             <table>
                 <thead><tr><th>Type</th><th>Signal Words</th><th>Effect / Function</th></tr></thead>
                 <tbody>
                     <tr>
                         <td><strong>First-Person</strong><br>(I-Narrator)</td>
-                        <td>"I", "me", "my"</td>
-                        <td><strong>Subjective.</strong> Creates intimacy and identification. We see the world through <em>their</em> eyes.  Can be an <em>unreliable narrator</em>.</td>
+                        <td>"I", "me"</td>
+                        <td><strong>Subjective.</strong> Creates intimacy/identification. Limit: We only see their view.</td>
                     </tr>
                     <tr>
-                        <td><strong>Third-Person Omniscient</strong><br>(All-knowing)</td>
+                        <td><strong>Third-Person Omniscient</strong></td>
                         <td>"He/She" + knows ALL</td>
-                        <td><strong>Objective / Trustworthy.</strong> Has an "Olympian view". Can jump between places/times and judge events from above.</td>
+                        <td><strong>Objective.</strong> Olympian view. Can judge events and jump between places/times.</td>
                     </tr>
                     <tr>
-                        <td><strong>Third-Person Limited</strong><br>(Personal)</td>
+                        <td><strong>Third-Person Limited</strong></td>
                         <td>"He/She" + knows ONE</td>
-                        <td><strong>Identification / Suspense.</strong> The reader feels close to this "reflector figure" but has limited knowledge (doesn't know what others think).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Third-Person Objective</strong><br>(Neutral)</td>
-                        <td>Only actions/dialogue</td>
-                        <td><strong>Distance.</strong> No insight into feelings. The reader must judge the characters solely by their actions.</td>
+                        <td><strong>Suspense/Empathy.</strong> We feel close to this character but don't know what others think.</td>
                     </tr>
                 </tbody>
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-top: 20px;">
-                <strong>⚠️ Crucial Rule:</strong><br>
-                Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
-            </div>
-
-            <h4>3. Writing the Analysis (The Formula)</h4>
+            <h4>2. Writing the Analysis (The Formula)</h4>
             <p>Don't just name the perspective. Explain what it <em>does</em> to the reader.</p>
-            <p class="highlight-box">
-                <strong>1. Identify:</strong> "The story is told by a third-person limited narrator..."<br>
-                <strong>2. Connect:</strong> "...who focuses on the protagonist's thoughts (l. 15)."<br>
-                <strong>3. Effect:</strong> "This creates suspense, as the reader shares the character's fear but does not know what the antagonist is planning."
-            </p>
+            <ul>
+                <li><strong>Identify:</strong> "The story is told by a third-person limited narrator..."</li>
+                <li><strong>Connect:</strong> "...who focuses on the protagonist's thoughts (l. 15)."</li>
+                <li><strong>Effect:</strong> "This creates suspense, as the reader shares the character's fear but does not know the antagonist's plans."</li>
+            </ul>
+
+            <h4>3. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Identification</strong></td>
+                    <td>
+                        "The story is told from the point of view of..."<br>
+                        "The author employs a first-person narrator."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Describing Effect</strong></td>
+                    <td>
+                        "This perspective allows the reader to..."<br>
+                        "It creates a bond between reader and narrator."<br>
+                        "The reader is limited to [Name]'s view, which creates..."
+                    </td>
+                </tr>
+            </table>
+            </div>
         `
     },
     {
@@ -344,119 +425,176 @@ const skillsContent = [
         short: "Analyze visuals (Description &rarr; Symbols &rarr; Message).",
         content: `
             <h3>Cartoon Analysis</h3>
-            <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It does not just show a picture; it tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
+            <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
+            
 
-            <h4>1. Introduction</h4>
-            <p>State the basic facts (title (if there is one), author, date, source) and the general topic.<br>
-            <em>"The cartoon by [Artist], published in [Source] on [Date], deals with [Topic]."</em></p>
-
-            <h4>2. Description (The "Camera View")</h4>
-            <p>Describe <strong>objectively</strong> what you see. Do not interpret yet!</p>
-            <ul>
-                <li><strong>Locate elements:</strong> "In the foreground/background...", "In the centre...", "On the left/right..."</li>
-                <li><strong>Describe action:</strong> Use <strong>Present Progressive</strong>! ("The politician <strong>is holding</strong> a bag of money.").</li>
-                <li><strong>Mention details:</strong> Facial expressions, gestures, clothing, setting.</li>
+            <h4>1. Structure of the Analysis</h4>
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Step 1: Introduction</strong> (Topic, Author, Source, Date).</li>
+                <li><strong>Step 2: Description</strong> (Objective! Present Progressive!).</li>
+                <li><strong>Step 3: Analysis</strong> (Explain symbols & devices).</li>
+                <li><strong>Step 4: Message</strong> (What is the criticism?).</li>
             </ul>
 
-            <h4>3. Analysis (The Decoding)</h4>
-            <p>Explain the meaning of the elements you described. Use the formula:</p>
+            <h4>2. The Decoding Formula</h4>
             <div class="highlight-box">
                 <strong>Element (Description) &rarr; Meaning (Interpretation)</strong><br>
-                <em>"The giant bag of money <strong>symbolizes/stands for</strong> the greed of the corporation."</em>
+                <em>"The giant bag of money <strong>symbolizes</strong> the greed of the corporation."</em>
             </div>
-            <p><strong>Look for these specific devices:</strong></p>
-            <ul>
-                <li><strong>Caricature:</strong> Are specific features exaggerated (e.g., long nose = Pinocchio/Liar)?</li>
-                <li><strong>Symbolism:</strong> Dove = Peace, Chains = Oppression, Donkey = Democrats (USA), Elephant = Republicans (USA).</li>
-                <li><strong>Labelling:</strong> Words written on objects to identify them.</li>
-                <li><strong>Irony:</strong> Is the text (Caption/Speech bubble) the opposite of the picture?</li>
-            </ul>
 
-            <h4>4. The Message</h4>
-            <p>Summarize the cartoonist's intention in one sentence.</p>
-            <ul>
-                <li>"The cartoonist wants to criticize..."</li>
-                <li>"The cartoon wants to show that..."</li>
-                <li>"The artist makes fun of..."</li>
-            </ul>
+            <h4>3. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Describing (Objective)</strong></td>
+                    <td>
+                        "In the centre / background / foreground..."<br>
+                        "The character <strong>is holding</strong>..." (Pres. Prog!)<br>
+                        "The caption reads..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Analyzing (Subjective)</strong></td>
+                    <td>
+                        "This element symbolizes / stands for..."<br>
+                        "The size of the man exaggerates..."<br>
+                        "It is an allusion to..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>The Message</strong></td>
+                    <td>
+                        "The cartoonist criticizes..."<br>
+                        "The artist wants to show that..."<br>
+                        "The cartoon makes fun of..."
+                    </td>
+                </tr>
+            </table>
+            </div>
         `
     },
     {
         title: "Style, Tone & Register",
+
         cat: "AFB II",
-        short: "Analyze language (Style = Diction + Syntax + Tone).",
+        
+        short: "Analyze language in a text.",
+        
         content: `
-            <h3>Language Analysis</h3>
-            <p class="intro-text"><em>Authors never choose words by accident. Language analysis is not just listing metaphors; it is about uncovering the <strong>Style</strong> (How is it written?), the <strong>Tone</strong> (What is the vibe?), and the <strong>Register</strong> (Who is it for?).</em></p>
-
-            <h4>1. Style (The "How")</h4>
-            <p>Style is the umbrella term for the specific way an author uses language. It consists of three main pillars:</p>
-            <ul>
-                <li><strong>Diction (Word Choice):</strong>
-                    <br>&rarr; <em>Positively/Negatively connoted words:</em> Do words evoke fear ("crisis", "disaster") or hope ("opportunity", "bright future")?
-                    <br>&rarr; <em>Keywords:</em> Are there repetitive key terms emphasizing a message?
-                </li>
-                <li><strong>Syntax (Sentence Structure):</strong>
-                    <br>&rarr; <em>Parataxis (Short sentences):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
-                    <br>&rarr; <em>Hypotaxis (Complex sentences):</em> Used for detailed explanations, complex arguments, or to show high education.
-                </li>
-                <li><strong>Rhetorical Devices:</strong>
-                    <br>Metaphors, similes, anaphora, etc. belong here. They are the "spices" of the style.
-                </li>
-            </ul>
-
-            <h4>2. Tone (The Atmosphere)</h4>
-            <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the emotions the text aims to convey. It can be <em>solemn</em> (feierlich), <em>alarming</em> (besorgniserregend), <em>ironic</em>, or something completely different.</p>
-            
-            <div class="highlight-box">
-                <strong>Useful Adjectives:</strong><br>
-                optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, emotional, objective, solemn, cynical.
-            </div>
-
-            <p><strong>Guiding Questions:</strong></p>
-            <ul style="margin-bottom: 15px;">
-                <li>What is the overall feeling or attitude of the author toward the topic?</li>
-                <li>Does the author sound serious, humorous, or alarmed? <em>Why</em> do you think so?</li>
-                <li>Are there specific words or phrases that indicate these feelings?</li>
-            </ul>
-
-            <div style="background: #fff; padding: 12px; border-left: 4px solid #94a3b8; margin-bottom: 20px; font-size: 0.95rem;">
-                <strong>Example sentence (Analysis):</strong><br>
-                <em>"In the article on the climate crisis, the author chooses an <strong>alarming tone</strong>, in order to draw attention to the urgency of the issue."</em>
-            </div>
-
-            <h4>3. Register (The Formality)</h4>
-            <p>Register describes the level of formality. It tells you about the relationship between author and reader.</p>
-            <ul>
-                <li><strong>Formal (High Register):</strong> Passive voice, complex syntax, advanced vocabulary.
-                    <br>&rarr; <em>Effect:</em> Professional, objective, distant, authoritative. (e.g., Scientific Articles, Serious Newspapers).</li>
-                <li><strong>Neutral (Standard Register):</strong> Clear, correct standard English, accessible to everyone.
-                    <br>&rarr; <em>Effect:</em> Informative, factual. (e.g., News Reports).</li>
-                <li><strong>Informal (Low Register):</strong> Slang, short forms ("can't"), colloquialisms, direct address ("you").
-                    <br>&rarr; <em>Effect:</em> Authentic, emotional, creates closeness/intimacy. (e.g., Blogs, Comments, speeches to young people).</li>
-            </ul>
+        
+        <h3>Language Analysis</h3>
+        
+        <p class="intro-text"><em>Authors never choose words by accident. Language analysis is not just listing metaphors; it is about uncovering the <strong>Style</strong> (How is it written?), the <strong>Tone</strong> (What is the vibe?), and the <strong>Register</strong> (Who is it for?).</em></p>
+        
+        
+        <h4>1. Style (The "How")</h4>
+        
+        <p>Style is the umbrella term for the specific way an author uses language. It consists of three main pillars:</p>
+        
+        <ul>
+        
+        <li><strong>Diction (Word Choice):</strong>
+        
+        <br>&rarr; <em>Positively/Negatively connoted words:</em> Do words evoke fear ("crisis", "disaster") or hope ("opportunity", "bright future")?
+        
+        <br>&rarr; <em>Keywords:</em> Are there repetitive key terms emphasizing a message?
+        
+        </li>
+        
+        <li><strong>Syntax (Sentence Structure):</strong>
+        
+        <br>&rarr; <em>Parataxis (Short sentences):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
+        
+        <br>&rarr; <em>Hypotaxis (Complex sentences):</em> Used for detailed explanations, complex arguments, or to show high education.
+        
+        </li>
+        
+        <li><strong>Rhetorical Devices:</strong>
+        
+        <br>Metaphors, similes, anaphora, etc. belong here. They are the "spices" of the style.
+        
+        </li>
+        
+        </ul>
+        
+        
+        <h4>2. Tone (The Atmosphere)</h4>
+        
+        <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the emotions the text aims to convey. It can be <em>solemn</em> (feierlich), <em>alarming</em> (besorgniserregend), <em>ironic</em>, or something completely different.</p>
+        
+        <div class="highlight-box">
+        
+        <strong>Useful Adjectives:</strong><br>
+        
+        optimistic, pessimistic, critical, ironic, sarcastic, aggressive, serious, humorous, alarming, emotional, objective, solemn, cynical.
+        
+        </div>
+        
+        
+        <p><strong>Guiding Questions:</strong></p>
+        
+        <ul style="margin-bottom: 15px;">
+        
+        <li>What is the overall feeling or attitude of the author toward the topic?</li>
+        
+        <li>Does the author sound serious, humorous, or alarmed? <em>Why</em> do you think so?</li>
+        
+        <li>Are there specific words or phrases that indicate these feelings?</li>
+        
+        </ul>
+        
+        
+        <div style="background: #fff; padding: 12px; border-left: 4px solid #94a3b8; margin-bottom: 20px; font-size: 0.95rem;">
+        
+        <strong>Example sentence (Analysis):</strong><br>
+        
+        <em>"In the article on the climate crisis, the author chooses an <strong>alarming tone</strong>, in order to draw attention to the urgency of the issue."</em>
+        
+        </div>
+        
+        
+        <h4>3. Register (The Formality)</h4>
+        
+        <p>Register describes the level of formality. It tells you about the relationship between author and reader.</p>
+        
+        <ul>
+        
+        <li><strong>Formal (High Register):</strong> Passive voice, complex syntax, advanced vocabulary.
+        
+        <br>&rarr; <em>Effect:</em> Professional, objective, distant, authoritative. (e.g., Scientific Articles, Serious Newspapers).</li>
+        
+        <li><strong>Neutral (Standard Register):</strong> Clear, correct standard English, accessible to everyone.
+        
+        <br>&rarr; <em>Effect:</em> Informative, factual. (e.g., News Reports).</li>
+        
+        <li><strong>Informal (Low Register):</strong> Slang, short forms ("can't"), colloquialisms, direct address ("you").
+        
+        <br>&rarr; <em>Effect:</em> Authentic, emotional, creates closeness/intimacy. (e.g., Blogs, Comments, speeches to young people).</li>
+        
+        </ul>
+        
         `
-    },
+        
+        }, 
     {
         title: "Contrast (Operator)",
         cat: "AFB II",
         short: "Emphasize differences between two or more things (no similarities!).",
         content: `
             <h3>Contrast</h3>
-            <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict (differences).</em></p>
+            <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict.</em></p>
 
-            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
                 <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
                 <strong>Compare:</strong> Find Similarities AND Differences.<br>
                 <strong>Contrast:</strong> Find Differences ONLY.<br>
                 <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
             </div>
+
             <h4>1. The Strategy: "Ping-Pong" vs. "Block"</h4>
-            <p>To get full points, do not just summarize Text A and then Text B. Connect them!</p>
             <ul>
-                <li><strong>The Block Method (Okay):</strong> You describe all features of Object A. Then you describe all features of Object B and say how they differ. (Easier, but less effective).</li>
-                <li><strong>The Ping-Pong Method (Best):</strong> You pick one aspect (e.g. "Tone") and immediately contrast A with B. Then you move to the next aspect.
-                <br><em>"While Text A is formal, Text B uses slang."</em></li>
+                <li><strong>The Block Method (Okay):</strong> Summary of A &rarr; Summary of B &rarr; Differences.</li>
+                <li><strong>The Ping-Pong Method (Best):</strong> Pick one aspect (e.g. "Tone") and immediately contrast A with B. Then move to the next aspect.</li>
             </ul>
 
             <h4>2. Useful Phrases</h4>
@@ -476,8 +614,7 @@ const skillsContent = [
                     <td>
                         "Text A <strong>differs from</strong> Text B in terms of..."<br>
                         "There is a <strong>sharp contrast</strong> between..."<br>
-                        "This view <strong>contradicts</strong> the opinion in..."<br>
-                        "The <strong>main difference</strong> is that..."
+                        "This view <strong>contradicts</strong> the opinion in..."
                     </td>
                 </tr>
             </table>
@@ -492,23 +629,20 @@ const skillsContent = [
             <h3>Operator: Compare</h3>
             <p class="intro-text"><strong>Definition:</strong> Show similarities <strong>and</strong> differences between two or more things, characters, or concepts.</p>
 
-            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
-                <strong>⚠️ Major Trap: "Contrast" vs. "Compare"</strong><br>
-                <strong>Compare:</strong> Find Similarities AND Differences.<br>
-                <strong>Contrast:</strong> Find Differences ONLY.<br>
-                <em>If the operator is "contrast", mentioning similarities is wrong/irrelevant!</em>
+            <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412;">
+                <strong>⚠️ Compare vs. Contrast:</strong><br>
+                <strong>Compare:</strong> Find similarities AND differences.<br>
+                <strong>Contrast:</strong> Find ONLY differences.
             </div>
 
             <h4>How to structure your answer:</h4>
-            <p>Do not just write a summary of Text A followed by a summary of Text B. Use the <strong>"Point-by-Point"</strong> method for a better grade:</p>
+            <p>Use the <strong>"Point-by-Point"</strong> method for a better grade:</p>
             <ul>
                 <li><strong>Aspect 1 (e.g., Atmosphere):</strong> How is it in Text A? &harr; How is it in Text B?</li>
                 <li><strong>Aspect 2 (e.g., Language):</strong> Text A uses metaphors... &harr; whereas Text B is factual...</li>
-                <li><strong>Aspect 3 (e.g., Intention):</strong> Both texts aim to...</li>
             </ul>
 
             <h4>Useful Phrases</h4>
-            <p>The key to a good comparison is the use of <strong>linking words</strong>.</p>
             <div class="table-wrap">
             <table style="font-size: 0.95em;">
                 <tr>
@@ -516,25 +650,23 @@ const skillsContent = [
                     <th>Phrases</th>
                 </tr>
                 <tr>
-                    <td><strong>Similarities</strong><br>(Gemeinsamkeiten)</td>
+                    <td><strong>Similarities</strong></td>
                     <td>
                         "Similarly,..." / "Likewise,..."<br>
                         "Just as in text A, text B also..."<br>
-                        "Both texts deal with..."<br>
-                        "A common feature of both characters is..."
+                        "Both texts deal with..."
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Differences</strong><br>(Unterschiede)</td>
+                    <td><strong>Differences</strong></td>
                     <td>
                         "However,..." / "In contrast to..."<br>
-                        "While character A is shy, character B is..."<br>
                         "Whereas text A focuses on..., text B..."<br>
                         "On the one hand..., on the other hand..."
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Conclusion</strong><br>(Fazit)</td>
+                    <td><strong>Conclusion</strong></td>
                     <td>
                         "To sum up, while they share..., they differ in..."<br>
                         "Despite these similarities, the main difference is..."
@@ -550,15 +682,20 @@ const skillsContent = [
         short: "Use examples to explain or make clear.",
         content: `
             <h3>Illustrate / Show</h3>
-            <p class="intro-text"><em>"Show, don't just tell." These operators require you to prove a general statement by picking a specific, concrete example from the text. You are not drawing a picture; you are shining a spotlight on evidence.</em></p>
+            <p class="intro-text"><em>"Show, don't just tell." These operators require you to prove a general statement by picking a specific, concrete example from the text.</em></p>
 
             <h4>1. The "Claim & Proof" Method</h4>
             <p>Never leave a claim standing alone. Always back it up:</p>
             <ul>
-                <li><strong>The Claim (General):</strong> "The protagonist is very impulsive."</li>
-                <li><strong>The Bridge (Signal):</strong> "This is illustrated by the fact that..."</li>
-                <li><strong>The Proof (Specific):</strong> "...he smashes his phone against the wall in line 14."</li>
+                <li><strong>The Claim:</strong> "The protagonist is very impulsive."</li>
+                <li><strong>The Bridge:</strong> "This is illustrated by the fact that..."</li>
+                <li><strong>The Proof:</strong> "...he smashes his phone against the wall in line 14."</li>
             </ul>
+
+            <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin: 15px 0;">
+                <strong>💡 Pro-Tip: Precision</strong><br>
+                Don't retell the whole scene. Just pick the <strong>one detail</strong> that proves your point perfectly.
+            </div>
 
             <h4>2. Useful Phrases</h4>
             <div class="table-wrap">
@@ -582,13 +719,6 @@ const skillsContent = [
                 </tr>
             </table>
             </div>
-
-            <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin-top: 15px;">
-                <strong>💡 Pro-Tip: Precision</strong><br>
-                Don't retell the whole scene. Just pick the <strong>one detail</strong> that proves your point perfectly. Be as specific as possible!<br>
-                <em>Bad: "He does crazy things."</em><br>
-                <em>Good: "This is illustrated by his reckless driving in chapter 3."</em>
-            </div>
         `
     },
     {
@@ -597,20 +727,19 @@ const skillsContent = [
         short: "Make something clear by giving reasons and showing causes.",
         content: `
             <h3>Operator: Explain</h3>
-            <p class="intro-text"><strong>Definition:</strong> Describe and define the causes and effects of a problem or situation. Make relationships between ideas clear.</p>
+            <p class="intro-text"><strong>Definition:</strong> Describe and define the causes and effects of a problem or situation.</p>
 
             <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>💡 The Difference:</strong> <br>
                 <strong>Describe</strong> = What does it look like? (Surface)<br>
-                <strong>Explain</strong> = Why is it like that? (Background, Reasons, Connections)
+                <strong>Explain</strong> = Why is it like that? (Reasons, Connections)
             </div>
 
             <h4>How to structure your answer:</h4>
             <ul>
-                <li><strong>1. Thesis/Statement:</strong> State the phenomenon or behavior you are going to explain.</li>
-                <li><strong>2. Reasoning (The "Because"):</strong> Connect the event with its cause. Use logical linkers!</li>
-                <li><strong>3. Evidence:</strong> Refer to the text/context to prove <em>why</em> this explanation is correct.</li>
-                <li><strong>4. Own Words:</strong> Do not just quote. Show that you have understood the logic behind the events.</li>
+                <li><strong>1. Thesis:</strong> State the phenomenon/behavior.</li>
+                <li><strong>2. Reasoning:</strong> Connect the event with its cause (The "Because").</li>
+                <li><strong>3. Evidence:</strong> Refer to the text.</li>
             </ul>
 
             <h4>Useful Phrases</h4>
@@ -621,40 +750,30 @@ const skillsContent = [
                     <th>Phrases</th>
                 </tr>
                 <tr>
-                    <td><strong>Cause & Reason</strong><br>(Ursache)</td>
+                    <td><strong>Cause & Reason</strong></td>
                     <td>
-                        "The reason for this behavior is..."<br>
+                        "The reason for this is..."<br>
                         "This can be attributed to..."<br>
-                        "This is due to the fact that..."<br>
-                        "He reacts this way because..."
+                        "This is due to the fact that..."
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Effect & Consequence</strong><br>(Wirkung)</td>
+                    <td><strong>Effect & Consequence</strong></td>
                     <td>
                         "As a result,..." / "Consequently,..."<br>
                         "This leads to..."<br>
-                        "For this reason,..."<br>
-                        "This explains why..."
+                        "For this reason,..."
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Clarifying</strong><br>(Verdeutlichen)</td>
+                    <td><strong>Clarifying</strong></td>
                     <td>
                         "This means that..."<br>
                         "In other words,..."<br>
-                        "To put it simply,..."<br>
-                        "This implies that..."
+                        "To put it simply,..."
                     </td>
                 </tr>
             </table>
-            </div>
-
-            <h4>Example Task:</h4>
-            <div style="background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 0.95rem;">
-                <strong>Task:</strong> "Explain why the protagonist decides to leave his family."<br><br>
-                <strong>Don't just write:</strong> <em>"He leaves because he is sad."</em> (Too simple)<br>
-                <strong>Better:</strong> <em>"The protagonist decides to leave his family <strong>due to</strong> a deep feeling of alienation. <strong>This is shown when</strong> he refuses to speak to his parents. <strong>Consequently</strong>, he sees leaving as the only way to regain his freedom."</em>
             </div>
         `
     },
@@ -668,6 +787,7 @@ const skillsContent = [
         content: `
             <h3>Writing a Comment</h3>
             <p class="intro-text"><em>In a comment, you don't need to be neutral. Your goal is to convince the reader of <strong>your</strong> opinion on a controversial topic.</em></p>
+            
 
             <h4>1. Structure</h4>
             <ol>
@@ -713,6 +833,7 @@ const skillsContent = [
 
             <h4>1. The Sandwich Method</h4>
             <p>This structure ensures your opinion stays in the reader's mind at the end.</p>
+            
             <ol>
                 <li><strong>Introduction:</strong> Present the controversial issue without taking sides yet.</li>
                 <li><strong>Counter-Arguments (The side you disagree with):</strong>
@@ -742,6 +863,13 @@ const skillsContent = [
         content: `
             <h3>Reflect on</h3>
             <p class="intro-text"><em>To reflect means to hold up a mirror to a topic. It is not just about shouting your opinion; it is about <strong>exploring</strong> an issue, considering its implications, and connecting it to your own world or society.</em></p>
+
+            <div class="highlight-box" style="background: #fdf2f8; border: 1px solid #fbcfe8; color: #831843;">
+                <strong>💡 Difference to "Comment":</strong><br>
+                A <strong>Comment</strong> tries to <em>persuade</em> the reader (Arguments: Pro/Con).<br>
+                A <strong>Reflection</strong> tries to <em>understand</em> the topic (Thoughts: Implications/Values).<br>
+                <em>You are allowed to use "I", but keep the register formal!</em>
+            </div>
 
             <h4>The "Deep Dive" Method</h4>
             <p>Don't stay on the surface. Follow these steps to go deep:</p>
@@ -782,13 +910,6 @@ const skillsContent = [
                 </tr>
             </table>
             </div>
-
-            <div class="highlight-box" style="background: #fdf2f8; border: 1px solid #fbcfe8; color: #831843; margin-top: 15px;">
-                <strong>💡 Difference to "Comment":</strong><br>
-                A <strong>Comment</strong> tries to <em>persuade</em> the reader (Arguments: Pro/Con).<br>
-                A <strong>Reflection</strong> tries to <em>understand</em> the topic (Thoughts: Implications/Values).<br>
-                <em>You are allowed to use "I", but keep the register formal!</em>
-            </div>
         `
     },
     {
@@ -798,6 +919,7 @@ const skillsContent = [
         content: `
             <h3>Operator: Assess / Evaluate</h3>
             <p class="intro-text"><strong>Definition:</strong> Express a well-founded opinion about the nature, quality, or value of something after carefully considering all important aspects.</p>
+            
 
             <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
                 <strong>⚖️ The Difference to "Comment":</strong><br>
@@ -940,7 +1062,6 @@ const skillsContent = [
         content: `
             <h3>Writing a Newspaper Article</h3>
             <p class="intro-text"><em>A newspaper article must grab the reader's attention immediately. Use the <strong>Inverted Pyramid</strong> principle: The most important info comes first.</em></p>
-
             <h4>1. Layout Elements (Don't forget these!)</h4>
             <ul>
                 <li><strong>Headline:</strong> Catchy, short, often no verbs (e.g., "Climate Crisis Escalates").</li>
@@ -1037,7 +1158,7 @@ const skillsContent = [
             </table>
             </div>
 
-            <div class="highlight-box">
+            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0369a1;">
                 <strong>💡 Pro-Tip: The "Ear-Test"</strong><br>
                 Use short sentences. Long, complex sentences (Hypotaxis) are hard to understand when listening. If you run out of breath while reading a sentence, it is too long!
             </div>
@@ -1086,6 +1207,7 @@ const skillsContent = [
             <h3>Writing a Formal Letter</h3>
             <p class="intro-text"><em>In a formal letter, precision and politeness are key. The reader usually doesn't know you, so you must be objective, factual, and strictly adhere to the layout conventions.</em></p>
             
+            
             <h4>1. The Layout Checklist</h4>
             <ul>
                 <li><strong>Top Right:</strong> Sender's Address (You).</li>
@@ -1120,13 +1242,11 @@ const skillsContent = [
             </table>
             </div>
 
-            <h4>5. Style: Diplomatic Language</h4>
-            <p>Never be aggressive, even if you are angry. Use the passive voice to sound objective.</p>
-            <div class="highlight-box">
+            <div class="highlight-box" style="background: #fff; border-left: 4px solid #ef4444; margin-top: 15px;">
+                <strong>💡 Diplomatic Language:</strong><br>
+                Never be aggressive. Use the passive voice to sound objective.<br>
                 ❌ <strong>Don't say:</strong> "You made a mistake!"<br>
-                ✅ <strong>Say:</strong> "It seems that a mistake has been made."<br><br>
-                ❌ <strong>Don't say:</strong> "I want my money back."<br>
-                ✅ <strong>Say:</strong> "I would be grateful if you could refund the amount."
+                ✅ <strong>Say:</strong> "It seems that a mistake has been made."
             </div>
         `
     },
