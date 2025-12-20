@@ -1,6 +1,4 @@
 // data-skills.js
-// Version: FINAL REMASTERED
-// Includes: AFB I, II, III, Enhanced Tools (Speaking/Checklist), Operators in Grading
 const skillsContent = [
 /* ============================================================
        AFB I: COMPREHENSION
@@ -8,7 +6,7 @@ const skillsContent = [
        {
         title: "Summarize (Operator)",
         cat: "AFB I",
-        short: "Concise account of a text's main points.",
+        short: "Give a concise account of the main points (condense).",
         content: `
             <h3>Summary</h3>
             <p class="intro-text"><em>A summary is the art of saying much with few words. Your goal is to strip the text down to its bare bones without losing the core message. Think: <strong>Maximum information in minimum words.</strong></em></p>
@@ -58,7 +56,7 @@ const skillsContent = [
     {
         title: "Outline (Operator)",
         cat: "AFB I",
-        short: "Structure specific info (Focus on one aspect).",
+        short: "Give the main features, structure or general principles of a topic omitting minor details.",
         content: `
             <h3>Outline</h3>
             <p class="intro-text"><em>Imagine you are a search engine. An outline doesn't want the whole story; it only wants the specific results for a specific search query. Ignore the rest.</em></p>
@@ -97,7 +95,7 @@ const skillsContent = [
     {
         title: "Point out / State (Operator)",
         cat: "AFB I",
-        short: "Identify and present clearly (No analysis!).",
+        short: "Identify something and present it clearly.",
         content: `
             <h3>Point out / State</h3>
             <p class="intro-text"><em>Sometimes, less is more. These operators don't ask for an essay; they ask for precision. Point at the information and name it.</em></p>
@@ -152,7 +150,7 @@ const skillsContent = [
     {
         title: "Present (Operator)",
         cat: "AFB I",
-        short: "(Re)structure and write down.",
+        short: "(Re)structure something and write down.",
         content: `
             <h3>Present</h3>
             <p class="intro-text"><em>This is about reorganization. You are not just copying information; you are collecting the puzzle pieces from different parts of the text and putting them together in a new way.</em></p>
@@ -442,7 +440,7 @@ const skillsContent = [
     {
         title: "Contrast (Operator)",
         cat: "AFB II",
-        short: "Emphasize differences (No similarities!).",
+        short: "Emphasize differences between two or more things (no similarities!).",
         content: `
             <h3>Contrast</h3>
             <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict (differences).</em></p>
@@ -666,7 +664,7 @@ const skillsContent = [
        {
         title: "Comment (Operator)",
         cat: "AFB III",
-        short: "Express your opinion (One-sided argument).",
+        short: "State clearly your opinions on the topic in question, giving evidence to support your view.",
         content: `
             <h3>Writing a Comment</h3>
             <p class="intro-text"><em>In a comment, you don't need to be neutral. Your goal is to convince the reader of <strong>your</strong> opinion on a controversial topic.</em></p>
@@ -708,7 +706,7 @@ const skillsContent = [
     {
         title: "Discussion (Operator)",
         cat: "AFB III",
-        short: "Weigh pros and cons (Dialectical essay).",
+        short: "Investigate an issue by argument; give reasons for and against.",
         content: `
             <h3>Writing a Discussion</h3>
             <p class="intro-text"><em>Unlike a comment, a discussion requires you to take a step back and look at <strong>both sides</strong> (Pro & Con) objectively before reaching a verdict.</em></p>
@@ -740,7 +738,7 @@ const skillsContent = [
     {
         title: "Reflect on (Operator)",
         cat: "AFB III",
-        short: "Express thoughts carefully & deeply.",
+        short: "Express your thoughts on something carefully and deeply.",
         content: `
             <h3>Reflect on</h3>
             <p class="intro-text"><em>To reflect means to hold up a mirror to a topic. It is not just about shouting your opinion; it is about <strong>exploring</strong> an issue, considering its implications, and connecting it to your own world or society.</em></p>
@@ -796,7 +794,7 @@ const skillsContent = [
     {
         title: "Assess / Evaluate (Operator)",
         cat: "AFB III",
-        short: "Weigh pros & cons to reach a well-founded judgment.",
+        short: "Express a well-founded opinion about the nature or quality of somebody/something after careful consideration of the most important aspects in question.",
         content: `
             <h3>Operator: Assess / Evaluate</h3>
             <p class="intro-text"><strong>Definition:</strong> Express a well-founded opinion about the nature, quality, or value of something after carefully considering all important aspects.</p>
@@ -1719,9 +1717,9 @@ const skillsContent = [
         `
     },
     {
-        title: "Writing in the Abitur",
+        title: "Writing in the 'Abitur'",
         cat: "Tools",
-        short: "The 3-step structure of the Writing Part.",
+        short: "The 3-step structure of the writing Part.",
         content: `
             <h3>The "Abitur" Writing Part</h3>
             <p class="intro-text"><em>The exam almost always follows a classic 3-step structure. Knowing this pattern helps you predict what is coming.</em></p>
