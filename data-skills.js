@@ -421,58 +421,47 @@ const skillsContent = [
     },
     {
         title: "Cartoon Analysis",
-        cat: "AFB II",
-        short: "Analyze visuals (Description &rarr; Symbols &rarr; Message).",
-        content: `
-            <h3>Cartoon Analysis</h3>
-            <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
-            
-
-            <h4>1. Structure of the Analysis</h4>
-            <ul style="list-style: none; padding: 0;">
-                <li><strong>Step 1: Introduction</strong> (Topic, Author, Source, Date).</li>
-                <li><strong>Step 2: Description</strong> (Objective! Present Progressive!).</li>
-                <li><strong>Step 3: Analysis</strong> (Explain symbols & devices).</li>
-                <li><strong>Step 4: Message</strong> (What is the criticism?).</li>
-            </ul>
-
-            <h4>2. The Decoding Formula</h4>
-            <div class="highlight-box">
+                cat: "AFB II",
+                short: "Analyze visuals (Description &rarr; Symbols &rarr; Message).",
+                content: `
+                <h3>Cartoon Analysis</h3>
+                <p class="intro-text"><em>A cartoon is a satirical comment on a current event. It does not just show a picture; it tells a story using symbols, exaggeration, and irony. Your job is to decode this story.</em></p>
+               
+        <h4>1. Introduction</h4>
+                <p>State the basic facts (title (if there is one), author, date, source) and the general topic.<br>
+                <em>"The cartoon by [Artist], published in [Source] on [Date], deals with [Topic]."</em></p>
+               
+        <h4>2. Description (The "Camera View")</h4>
+                <p>Describe <strong>objectively</strong> what you see. Do not interpret yet!</p>
+                <ul>
+                <li><strong>Locate elements:</strong> "In the foreground/background...", "In the centre...", "On the left/right..."</li>
+                <li><strong>Describe action:</strong> Use <strong>Present Progressive</strong>! ("The politician <strong>is holding</strong> a bag of money.").</li>
+                <li><strong>Mention details:</strong> Facial expressions, gestures, clothing, setting.</li>
+                </ul>
+                
+        <h4>3. Analysis (The Decoding)</h4>
+                <p>Explain the meaning of the elements you described. Use the formula:</p>
+                <div class="highlight-box">
                 <strong>Element (Description) &rarr; Meaning (Interpretation)</strong><br>
-                <em>"The giant bag of money <strong>symbolizes</strong> the greed of the corporation."</em>
-            </div>
-
-            <h4>3. Useful Phrases</h4>
-            <div class="table-wrap">
-            <table>
-                <tr>
-                    <td><strong>Describing (Objective)</strong></td>
-                    <td>
-                        "In the centre / background / foreground..."<br>
-                        "The character <strong>is holding</strong>..." (Pres. Prog!)<br>
-                        "The caption reads..."
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Analyzing (Subjective)</strong></td>
-                    <td>
-                        "This element symbolizes / stands for..."<br>
-                        "The size of the man exaggerates..."<br>
-                        "It is an allusion to..."
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>The Message</strong></td>
-                    <td>
-                        "The cartoonist criticizes..."<br>
-                        "The artist wants to show that..."<br>
-                        "The cartoon makes fun of..."
-                    </td>
-                </tr>
-            </table>
-            </div>
-        `
-    },
+                <em>"The giant bag of money <strong>symbolizes/stands for</strong> the greed of the corporation."</em>
+                </div>
+                <p><strong>Look for these specific devices:</strong></p>
+                <ul>
+                <li><strong>Caricature:</strong> Are specific features exaggerated (e.g., long nose = Pinocchio/Liar)?</li>
+                <li><strong>Symbolism:</strong> Dove = Peace, Chains = Oppression, Donkey = Democrats (USA), Elephant = Republicans (USA).</li>
+                <li><strong>Labelling:</strong> Words written on objects to identify them.</li>
+                <li><strong>Irony:</strong> Is the text (Caption/Speech bubble) the opposite of the picture?</li>
+                </ul>
+        
+                <h4>4. The Message</h4>
+                <p>Summarize the cartoonist's intention in one sentence.</p>
+                <ul>
+                <li>"The cartoonist wants to criticize..."</li>
+                <li>"The cartoon wants to show that..."</li>
+                <li>"The artist makes fun of..."</li>
+                </ul>
+                `
+                }, 
     {
         title: "Style, Tone & Register",
 
