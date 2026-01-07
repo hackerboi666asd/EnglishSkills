@@ -43,7 +43,7 @@ const skillsContent = [
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534;">
                 <strong>⚠️ Summary NO-GOs (Checklist):</strong><br>
                 ❌ NO quotes (Use indirect speech).<br>
                 ❌ NO direct speech.<br>
@@ -106,7 +106,7 @@ const skillsContent = [
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0369a1;">
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534;">
                 <strong>Crucial Difference to Summary:</strong><br>
                 In an outline, you state the point/argument, but you <strong>omit the examples</strong> used in the text. Keep it dry and factual. And: <strong>No quotes!</strong>
             </div>
@@ -295,7 +295,7 @@ const skillsContent = [
             <p class="intro-text"><em>Characters are the heart of every story. In a characterization, you look beneath the surface (Indirect Characterization) to explain <strong>why</strong> a person acts the way they do.</em></p>
             
 
-            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534;">
+            <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>💡 The Two Layers:</strong><br>
                 <strong>1. Direct (Explicit):</strong> The narrator tells you exactly what they are like ("He was cruel").<br>
                 <strong>2. Indirect (Implicit):</strong> You must guess the traits based on Appearance, Behavior, and Language.
@@ -360,7 +360,7 @@ const skillsContent = [
             <p class="intro-text"><em>The narrator is the "camera" through which we see the story. By choosing a specific perspective, the author controls what we know and how we feel.</em></p>
             
 
-            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e;">
+            <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>⚠️ Crucial Rule:</strong><br>
                 Never confuse the <strong>Author</strong> (who wrote the book) with the <strong>Narrator</strong> (the voice telling the story)!
             </div>
@@ -441,7 +441,7 @@ const skillsContent = [
                 
         <h4>3. Analysis (The Decoding)</h4>
                 <p>Explain the meaning of the elements you described. Use the formula:</p>
-                <div class="highlight-box">
+                <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>Element (Description) &rarr; Meaning (Interpretation)</strong><br>
                 <em>"The giant bag of money <strong>symbolizes/stands for</strong> the greed of the corporation."</em>
                 </div>
@@ -511,7 +511,7 @@ const skillsContent = [
         
         <p>Style creates Tone. Tone is the <strong>author's attitude</strong> towards the topic or the emotions the text aims to convey. It can be <em>solemn</em> (feierlich), <em>alarming</em> (besorgniserregend), <em>ironic</em>, or something completely different.</p>
         
-        <div class="highlight-box">
+        <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
         
         <strong>Useful Adjectives:</strong><br>
         
@@ -573,7 +573,7 @@ const skillsContent = [
             <h3>Contrast</h3>
             <p class="intro-text"><em>Think of a duel. "Contrast" means you look at two things and find out why they are opposites. You are <strong>not</strong> looking for friends (similarities); you are looking for conflict.</em></p>
 
-       <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412;">
+       <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>⚠️ Compare vs. Contrast:</strong><br>
                 <strong>Compare:</strong> Find similarities AND differences.<br>
                 <strong>Contrast:</strong> Find ONLY differences.
@@ -617,7 +617,7 @@ const skillsContent = [
             <h3>Operator: Compare</h3>
             <p class="intro-text"><strong>Definition:</strong> Show similarities <strong>and</strong> differences between two or more things, characters, or concepts.</p>
 
-            <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412;">
+            <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>⚠️ Compare vs. Contrast:</strong><br>
                 <strong>Compare:</strong> Find similarities AND differences.<br>
                 <strong>Contrast:</strong> Find ONLY differences.
@@ -672,6 +672,12 @@ const skillsContent = [
             <h3>Illustrate / Show</h3>
             <p class="intro-text"><em>"Show, don't just tell." These operators require you to prove a general statement by picking a specific, concrete example from the text.</em></p>
 
+            <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
+                <strong>💡 The Difference:</strong> <br>
+                <strong>Illustrate / Show</strong> = What does it look like? (Surface)<br>
+                <strong>Explain</strong> = Why is it like that? (Reasons, Connections)
+            </div>
+
             <h4>1. The "Claim & Proof" Method</h4>
             <p>Never leave a claim standing alone. Always back it up:</p>
             <ul>
@@ -680,7 +686,7 @@ const skillsContent = [
                 <li><strong>The Proof:</strong> "...he smashes his phone against the wall in line 14."</li>
             </ul>
 
-            <div class="highlight-box" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; margin: 15px 0;">
+            <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6; margin: 15px 0;">
                 <strong>💡 Pro-Tip: Precision</strong><br>
                 Don't retell the whole scene. Pick the one details that prove your point.
             </div>
@@ -719,7 +725,7 @@ const skillsContent = [
 
             <div class="highlight-box" style="background: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6;">
                 <strong>💡 The Difference:</strong> <br>
-                <strong>Describe</strong> = What does it look like? (Surface)<br>
+                <strong>Illustrate / Show</strong> = What does it look like? (Surface)<br>
                 <strong>Explain</strong> = Why is it like that? (Reasons, Connections)
             </div>
 
@@ -852,7 +858,7 @@ const skillsContent = [
             <h3>Reflect on</h3>
             <p class="intro-text"><em>To reflect means to hold up a mirror to a topic. It is not just about shouting your opinion; it is about <strong>exploring</strong> an issue, considering its implications, and connecting it to your own world or society.</em></p>
 
-            <div class="highlight-box" style="background: #fdf2f8; border: 1px solid #fbcfe8; color: #831843;">
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
                 <strong>💡 Difference to "Comment":</strong><br>
                 A <strong>Comment</strong> tries to <em>persuade</em> the reader (Arguments: Pro/Con).<br>
                 A <strong>Reflection</strong> tries to <em>understand</em> the topic (Thoughts: Implications/Values).<br>
@@ -982,7 +988,7 @@ const skillsContent = [
             <h3>Text Type: Diary Entry</h3>
             <p class="intro-text"><strong>Definition:</strong> A personal record of events, thoughts, and feelings. It is highly subjective and written from the first-person perspective ("I").</p>
 
-            <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e;">
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
                 <strong>💡 Golden Rule:</strong> Never just retell the plot! The focus lies on <strong>emotions, inner conflicts, and reflection</strong>. How does the character <em>feel</em> about what happened?
             </div>
 
@@ -1146,7 +1152,7 @@ const skillsContent = [
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0369a1;">
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239;">
                 <strong>💡 Pro-Tip: The "Ear-Test"</strong><br>
                 Use short sentences. Long, complex sentences (Hypotaxis) are hard to understand when listening. If you run out of breath while reading a sentence, it is too long!
             </div>
@@ -1230,7 +1236,7 @@ const skillsContent = [
             </table>
             </div>
 
-            <div class="highlight-box" style="background: #fff; border-left: 4px solid #ef4444; margin-top: 15px;">
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-top: 15px;">
                 <strong>💡 Diplomatic Language:</strong><br>
                 Never be aggressive. Use the passive voice to sound objective.<br>
                 ❌ <strong>Don't say:</strong> "You made a mistake!"<br>
@@ -1306,7 +1312,7 @@ const skillsContent = [
         content: `
             <h3>Stylistic Devices (Rhetorical Figures)</h3>
             
-            <div class="highlight-box" style="background: #fff7ed; border: 1px solid #fdba74; color: #9a3412; margin-bottom: 20px;">
+            <div class="highlight-box" style="background: #fff1f2; border: 1px solid #fda4af; color: #9f1239; margin-bottom: 20px;">
                 <strong>⚠️ Important Analysis Tip:</strong><br>
                 When analyzing the devices of a text, make sure to also point out its <strong>function or effect in its context</strong>.<br>
                 <em>Example:</em> A simile can create a picture in the mind of a reader, but <strong>which one exactly</strong> is it? Or a personification can be mentioned, but <strong>what specific issue</strong> does it illustrate in the context of the text?

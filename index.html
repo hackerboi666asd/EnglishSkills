@@ -16,7 +16,7 @@
 <header>
     <h1>Englisch in der Oberstufe</h1>
     <p>Anforderungsbereiche (AFB), Tools und Benotung</p><br>
-    <span class="origin-badge">Erstellt für den Englischunterricht im Bundesland Bremen</span>
+    <span class="origin-badge">Erstellt für den Englischunterricht im Bundesland Bremen von <a href="mailto:j.brandt@schule.bremen.de">Julian Brandt</a></span>
 </header>
 
 <div class="intro-section">
@@ -33,15 +33,18 @@
             <strong>AFB III: Evaluation</strong>
             <span class="afb-desc">Bewertung & eigene Meinung. <br><em>"Was denke ich darüber?"</em></span>
         </div>
+        <div class="afb-card" onclick="filterContent('Tools', this)">
+            <strong>Tools</strong>
+            <span class="afb-desc">Hilfsmittel und Ressourcen für den Englischunterricht. <br><em>"Praktische Werkzeuge"</em></span>
+        </div>
+        <div class="afb-card" onclick="filterContent('Grading', this)">
+            <strong>Benotung</strong>
+            <span class="afb-desc">Bewertungskriterien und Notengebung. <br><em>"Wie wird bewertet?"</em></span>
+        </div>
     </div>
 </div>
 
-<div class="controls">
-    <span class="divider-text">Weitere Ressourcen</span>
-    <button class="filter-btn" onclick="filterContent('Tools', this)">Tools</button>
-    <button class="filter-btn" onclick="filterContent('Grading', this)">Benotung</button>
-    <button class="filter-btn" onclick="filterContent('all', this)" style="margin-left: 15px; background: transparent; border: 1px solid #ccc; color: #666;">Alle anzeigen</button>
-</div>
+
 
 <main class="grid" id="grid">
     </main>

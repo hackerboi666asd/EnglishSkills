@@ -362,7 +362,7 @@ const gradingContent = [
         </table>
         </div>
 
-        <div class="highlight-box" style="background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; margin-top: 10px;">
+        <div class="highlight-box" style="background: #fdf2f8; border: 1px solid #fbcfe8; color: #831843; margin-top: 10px;">
             <strong>⚠️ Wichtig: Nicht runden!</strong><br>
             Es wird nicht auf- oder abgerundet. Die Ergebnisse gehen mit allen Kommastellen in die Berechnung ein.
         </div>
