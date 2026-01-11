@@ -1574,6 +1574,11 @@ const skillsContent = [
             <a href="https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-englisch/?Kompetenzbereich=1957" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 5px; transition: background 0.2s;">
                 &rarr; Open IQB Task Pool (Sprachmittlung)
             </a>
+            
+            <p style="margin-top: 20px; padding: 15px; background: #f0f9ff; border-left: 4px solid #0284c7; border-radius: 4px;">
+                <strong>💡 Tipp:</strong> Auf der <a href="https://www.bildung.bremen.de/prufungsunterlagen-226880" target="_blank" rel="noopener noreferrer" style="color: #0369a1; font-weight: bold;">Seite der Bildungsbehörde Bremen</a> kannst du alte Abiturklausuren einsehen.<br>
+                <span style="font-size: 0.9rem; color: #0c4a6e;">→ Klicke auf <strong>"Abitur"</strong> und suche weiter unten nach <strong>"Englisch"</strong>.</span>
+            </p>
         `
     },
     {
@@ -1659,6 +1664,11 @@ const skillsContent = [
             <a href="https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-englisch/?Kompetenzbereich=1594" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 5px; transition: background 0.2s;">
                 &rarr; Open IQB Task Pool (Hörverstehen)
             </a>
+            
+            <p style="margin-top: 20px; padding: 15px; background: #f0f9ff; border-left: 4px solid #0284c7; border-radius: 4px;">
+                <strong>💡 Tipp:</strong> Auf der <a href="https://www.bildung.bremen.de/prufungsunterlagen-226880" target="_blank" rel="noopener noreferrer" style="color: #0369a1; font-weight: bold;">Seite der Bildungsbehörde Bremen</a> kannst du alte Abiturklausuren einsehen.<br>
+                <span style="font-size: 0.9rem; color: #0c4a6e;">→ Klicke auf <strong>"Abitur"</strong> und suche weiter unten nach <strong>"Englisch"</strong>.</span>
+            </p>
         `
     },
     {
@@ -1893,6 +1903,11 @@ const skillsContent = [
             <a href="https://www.iqb.hu-berlin.de/de/schule/aufgaben/sekii/abiturpruefungsaufgaben-englisch/?Kompetenzbereich=1839" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #0f172a; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 5px; transition: background 0.2s;">
                 &rarr; Open IQB Task Pool (Schreiben)
             </a>
+            
+            <p style="margin-top: 20px; padding: 15px; background: #f0f9ff; border-left: 4px solid #0284c7; border-radius: 4px;">
+                <strong>💡 Tipp:</strong> Auf der <a href="https://www.bildung.bremen.de/prufungsunterlagen-226880" target="_blank" rel="noopener noreferrer" style="color: #0369a1; font-weight: bold;">Seite der Bildungsbehörde Bremen</a> kannst du alte Abiturklausuren einsehen.<br>
+                <span style="font-size: 0.9rem; color: #0c4a6e;">→ Klicke auf <strong>"Abitur"</strong> und suche weiter unten nach <strong>"Englisch"</strong>.</span>
+            </p>
         `
     },
 

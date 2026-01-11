@@ -2,7 +2,7 @@
 // Version: 2.0 (Compatible with Header Cards & Buttons)
 
 // 1. GLOBALE VARIABLEN
-let currentFilter = 'all';
+let currentFilter = 'none'; // Starte mit 'none' statt 'all'
 const grid = document.getElementById('grid');
 const modalOverlay = document.getElementById('modalOverlay');
 
@@ -91,9 +91,16 @@ function renderCards() {
 
     // Leere-Meldung anzeigen
     if (foundCount === 0) {
-        grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #999; padding: 40px;">
-            Keine Inhalte für die Kategorie "${currentFilter}" gefunden.
-        </p>`;
+        if (currentFilter === 'none') {
+            grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #64748b; padding: 40px; font-size: 1.1rem;">
+                <strong>👆 Wähle oben eine Kategorie aus</strong><br>
+                <span style="font-size: 0.9rem; opacity: 0.8; margin-top: 10px; display: block;">Klicke auf eine der Karten (AFB I, AFB II, AFB III, Tools oder Benotung), um die Inhalte anzuzeigen.</span>
+            </p>`;
+        } else {
+            grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #999; padding: 40px;">
+                Keine Inhalte für die Kategorie "${currentFilter}" gefunden.
+            </p>`;
+        }
     }
 }
 
@@ -110,9 +117,9 @@ window.filterContent = function(category, element) {
         el.classList.remove('active');
     });
 
-    // LOGIK: Toggle (Klick auf das Gleiche = Reset auf 'all')
-    if (currentFilter === category && category !== 'all') {
-        currentFilter = 'all';
+    // LOGIK: Toggle (Klick auf das Gleiche = Reset auf 'none')
+    if (currentFilter === category && category !== 'none') {
+        currentFilter = 'none';
     } else {
         currentFilter = category;
         
