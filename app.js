@@ -347,11 +347,24 @@ window.filterContentMobile = function(category, element) {
         const accordion = document.createElement('div');
         accordion.className = 'mobile-accordion';
         
+        // Schließen-Button hinzufügen
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'mobile-accordion-close';
+        closeBtn.innerHTML = '&times;';
+        closeBtn.onclick = (e) => {
+            e.stopPropagation();
+            element.classList.remove('active');
+            accordion.remove();
+            currentFilter = 'none';
+            grid.innerHTML = '';
+        };
+        accordion.appendChild(closeBtn);
+        
         // Gefilterte Karten erstellen
         const filteredItems = window.contentData.filter(item => item.cat === category);
         
         if (filteredItems.length === 0) {
-            accordion.innerHTML = '<p style="text-align:center; color:#64748b; padding:20px;">Keine Inhalte gefunden.</p>';
+            accordion.innerHTML += '<p style="text-align:center; color:#64748b; padding:20px;">Keine Inhalte gefunden.</p>';
         } else {
             filteredItems.forEach((item) => {
                 const originalIndex = window.contentData.indexOf(item);
