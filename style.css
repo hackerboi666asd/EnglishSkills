@@ -355,8 +355,15 @@ tr:hover td { background: #f1f5f9; }
     }
     
     .close-modal {
-        top: 1.5rem; right: 1.5rem; width: 44px; height: 44px; /* Touch-Target */
-        font-size: 1.8rem;
+        top: 1rem; right: 1rem; width: 48px; height: 48px; /* Touch-Target */
+        font-size: 2rem; background: #ef4444 !important; color: white !important;
+        box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+        font-weight: bold; z-index: 1000;
+    }
+    
+    .close-modal:active {
+        transform: scale(0.95) !important;
+        background: #dc2626 !important;
     }
     
     /* Tabellen: Horizontales Scrollen */
