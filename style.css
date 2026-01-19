@@ -10,7 +10,7 @@
     --afb1: #10b981;  /* Green */
     --afb2: #8b5cf6;  /* Purple */
     --afb3: #ef4444;  /* Red */
-    --tools: #06b6d4; /* Cyan */
+    --kompetenzen: #06b6d4; /* Cyan */
     --grading: #ec4899; /* Pink */
 }
 
@@ -32,6 +32,34 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
     display: inline-block; background-color: rgba(255,255,255,0.2); backdrop-filter: blur(5px);
     color: #fff; font-size: 0.85rem; padding: 6px 14px;
     border-radius: 20px; margin-bottom: 20px; font-weight: 600; letter-spacing: 0.5px;
+}
+
+/* --- SUCHFUNKTION --- */
+.search-container {
+    max-width: 900px; margin: 30px auto 30px; padding: 0 20px; text-align: center;
+}
+
+.search-input {
+    width: 100%; max-width: 600px; padding: 16px 24px; font-size: 1rem;
+    border: 2px solid #e2e8f0; border-radius: 50px; background: white;
+    transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    font-family: 'Inter', sans-serif;
+}
+
+.search-input:focus {
+    outline: none; border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1), 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.search-counter {
+    margin-top: 12px; font-size: 0.9rem; color: var(--text-muted);
+    font-weight: 600; display: none;
+}
+
+/* Highlight für Suchbegriffe */
+mark {
+    background-color: #fef08a; color: #854d0e; padding: 2px 4px;
+    border-radius: 3px; font-weight: 600;
 }
 
 /* --- INTRO & AFB KARTEN (OBEN) --- */
@@ -147,7 +175,7 @@ header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
 .skill-card:has(.badge[style*="10b981"])::before { background: var(--afb1); }
 .skill-card:has(.badge[style*="8b5cf6"])::before { background: var(--afb2); }
 .skill-card:has(.badge[style*="ef4444"])::before { background: var(--afb3); }
-.skill-card:has(.badge[style*="06b6d4"])::before { background: var(--tools); } /* Tools Hex angepasst */
+.skill-card:has(.badge[style*="06b6d4"])::before { background: var(--kompetenzen); } /* Kompetenzen Hex angepasst */
 .skill-card:has(.badge[style*="ec4899"])::before { background: var(--grading); } /* Grading Hex angepasst */
 
 .badge {
@@ -213,8 +241,185 @@ tr:hover td { background: #f1f5f9; }
 .grading-table td { border: 1px solid #cbd5e1; }
 
 @media (max-width: 768px) {
+    /* Header */
     header h1 { font-size: 2.2rem; }
-    .modal-content { padding: 1.5rem; }
-    .modal-header { padding: 1.5rem; }
-    .grid { grid-template-columns: 1fr; padding: 0 1rem; }
+    header { padding: 3rem 1.5rem 4rem; }
+    
+    /* AFB-Karten: Accordion-Modus */
+    .afb-explainer {
+        flex-direction: column !important; gap: 10px;
+    }
+    
+    .afb-card {
+        min-width: 100%; cursor: pointer; position: relative;
+        touch-action: manipulation; /* Touch-Optimierung */
+        min-height: 44px; /* Touch-freundliche Mindesthöhe */
+    }
+    
+    /* Pfeil-Indikator für Accordion */
+    .afb-card::after {
+        content: "▼"; position: absolute; right: 20px; top: 50%;
+        transform: translateY(-50%); font-size: 0.9rem; color: #64748b;
+        transition: transform 0.3s ease;
+    }
+    
+    .afb-card.active::after {
+        transform: translateY(-50%) rotate(180deg);
+        content: "▼"; /* Überschreibt das Häkchen */
+    }
+    
+    /* Mobile Accordion Container */
+    .mobile-accordion {
+        display: flex; flex-direction: column; gap: 10px;
+        margin-top: 10px; padding: 10px; background: #f8fafc;
+        border-radius: 8px; animation: slideDown 0.3s ease;
+    }
+    
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Mini-Cards im Accordion */
+    .mobile-mini-card {
+        background: white; padding: 16px; border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;
+        transition: transform 0.2s; min-height: 44px; /* Touch-Target */
+    }
+    
+    .mobile-mini-card:active {
+        transform: scale(0.98);
+    }
+    
+    .mobile-mini-card h4 {
+        font-size: 1rem; margin-bottom: 6px; color: var(--primary);
+    }
+    
+    .mobile-mini-card p {
+        font-size: 0.85rem; color: var(--text-muted); margin: 0;
+    }
+    
+    /* Suchfeld */
+    .search-input {
+        width: 100% !important; max-width: 100% !important;
+        font-size: 16px; /* Verhindert Zoom auf iOS */
+        padding: 14px 20px;
+    }
+    
+    .search-container {
+        padding: 0 15px; margin: 20px auto 30px;
+    }
+    
+    /* Grid */
+    .grid { 
+        grid-template-columns: 1fr !important; /* 1 Spalte auf Mobile */
+        padding: 0 1rem; gap: 1.5rem;
+    }
+    
+    .skill-card {
+        padding: 1.5rem; min-height: 44px; /* Touch-Target */
+    }
+    
+    /* Modal */
+    .modal {
+        width: 100%; max-width: 100%; margin: 0; border-radius: 20px 20px 0 0;
+        max-height: 95vh; /* 95vh auf Mobile */
+    }
+    
+    .modal-content { 
+        padding: 1.5rem; font-size: 1rem; line-height: 1.6;
+    }
+    
+    .modal-header { 
+        padding: 1.5rem; 
+    }
+    
+    .modal-header h2 {
+        font-size: 1.5rem; padding-right: 40px; /* Platz für Close-Button */
+    }
+    
+    .close-modal {
+        top: 1.5rem; right: 1.5rem; width: 44px; height: 44px; /* Touch-Target */
+        font-size: 1.8rem;
+    }
+    
+    /* Tabellen: Horizontales Scrollen */
+    .table-wrap {
+        overflow-x: auto; -webkit-overflow-scrolling: touch;
+        margin: 1.5rem -1.5rem; /* Volle Breite nutzen */
+        padding: 0 1.5rem;
+    }
+    
+    table {
+        min-width: 600px; font-size: 0.85rem;
+    }
+    
+    th, td {
+        padding: 10px 12px; white-space: nowrap;
+    }
+    
+    /* Content Typography Mobile */
+    .modal-content h3 { 
+        font-size: 1.3rem; margin: 2rem 0 1rem;
+    }
+    
+    .modal-content h4 { 
+        font-size: 1.1rem; margin: 1.2rem 0 0.5rem;
+    }
+    
+    .highlight-box {
+        padding: 1rem; margin: 1.5rem 0; font-size: 0.9rem;
+    }
+}
+
+/* --- RECHTLICHER HINWEIS (FOOTER) --- */
+.legal-disclaimer {
+    max-width: 1200px; margin: 80px auto 0; padding: 0 20px 40px;
+}
+
+.disclaimer-content {
+    background: #fefce8; border: 2px solid #facc15;
+    border-radius: 12px; padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.disclaimer-content h4 {
+    font-size: 0.95rem; color: #854d0e; margin: 0 0 12px 0;
+    font-weight: 700; letter-spacing: 0.3px;
+}
+
+.disclaimer-content p {
+    font-size: 0.8rem; color: #713f12; line-height: 1.5;
+    margin: 0 0 10px 0;
+}
+
+.disclaimer-content ol {
+    margin: 0; padding-left: 20px; font-size: 0.75rem;
+    color: #854d0e; line-height: 1.6;
+}
+
+.disclaimer-content ol li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+    .legal-disclaimer {
+        margin-top: 60px; padding: 0 15px 30px;
+    }
+    
+    .disclaimer-content {
+        padding: 18px 20px;
+    }
+    
+    .disclaimer-content h4 {
+        font-size: 0.85rem;
+    }
+    
+    .disclaimer-content p {
+        font-size: 0.75rem;
+    }
+    
+    .disclaimer-content ol {
+        font-size: 0.7rem; padding-left: 16px;
+    }
 }

@@ -1307,7 +1307,7 @@ const skillsContent = [
        ============================================================ */
        {
         title: "Stylistic Devices",
-        cat: "Tools",
+        cat: "AFB II",
         short: "Definitions, Examples & Effects.",
         content: `
             <h3>Stylistic Devices (Rhetorical Figures)</h3>
@@ -1425,7 +1425,7 @@ const skillsContent = [
     },
        {
         title: "Linking Words / Connectives",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "Improve flow & logic (The Glue of your Essay).",
         content: `
             <h3>Linking Words & Connectives</h3>
@@ -1465,7 +1465,7 @@ const skillsContent = [
     },
     {
         title: "Mediation Skills",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "Mediate texts DE -> EN (Strategies & Phrases).",
         content: `
             <h3>Mediation: The Master Guide</h3>
@@ -1583,7 +1583,7 @@ const skillsContent = [
     },
     {
         title: "Listening Skills",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "Strategies for Pre-, While-, and Post-Listening.",
         content: `
             <h3>Listening Comprehension Guide</h3>
@@ -1673,7 +1673,7 @@ const skillsContent = [
     },
     {
         title: "Speaking Skills",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "Strategies & Phrases (Discussion, Monologue, Description).",
         content: `
             <h3>Speaking Skills: The Complete Guide</h3>
@@ -1763,7 +1763,7 @@ const skillsContent = [
     },
     {
         title: "Practicing Speaking",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "Train fluency with AI Voice Mode & Real Life tips.",
         content: `
             <h3>How to Practice Speaking</h3>
@@ -1802,7 +1802,7 @@ const skillsContent = [
     },
     {
         title: "General Checklist",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "The \"Last Minute\" Polish (Content, Structure, Style).",
         content: `
             <h3>General Checklist (Self-Correction)</h3>
@@ -1842,7 +1842,7 @@ const skillsContent = [
     },
     {
         title: "Writing in the 'Abitur'",
-        cat: "Tools",
+        cat: "Kompetenzen",
         short: "The 3-step structure of the writing Part.",
         content: `
             <h3>The "Abitur" Writing Part</h3>
@@ -1870,10 +1870,6 @@ const skillsContent = [
                 <li><strong>Runner-up: Examine</strong><br>
                 Often used for characters or feelings (e.g., "Examine the narrator's attitude...").</li>
             </ul>
-            <div class="highlight-box" style="background: #e0f2fe; border: 1px solid #7dd3fc; color: #0369a1; margin: 15px 0;">
-                <strong>🔑 The Golden Formula:</strong><br>
-                Feature + Quote + Label + Effect
-            </div>
 
             <h4>3. Evaluation & Creativity (Task 3)</h4>
             <p><strong>Goal:</strong> Give your opinion or apply knowledge.</p>
@@ -1890,10 +1886,7 @@ const skillsContent = [
                 <li><strong>Top Format:</strong> Blog Entry.</li>
                 <li><strong>Others:</strong> Article, Formal Letter/Email.</li>
             </ul>
-            
-            <div style="background-color: #fffbeb; padding: 10px; border-left: 4px solid #f59e0b; margin-top: 15px; color: #92400e;">
-                <strong>⚠️ Advice:</strong> Pay close attention to the <strong>register</strong> (formal vs. informal) and structure (headline, greeting, etc.).
-            </div>
+    
 
             <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
 

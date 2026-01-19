@@ -15,36 +15,39 @@
 
 <header>
     <h1>Englisch in der Oberstufe</h1>
-    <p>Anforderungsbereiche (AFB), Tools und Benotung</p><br>
     <span class="origin-badge">Erstellt für den Englischunterricht im Bundesland Bremen von <a href="mailto:j.brandt@schule.bremen.de">Julian Brandt</a></span>
 </header>
 
+<!-- Suchfunktion -->
+<div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="🔍 Suche nach Titel, Beschreibung oder Inhalt..." autocomplete="off">
+    <div id="searchCounter" class="search-counter"></div>
+</div>
+
 <div class="intro-section">
        <div class="afb-explainer">
-        <div class="afb-card" onclick="filterContent('AFB I', this)">
+        <div class="afb-card" onclick="handleCategoryClick('AFB I', this)">
             <strong>AFB I: Comprehension</strong>
             <span class="afb-desc">Reproduktion & Zusammenfassung. <br><em>"Was steht im Text?"</em></span>
         </div>
-        <div class="afb-card" onclick="filterContent('AFB II', this)">
+        <div class="afb-card" onclick="handleCategoryClick('AFB II', this)">
             <strong>AFB II: Analysis</strong>
             <span class="afb-desc">Analyse & Reorganisation. <br><em>"Wie macht der Autor das?"</em></span>
         </div>
-        <div class="afb-card" onclick="filterContent('AFB III', this)">
+        <div class="afb-card" onclick="handleCategoryClick('AFB III', this)">
             <strong>AFB III: Evaluation</strong>
             <span class="afb-desc">Bewertung & eigene Meinung. <br><em>"Was denke ich darüber?"</em></span>
         </div>
-        <div class="afb-card" onclick="filterContent('Tools', this)">
-            <strong>Tools</strong>
+        <div class="afb-card" onclick="handleCategoryClick('Kompetenzen', this)">
+            <strong>Kompetenzen</strong>
             <span class="afb-desc">Hilfsmittel und Ressourcen für den Englischunterricht. <br><em>"Praktische Werkzeuge"</em></span>
         </div>
-        <div class="afb-card" onclick="filterContent('Grading', this)">
-            <strong>Benotung</strong>
+        <div class="afb-card" onclick="handleCategoryClick('Grading', this)">
+            <strong>Bewertungskriterien</strong>
             <span class="afb-desc">Bewertungskriterien und Notengebung. <br><em>"Wie wird bewertet?"</em></span>
         </div>
     </div>
 </div>
-
-
 
 <main class="grid" id="grid">
     </main>
@@ -69,6 +72,21 @@
 <script src="data-grading.js"></script>
 
 <script src="app.js"></script>
+
+<!-- Rechtlicher Hinweis -->
+<footer class="legal-disclaimer">
+    <div class="disclaimer-content">
+        <h4>⚠️ Wichtiger Hinweis</h4>
+        <p>Die bereitgestellten Lerninhalte wurden mit größter Sorgfalt erstellt, stellen jedoch keine Garantie für absolute Richtigkeit, Vollständigkeit oder Aktualität dar. Insbesondere gilt:</p>
+        <ol>
+            <li>Lehrpläne und Prüfungsanforderungen können sich durch die zuständigen Kultusministerien ändern, ohne dass diese Änderungen sofort in den Materialien reflektiert werden</li>
+            <li>Im Unterricht besprochene Aspekte, Schwerpunkte oder Interpretationen können von den Inhalten abweichen</li>
+            <li>Es existieren verschiedene didaktische und methodische Herangehensweisen, die alle legitim sein können</li>
+            <li>Rechtliche oder politische Entwicklungen (z.B. bei landeskundlichen Themen) können aktuelle Anpassungen erfordern</li>
+            <li>Die Materialien sind als ergänzendes Lernwerkzeug konzipiert und ersetzen nicht den Unterricht oder individuelle Rücksprache mit Lehrkräften</li>
+        </ol>
+    </div>
+</footer>
 
 </body>
 </html>
