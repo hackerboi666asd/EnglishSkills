@@ -491,11 +491,11 @@ const skillsContent = [
         </li>
         
         <li><strong>Syntax (Sentence Structure):</strong>
-        
-        <br>&rarr; <em>Parataxis (Short sentences):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
-        
-        <br>&rarr; <em>Hypotaxis (Complex sentences):</em> Used for detailed explanations, complex arguments, or to show high education.
-        
+
+        <br>&rarr; <em>Parataxis (Coordination of main clauses):</em> Creates speed, urgency, drama, or simplicity ("I came. I saw. I conquered.").
+
+        <br>&rarr; <em>Hypotaxis (Subordination with dependent clauses):</em> Used for detailed explanations, complex arguments, or to show high education.
+
         </li>
         
         <li><strong>Rhetorical Devices:</strong>
@@ -543,6 +543,7 @@ const skillsContent = [
         
         
         <h4>3. Register (The Formality)</h4>
+    
         
         <p>Register describes the level of formality. It tells you about the relationship between author and reader.</p>
         
@@ -1299,6 +1300,116 @@ const skillsContent = [
                     <td>"Write back soon!"</td>
                 </tr>
             </table>
+            </div>
+        `
+    },
+    {
+        title: "Letter to the Editor",
+        cat: "AFB III",
+        short: "React to a newspaper article.",
+        content: `
+            <h3>Writing a Letter to the Editor</h3>
+            <p class="intro-text"><em>A letter to the editor is your chance to join the public debate. You respond to a published article, express your opinion, and add your voice to the discussion.</em></p>
+
+            <div class="highlight-box" style="background: #fef2f2; border: 1px solid #fca5a5; color: #991b1b;">
+                <strong>💡 Key Characteristics:</strong><br>
+                <strong>Register:</strong> Semi-formal (more polite than a blog, but more personal than a formal letter).<br>
+                <strong>Tone:</strong> Can be formal or semi-formal, depending on the newspaper and topic. Use "I" to express your view, but stay respectful even when disagreeing strongly.
+            </div>
+
+            <h4>1. Structure</h4>
+            <ul>
+                <li><strong>Opening (Reference to the Article):</strong>
+                    <br>&rarr; Mention the article's title, author, and date.
+                    <br>&rarr; Briefly state what the article was about (1-2 sentences max).
+                    <br>&rarr; Indicate your position (agree, disagree, or partially agree).
+                </li>
+                <li><strong>Body (Your Arguments):</strong>
+                    <br>&rarr; Present 2-3 clear arguments to support your view.
+                    <br>&rarr; Use facts, examples, or personal experience to back up your points.
+                    <br>&rarr; Address counter-arguments if necessary ("While I understand that..., I believe...").
+                </li>
+                <li><strong>Conclusion (Call to Action or Final Thought):</strong>
+                    <br>&rarr; Summarize your main point in one sentence.
+                    <br>&rarr; End with a call to action ("We should...", "It is time to...") or a thought-provoking question.
+                </li>
+            </ul>
+
+            <h4>2. Layout Elements</h4>
+            <ul>
+                <li><strong>Top Right:</strong> Your Name, City (e.g., "Sarah Thompson, Munich").</li>
+                <li><strong>Greeting:</strong> "Dear Editor," or "To the Editor,"</li>
+                <li><strong>Closing:</strong> "Sincerely," or "Yours sincerely," followed by your name.</li>
+            </ul>
+
+            <h4>3. Useful Phrases</h4>
+            <div class="table-wrap">
+            <table style="font-size: 0.95em;">
+                <tr>
+                    <th>Function</th>
+                    <th>Phrases</th>
+                </tr>
+                <tr>
+                    <td><strong>Opening & Reference</strong></td>
+                    <td>
+                        "I am writing in response to the article '...' by [Author], published on [Date]."<br>
+                        "I read with great interest the article about..."<br>
+                        "The recent article on... raised several important points."<br>
+                        "I was surprised / delighted / concerned to read that..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Expressing Agreement</strong></td>
+                    <td>
+                        "I fully agree with the author's view that..."<br>
+                        "The article rightly points out that..."<br>
+                        "I could not agree more when the author states..."<br>
+                        "This is exactly what we need to hear."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Expressing Disagreement</strong></td>
+                    <td>
+                        "I must respectfully disagree with the claim that..."<br>
+                        "However, the article fails to mention that..."<br>
+                        "This view overlooks the fact that..."<br>
+                        "While I understand the author's concern, I believe..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Adding Your Perspective</strong></td>
+                    <td>
+                        "From my experience as a [student/parent/citizen],..."<br>
+                        "What the article does not address is..."<br>
+                        "In my opinion, a crucial aspect is..."<br>
+                        "It is important to remember that..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Concluding & Call to Action</strong></td>
+                    <td>
+                        "In conclusion, I urge readers to..."<br>
+                        "It is time for us to..."<br>
+                        "We must not ignore the fact that..."<br>
+                        "I hope this issue will receive the attention it deserves."<br>
+                        "Sincerely, [Your Name], [City]"<br>
+                        "Yours sincerely, [Your Name], [City]"
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <h4>4. Pro-Tips</h4>
+            <ul>
+                <li><strong>Keep it concise:</strong> Newspapers have word limits (usually 150-250 words). Get to the point quickly.</li>
+                <li><strong>Be specific:</strong> Refer to concrete statements from the article rather than vague generalities.</li>
+                <li><strong>Stay respectful:</strong> Even when disagreeing, avoid personal attacks. Focus on the argument, not the person.</li>
+                <li><strong>Show credibility:</strong> Mention if you have relevant experience ("As a student who...", "As someone who has worked in...").
+            </ul>
+
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534; margin-top: 15px;">
+                <strong>✅ Example Opening:</strong><br>
+                "I am writing in response to John Miller's article 'Schools Should Ban Smartphones', published on 10 January 2026. While I agree that excessive phone use is problematic, I believe a complete ban is not the solution. Instead, we should teach students digital responsibility."
             </div>
         `
     },
