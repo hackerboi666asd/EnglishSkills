@@ -286,7 +286,152 @@ const skillsContent = [
     /* ============================================================
        AFB II: ANALYSIS
        ============================================================ */
-       {
+    {
+        title: "Analyse / Examine (Operator)",
+        cat: "AFB II",
+        short: "Look at something in detail and explain its meaning or structure.",
+        content: `
+            <h3>Analyse / Examine</h3>
+            <p class="intro-text"><em>Analysieren bedeutet, etwas systematisch zu untersuchen und seine Bestandteile, Funktionen oder Bedeutungen zu erklären. Aber Vorsicht: <strong>Was</strong> analysiert werden soll, hängt stark von der konkreten Aufgabenstellung ab!</em></p>
+            
+            <div class="highlight-box warning">
+                <strong>⚠️ Wichtig: Lies die Aufgabenstellung genau!</strong><br>
+                "Analyse" ist kein fester Texttyp – die Frage bestimmt den Fokus. Du musst immer klären: <strong>WAS soll ich analysieren?</strong>
+            </div>
+
+            <h4>Mögliche Analyse-Objekte (abhängig von der Aufgabe)</h4>
+            <p>Je nach Aufgabenstellung kann die Analyse sich auf ganz unterschiedliche Aspekte konzentrieren:</p>
+            
+            <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Analyse-Objekt</th><th>Fokus der Analyse</th><th>Typische Fragestellung</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cartoon</strong></td>
+                        <td>Bildkomposition, Symbole, Karikatur-Elemente, Message</td>
+                        <td>"Analyse the cartoon and explain its message."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Style / Language</strong></td>
+                        <td>Wortwahl, Satzbau, rhetorische Mittel, Stilebene</td>
+                        <td>"Analyse the author's use of language."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tone & Register</strong></td>
+                        <td>Formell/informell, sachlich/emotional, ironisch/ernst</td>
+                        <td>"Analyse the tone of the text."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Narrative Perspective</strong></td>
+                        <td>Erzählerperspektive (1st/3rd person), Wirkung auf Leser</td>
+                        <td>"Analyse how the narrative perspective shapes the reader's view."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Characters</strong></td>
+                        <td>Charaktereigenschaften, Verhalten, Entwicklung, Beziehungen</td>
+                        <td>"Analyse the relationship between the two main characters."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Structure</strong></td>
+                        <td>Aufbau (Einleitung, Höhepunkt, Schluss), Textorganisation</td>
+                        <td>"Analyse how the text is structured."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Argumentation</strong></td>
+                        <td>Argumente, Belege, logischer Aufbau, Überzeugungsstrategien</td>
+                        <td>"Analyse the author's line of argument."</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Symbols / Imagery</strong></td>
+                        <td>Metaphern, Symbolik, Bilder und ihre Bedeutung</td>
+                        <td>"Analyse the use of symbolism in the extract."</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <h4>Grundstruktur einer Analyse (unabhängig vom Objekt)</h4>
+            <p>Egal was du analysierst – diese universelle Struktur hilft dir:</p>
+            
+            <div class="highlight-box" style="background: #f0fdf4; border: 1px solid #86efac; color: #166534;">
+                <strong>1. IDENTIFIZIEREN (WHAT?)</strong><br>
+                → Benenne das Element genau ("The cartoon shows...", "The author uses irony...")
+                <br><br>
+                <strong>2. BELEGEN (WHERE?)</strong><br>
+                → Zitiere die Textstelle oder beschreibe das visuelle Element ("This is evident in line 5...", "The oversized dollar sign in the center...")
+                <br><br>
+                <strong>3. ERKLÄREN (WHY? / EFFECT?)</strong><br>
+                → Erkläre die Funktion, Bedeutung oder Wirkung ("This creates a sense of urgency...", "The symbol represents...")
+            </div>
+
+            <h4>Typische Formulierungen für Analysen</h4>
+            <div class="table-wrap">
+            <table>
+                <tr>
+                    <td><strong>Identifizieren</strong></td>
+                    <td>
+                        "The text is characterized by..."<br>
+                        "A striking feature is..."<br>
+                        "The author employs..."<br>
+                        "One can observe that..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Belegen</strong></td>
+                    <td>
+                        "This becomes apparent in line X where..."<br>
+                        "As shown by the phrase '...' (l. X)"<br>
+                        "Evidence for this can be found when..."<br>
+                        "The use of '...' (l. X) illustrates..."
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Erklären (Wirkung)</strong></td>
+                    <td>
+                        "This creates/evokes/suggests..."<br>
+                        "The effect of this is that..."<br>
+                        "This serves to emphasize..."<br>
+                        "By doing so, the author achieves..."<br>
+                        "This contributes to the overall impression of..."
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+            <h4>Beispiel: Zwei verschiedene Analyse-Aufgaben</h4>
+            
+            <p><strong>Aufgabe A:</strong> "Analyse the author's use of <u>language</u> in the opening paragraph."</p>
+            <p style="margin-left: 20px; color: #0369a1;">
+                → Fokus: Wortwahl, Stilmittel, Satzbau<br>
+                → <em>Beispiel-Anfang:</em> "The author's language is characterized by vivid imagery and emotive vocabulary. The phrase 'blood-soaked streets' (l. 3) creates a sense of violence and chaos..."
+            </p>
+
+            <p><strong>Aufgabe B:</strong> "Analyse how the <u>narrative perspective</u> influences the reader's understanding."</p>
+            <p style="margin-left: 20px; color: #0369a1;">
+                → Fokus: Erzähler (1st/3rd person), Wissenshorizont, subjektive vs. objektive Sicht<br>
+                → <em>Beispiel-Anfang:</em> "The first-person narrator provides an intimate, subjective view of events. The use of 'I felt my heart pounding' (l. 7) allows the reader to directly access the protagonist's emotions..."
+            </p>
+
+            <div class="highlight-box info">
+                <strong>💡 Merke:</strong><br>
+                Eine gute Analyse ist <strong>systematisch</strong> (strukturiert), <strong>textbasiert</strong> (mit Belegen) und <strong>erklärend</strong> (nicht nur beschreibend). Passe deinen Fokus immer an die konkrete Aufgabenstellung an!
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>Weiterführende Karten</h4>
+            <p>Für spezifische Analyse-Themen gibt es eigene Karten auf dieser Plattform:</p>
+            <ul>
+                <li><strong>Characterization</strong> – für Charakteranalysen</li>
+                <li><strong>Narrative Perspective</strong> – für Erzählperspektive</li>
+                <li><strong>Stylistic Devices</strong> – für sprachliche Mittel</li>
+                <li><strong>Cartoon Analysis</strong> – falls vorhanden (Kategorie Kompetenzen)</li>
+            </ul>
+        `
+    },
+    {
         title: "Characterization",
         cat: "AFB II",
         short: "Operator: Describe the character of / give / write a characterization",
@@ -2057,6 +2202,123 @@ const skillsContent = [
                     <tr><td><strong>create / imagine</strong></td><td>III</td><td>produce sth. that has not existed before / form a picture in your mind</td></tr>
                 </tbody>
             </table>
+            </div>
+        `
+    },
+
+    /* ============================================================
+       KI ALS LERNHILFE
+       ============================================================ */
+    {
+        title: "KI als Lernhilfe nutzen",
+        cat: "Kompetenzen",
+        short: "Mit ChatGPT, Gemini & Grok Übungsklausuren erstellen und Feedback erhalten",
+        content: `
+            <h3>🤖 KI als Lernhilfe nutzen</h3>
+            <p class="intro-text"><em>Mit ChatGPT, Gemini & Grok kannst du komplette Übungsklausuren erstellen und deine Texte analysieren lassen.</em></p>
+            
+            <h4>Warum KI nutzen?</h4>
+            <p><strong>KI-Assistenten sind kostenlose 24/7-Lernhelfer</strong></p>
+            <ul>
+                <li><strong>Komplette Übungsklausuren generieren</strong> – mit Grundlagentext, Aufgaben (AFB I-III) und Erwartungshorizont</li>
+                <li><strong>Texte analysieren und Feedback geben</strong> – detaillierte Rückmeldung zu Inhalt, Struktur und Sprache</li>
+            </ul>
+            
+            <div class="highlight-box warning">
+                <strong>⚠️ KI ersetzt nicht das Lernen!</strong><br>
+                Sie ist ein Werkzeug zum Üben und Verstehen – nicht zum Abschreiben.
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>📋 Schritt 1: Komplette Übungsklausur generieren</h4>
+            <p>Generiere eine vollständige Klausur mit Grundlagentext, Aufgaben und Erwartungshorizont</p>
+            
+            <div class="form-group">
+                <label class="form-label" for="ki-fach">Fach <span style="color: #ef4444;">*</span></label>
+                <input type="text" id="ki-fach" class="form-input" placeholder="z.B. Englisch, Deutsch, Französisch...">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="ki-thema">Thema <span style="color: #ef4444;">*</span></label>
+                <input type="text" id="ki-thema" class="form-input" placeholder="z.B. Globalization, American Dream, Klimawandel...">
+            </div>
+            
+            <button class="prompt-button" onclick="generateKlausurPrompt()">✨ Prompt generieren</button>
+            
+            <div id="klausur-output" class="prompt-output" style="display: none; margin-top: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <strong style="color: #e2e8f0;">Generierter Prompt:</strong>
+                    <button id="copy-btn-klausur" class="copy-button" onclick="copyPromptToClipboard('klausur-prompt', 'copy-btn-klausur')">📋 Kopieren</button>
+                </div>
+                <pre><code id="klausur-prompt"></code></pre>
+                
+                <div class="next-steps">
+                    <p style="margin-top: 20px; margin-bottom: 10px;"><strong>Nächste Schritte:</strong></p>
+                    <ol style="line-height: 1.8; padding-left: 20px;">
+                        <li>Kopiere den Prompt (Button oben rechts) ✅</li>
+                        <li>Öffne ChatGPT, Gemini oder Grok (siehe unten) 🤖</li>
+                        <li>Füge den Prompt ein und erhalte deine Klausur 📝</li>
+                        <li>Speichere das Ergebnis für Schritt 2 (Feedback) 💾</li>
+                        <li>Beantworte (digital) schriftlich eine, zwei oder alle drei Aufgaben ✍️</li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>🔍 Schritt 2: Text-Feedback einholen</h4>
+            <p>Füge die generierte Klausur (von Schritt 1) und deine geschriebenen Texte ein</p>
+            
+            <div class="form-group">
+                <label class="form-label" for="ki-klausur">Klausur-Ergebnis von Schritt 1 <span style="color: #ef4444;">*</span></label>
+                <textarea id="ki-klausur" class="form-textarea" rows="6" placeholder="Füge hier die komplette Übungsklausur ein (Grundlagentext + Aufgaben + Erwartungshorizont)..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="ki-text">Meine geschriebenen Texte <span style="color: #ef4444;">*</span></label>
+                <textarea id="ki-text" class="form-textarea" rows="6" placeholder="Füge hier deine Texte ein, die du zur Übungsklausur geschrieben hast..."></textarea>
+            </div>
+            
+            <button class="prompt-button" onclick="generateFeedbackPrompt()">✨ Prompt generieren</button>
+            
+            <div id="feedback-output" class="prompt-output" style="display: none; margin-top: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <strong style="color: #e2e8f0;">Generierter Prompt:</strong>
+                    <button id="copy-btn-feedback" class="copy-button" onclick="copyPromptToClipboard('feedback-prompt', 'copy-btn-feedback')">📋 Kopieren</button>
+                </div>
+                <pre><code id="feedback-prompt"></code></pre>
+                
+                <div class="next-steps">
+                    <p style="margin-top: 20px; margin-bottom: 10px;"><strong>Nächste Schritte:</strong></p>
+                    <ol style="line-height: 1.8; padding-left: 20px;">
+                        <li>Kopiere den Prompt (Button oben rechts) ✅</li>
+                        <li>Öffne ChatGPT, Gemini oder Grok (siehe unten) 🤖</li>
+                        <li>Füge den Prompt ein und erhalte dein Feedback 📊</li>
+                        <li>Sichere dir dein Feedback in Kurzform um es als Grundlage für weiteres Üben zu nutzen 📚</li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 30px 0;">
+
+            <h4>🚀 KI-Tools direkt öffnen</h4>
+            <div class="ki-tool-cards">
+                <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" class="ki-tool-card">
+                    <div class="ki-tool-icon">🤖</div>
+                    <div class="ki-tool-name">ChatGPT</div>
+                    <div class="ki-tool-provider">OpenAI</div>
+                </a>
+                <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="ki-tool-card">
+                    <div class="ki-tool-icon">✨</div>
+                    <div class="ki-tool-name">Gemini</div>
+                    <div class="ki-tool-provider">Google</div>
+                </a>
+                <a href="https://grok.com/" target="_blank" rel="noopener noreferrer" class="ki-tool-card">
+                    <div class="ki-tool-icon">⚡</div>
+                    <div class="ki-tool-name">Grok</div>
+                    <div class="ki-tool-provider">xAI</div>
+                </a>
             </div>
         `
     }

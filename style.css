@@ -133,7 +133,7 @@ mark {
 .afb-explainer .afb-card:nth-child(1)::before { background: var(--afb1); }
 .afb-explainer .afb-card:nth-child(2)::before { background: var(--afb2); }
 .afb-explainer .afb-card:nth-child(3)::before { background: var(--afb3); }
-.afb-explainer .afb-card:nth-child(4)::before { background: var(--tools); }
+.afb-explainer .afb-card:nth-child(4)::before { background: var(--kompetenzen); }
 .afb-explainer .afb-card:nth-child(5)::before { background: var(--grading); }
 
 
@@ -425,6 +425,199 @@ tr:hover td { background: #f1f5f9; }
     margin-bottom: 6px;
 }
 
+/* ===================================================================
+   KI-LERNHILFE: FORMULAR, BUTTONS, PROMPT-AUSGABE & TOOL-CARDS
+   =================================================================== */
+
+/* --- FORMULAR ELEMENTE --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+/* --- BUTTONS --- */
+.prompt-button {
+    background: #10b981;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
+    margin-top: 10px;
+}
+
+.prompt-button:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(16, 185, 129, 0.3);
+}
+
+.prompt-button:active {
+    transform: translateY(0);
+}
+
+.copy-button {
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+/* --- PROMPT AUSGABE BOX --- */
+.prompt-output {
+    background: #1e293b;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #334155;
+}
+
+.prompt-output pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.prompt-output code {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.next-steps {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+.next-steps ol {
+    color: #cbd5e1;
+}
+
+/* --- HIGHLIGHT BOXEN --- */
+.highlight-box {
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid;
+}
+
+.highlight-box.info {
+    background: #f0f9ff;
+    border-color: #0284c7;
+    color: #075985;
+}
+
+.highlight-box.warning {
+    background: #fef9c3;
+    border-color: #f59e0b;
+    color: #92400e;
+}
+
+.highlight-box.success {
+    background: #f0fdf4;
+    border-color: #10b981;
+    color: #166534;
+}
+
+/* --- KI-TOOL CARDS --- */
+.ki-tool-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ki-tool-card {
+    display: block;
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ki-tool-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    border-color: var(--accent);
+}
+
+.ki-tool-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.ki-tool-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--primary);
+}
+
+.ki-tool-provider {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* ===================================================================
+   RESPONSIVE: MOBILE ANPASSUNGEN
+   =================================================================== */
+
 @media (max-width: 768px) {
     .legal-disclaimer {
         margin-top: 60px; padding: 0 15px 30px;
@@ -444,5 +637,34 @@ tr:hover td { background: #f1f5f9; }
     
     .disclaimer-content ol {
         font-size: 0.7rem; padding-left: 16px;
+    }
+    
+    /* KI-Lernhilfe Mobile-Anpassungen */
+    .ki-tool-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .form-input,
+    .form-textarea {
+        font-size: 16px; /* Verhindert Zoom auf iOS */
+    }
+    
+    .prompt-button {
+        width: 100%;
+        padding: 16px;
+    }
+    
+    .prompt-output {
+        padding: 15px;
+    }
+    
+    .prompt-output code {
+        font-size: 0.8rem;
+    }
+    
+    .copy-button {
+        font-size: 0.85rem;
+        padding: 10px 14px;
     }
 }

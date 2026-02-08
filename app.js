@@ -212,6 +212,19 @@ function openModal(index) {
     // Anzeige von Grading zu Bewertungskriterien ändern
     document.getElementById('mCat').innerText = item.cat === 'Grading' ? 'Bewertungskriterien' : item.cat;
     
+    // Badge-Farbe dynamisch setzen
+    let badgeColor = '#e2e8f0'; // Standard grau
+    if(item.cat.includes('I')) badgeColor = '#10b981';   // AFB I - Grün
+    if(item.cat.includes('II')) badgeColor = '#8b5cf6';  // AFB II - Lila
+    if(item.cat.includes('III')) badgeColor = '#ef4444'; // AFB III - Rot
+    if(item.cat === 'Kompetenzen') badgeColor = '#06b6d4';  // Cyan/Türkis
+    if(item.cat === 'Grading') badgeColor = '#ec4899';   // Pink
+    
+    const mCatElement = document.getElementById('mCat');
+    mCatElement.style.background = badgeColor;
+    mCatElement.style.color = 'white';
+    mCatElement.style.fontWeight = 'bold';
+    
     document.getElementById('mBody').innerHTML = item.content;
     
     // Öffnen
@@ -404,4 +417,195 @@ function createMiniCard(item, index) {
     card.onclick = () => openModal(index);
     
     return card;
+}
+
+// ============================================================
+// KI-LERNHILFE: PROMPT-GENERIERUNG & CLIPBOARD-FUNKTIONEN
+// ============================================================
+
+/**
+ * Generiert Prompt für Übungsklausur basierend auf Formularinhalten
+ */
+window.generateKlausurPrompt = function() {
+    const fach = document.getElementById('ki-fach').value.trim();
+    const thema = document.getElementById('ki-thema').value.trim();
+    
+    // Validierung
+    if (!fach || !thema) {
+        alert('⚠️ Bitte fülle mindestens Fach und Thema aus!');
+        return;
+    }
+    
+    // Prompt-Template befüllen
+    let prompt = `Erstelle eine vollständige Übungsklausur für ${fach}-Abitur:
+
+THEMA: ${thema}
+ZEIT: 90 Minuten (Lesezeit: 30 Min, Schreibzeit: 60 Min)`;
+    
+    prompt += `
+
+AUFBAU:
+
+MATERIALTEXT (700-800 Wörter)
+
+Stelle einen passenden Text/Artikel/Auszug bereit
+Füge Quellenangabe hinzu (Autor, Titel, Erscheinungsjahr)
+
+AUFGABEN (3 Aufgaben mit verschiedenen Anforderungsbereichen)
+
+Aufgabe 1: AFB I (Reproduktion, z.B. "Nenne...", "Beschreibe...")
+Aufgabe 2: AFB II (Analyse, z.B. "Analysiere...", "Erläutere...")
+Aufgabe 3: AFB III (Bewertung, z.B. "Bewerte...", "Beurteile...")
+
+ERWARTUNGSHORIZONT
+
+Detaillierte Lösungserwartungen für alle Aufgaben
+Punktverteilung: Inhalt 60%, Sprache 40%
+Bewertungsschema mit Notentabelle (15-0 Punkte)
+
+Gib die komplette Klausur aus, sodass ich sie direkt zum Üben verwenden kann.`;
+    
+    // Output anzeigen
+    document.getElementById('klausur-prompt').textContent = prompt;
+    document.getElementById('klausur-output').style.display = 'block';
+    
+    // Smooth scroll zu Output
+    document.getElementById('klausur-output').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+};
+
+/**
+ * Generiert Feedback-Prompt basierend auf Klausur und eigenem Text
+ */
+window.generateFeedbackPrompt = function() {
+    const klausur = document.getElementById('ki-klausur').value.trim();
+    const text = document.getElementById('ki-text').value.trim();
+    
+    // Validierung
+    if (!klausur || !text) {
+        alert('⚠️ Bitte fülle beide Felder aus (Klausur und deine Texte)!');
+        return;
+    }
+    
+    // Prompt-Template befüllen
+    const prompt = `Du bist ein erfahrener Abitur-Korrektor. Du hast mir zuvor folgende Übungsklausur erstellt:
+
+===== ÜBUNGSKLAUSUR =====
+${klausur}
+===== ENDE ÜBUNGSKLAUSUR =====
+
+Ich habe diese Klausur bearbeitet. Hier ist mein Text:
+
+===== MEIN TEXT =====
+${text}
+===== ENDE MEIN TEXT =====
+
+Bitte analysiere meinen Text und gib mir hilfreiche Verbesserungsvorschläge. Gehe dabei wie folgt vor:
+
+AUFGABENERFÜLLUNG
+
+Habe ich alle Aufgaben beantwortet?
+Sind die Operatoren korrekt umgesetzt?
+Wurden alle wichtigen Aspekte behandelt?
+
+INHALTLICHE QUALITÄT
+
+Wie überzeugend ist meine Argumentation?
+Wurden relevante Textbelege verwendet?
+Ist die Analyse tiefgehend genug?
+
+STRUKTUR & AUFBAU
+
+Ist der Text logisch gegliedert?
+Gibt es klare Übergänge zwischen Absätzen?
+Werden Einleitung und Schluss den Anforderungen gerecht?
+
+SPRACHE & AUSDRUCK
+
+Wortschatz und Satzbau
+Grammatik und Rechtschreibung
+Fachsprachliche Präzision
+
+BEWERTUNG & NOTE
+
+Welche Punktzahl würdest du vergeben? (0-15 Punkte)
+Begründe die Note anhand des Erwartungshorizonts
+
+KONKRETE VERBESSERUNGSTIPPS
+
+Nenne 3-5 Aspekte, die ich beim nächsten Mal besser machen sollte
+Gib praktische Tipps für die Verbesserung
+
+Schreibe dein Feedback konstruktiv und ermutigend – ich bin ein angehender Abiturient und möchte mich verbessern!`;
+    
+    // Output anzeigen
+    document.getElementById('feedback-prompt').textContent = prompt;
+    document.getElementById('feedback-output').style.display = 'block';
+    
+    // Smooth scroll zu Output
+    document.getElementById('feedback-output').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+};
+
+/**
+ * Kopiert generierten Prompt in die Zwischenablage
+ * @param {string} promptId - ID des Elements mit dem Prompt-Text
+ * @param {string} buttonId - ID des Buttons für visuelles Feedback
+ */
+window.copyPromptToClipboard = function(promptId, buttonId) {
+    const promptText = document.getElementById(promptId).textContent;
+    const button = document.getElementById(buttonId);
+    
+    // Moderne Clipboard API (mit Fallback)
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(promptText)
+            .then(() => {
+                showCopySuccess(button);
+            })
+            .catch(err => {
+                console.error('Clipboard API fehlgeschlagen:', err);
+                fallbackCopy(promptText, button);
+            });
+    } else {
+        // Fallback für ältere Browser
+        fallbackCopy(promptText, button);
+    }
+};
+
+/**
+ * Fallback-Kopierfunktion für ältere Browser
+ */
+function fallbackCopy(text, button) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    
+    try {
+        const success = document.execCommand('copy');
+        if (success) {
+            showCopySuccess(button);
+        } else {
+            alert('❌ Kopieren fehlgeschlagen. Bitte manuell markieren und kopieren.');
+        }
+    } catch (err) {
+        console.error('Fallback-Kopieren fehlgeschlagen:', err);
+        alert('❌ Kopieren fehlgeschlagen. Bitte manuell markieren und kopieren.');
+    } finally {
+        document.body.removeChild(textarea);
+    }
+}
+
+/**
+ * Zeigt visuelles Feedback beim erfolgreichen Kopieren
+ */
+function showCopySuccess(button) {
+    const originalText = button.textContent;
+    button.textContent = '✅ Kopiert!';
+    button.style.background = '#10b981'; // Grün
+    
+    setTimeout(() => {
+        button.textContent = originalText;
+        button.style.background = ''; // Zurück zu Standard
+    }, 2000);
 }
