@@ -440,27 +440,20 @@ window.generateKlausurPrompt = function() {
     let prompt = `Erstelle eine vollständige Übungsklausur für ${fach}-Abitur:
 
 THEMA: ${thema}
-ZEIT: 90 Minuten (Lesezeit: 30 Min, Schreibzeit: 60 Min)`;
+ZEIT: 225 Minuten`;
     
     prompt += `
 
-AUFBAU:
+AUFBAU: MATERIALTEXT (ca. 700 Wörter) Stelle einen passenden Text/Artikel/Auszug bereit Füge Quellenangabe hinzu (Autor, Titel, Erscheinungsjahr) AUFGABEN (3 Aufgaben AUF ENGLISCH mit verschiedenen Anforderungsbereichen)
 
-MATERIALTEXT (700-800 Wörter)
-
-Stelle einen passenden Text/Artikel/Auszug bereit
-Füge Quellenangabe hinzu (Autor, Titel, Erscheinungsjahr)
-
-AUFGABEN (3 Aufgaben mit verschiedenen Anforderungsbereichen)
-
-Aufgabe 1: AFB I (Reproduktion, z.B. "Nenne...", "Beschreibe...")
-Aufgabe 2: AFB II (Analyse, z.B. "Analysiere...", "Erläutere...")
-Aufgabe 3: AFB III (Bewertung, z.B. "Bewerte...", "Beurteile...")
+Aufgabe 1: AFB I (Reproduktion, z.B. "Outline...", "Describe...")
+Aufgabe 2: AFB II (Analyse, z.B. "Analyze...", "Examine...")
+Aufgabe 3: AFB III (Bewertung oder Kreativ, z.B. "Comment on...", "Discuss...", "Write a blog entry about...")
 
 ERWARTUNGSHORIZONT
 
-Detaillierte Lösungserwartungen für alle Aufgaben
-Punktverteilung: Inhalt 60%, Sprache 40%
+Detaillierte Lösungserwartungen für alle Aufgaben (auf Englisch)
+Punktverteilung: Inhalt 40%, Sprache 60%
 Bewertungsschema mit Notentabelle (15-0 Punkte)
 
 Gib die komplette Klausur aus, sodass ich sie direkt zum Üben verwenden kann.`;
